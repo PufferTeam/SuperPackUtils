@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "puffercreateutils:block/tiny_torch"
+    }
+  }
+}

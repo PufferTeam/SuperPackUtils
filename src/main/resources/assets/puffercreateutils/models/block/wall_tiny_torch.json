@@ -1,0 +1,75 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/torch_wall",
+	"textures": {
+		"0": "block/torch",
+		"particle": "block/torch"
+	},
+	"elements": [
+		{
+			"from": [3, 12, 7],
+			"to": [5, 14, 9],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [-4, 11.5, 8]},
+			"faces": {
+				"north": {"uv": [7, 6, 9, 8], "texture": "#0"},
+				"east": {"uv": [7, 6, 9, 8], "texture": "#0"},
+				"south": {"uv": [7, 6, 9, 8], "texture": "#0"},
+				"west": {"uv": [7, 6, 9, 8], "texture": "#0"},
+				"up": {"uv": [7, 6, 9, 8], "texture": "#0"},
+				"down": {"uv": [7, 14, 9, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 8, 7],
+			"to": [5, 12, 9],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [-4, 11.5, 8]},
+			"faces": {
+				"north": {"uv": [7, 8, 9, 16], "texture": "#0"},
+				"east": {"uv": [7, 8, 9, 16], "texture": "#0"},
+				"south": {"uv": [7, 8, 9, 16], "texture": "#0"},
+				"west": {"uv": [7, 8, 9, 16], "texture": "#0"},
+				"up": {"uv": [7, 11, 9, 13], "texture": "#0"},
+				"down": {"uv": [7, 14, 9, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 0, 25],
+			"translation": [4.5, 5, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 0, -25],
+			"translation": [-4.25, 3, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, 25],
+			"translation": [0, 5.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 0, -25],
+			"translation": [-2.5, 6.5, 0]
+		},
+		"ground": {
+			"translation": [0, 6, 0]
+		},
+		"gui": {
+			"translation": [0, 5, 0]
+		},
+		"head": {
+			"rotation": [0, 90, 0],
+			"translation": [-0.25, 7, -11.75],
+			"scale": [1.16406, 1.5, 1.5]
+		},
+		"fixed": {
+			"translation": [0, 5, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [15, 9, 15],
+			"children": [0, 1]
+		}
+	]
+}
