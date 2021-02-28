@@ -16,9 +16,9 @@ public class BlockInit {
 
     public static final RegistryObject<Block> TINY_TORCH = BLOCKS.register("tiny_torch",
             () -> new TinyTorch(AbstractBlock.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance()
-                    .setLightLevel((state) -> 14).sound(SoundType.WOOD), ParticleTypes.FLAME));
+                    .setLightLevel((state) -> 2).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
     public static final RegistryObject<Block> WALL_TINY_TORCH = BLOCKS.register("wall_tiny_torch",
             () -> new WallTinyTorch(AbstractBlock.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance()
-                    .setLightLevel((state) -> 14).sound(SoundType.WOOD), ParticleTypes.FLAME));
+                    .setLightLevel((state) -> 2).sound(SoundType.WOOD), ParticleTypes.FLAME));
 }
