@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "superpackutils:block/tiny_torch"
+    }
+  }
+}

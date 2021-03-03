@@ -42,7 +42,7 @@ minecraft {
             properties 'mixin.env.disableRefMap': 'true'
 
             mods {
-                puffercreateutils {
+                superpackutils {
                     source sourceSets.main
                 }
             }
@@ -57,7 +57,7 @@ minecraft {
             properties 'mixin.env.disableRefMap': 'true'
 
             mods {
-                puffercreateutils {
+                superpackutils {
                     source sourceSets.main
                 }
             }
@@ -71,10 +71,10 @@ minecraft {
             properties 'mixin.env.disableRefMap': 'true'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'puffercreateutils', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', archivesBaseName, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                puffercreateutils {
+                superpackutils {
                     source sourceSets.main
                 }
             }
@@ -138,7 +138,10 @@ dependencies {
     compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-51-SNAPSHOT:api")
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-51-SNAPSHOT")
 
-    compile fg.deobf("curse.maven:psi-241665:3085941")
+    implementation fg.deobf("curse.maven:create-328085:3167531")
+    implementation fg.deobf("curse.maven:immersive-engineering-231951:3102280")
+    runtimeOnly fg.deobf("curse.maven:ezzoom-422719:3128797")
+    runtimeOnly fg.deobf("curse.maven:tellme-225781:3155161")
 
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.4-4.0.3.5:api")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.4-4.0.3.5")

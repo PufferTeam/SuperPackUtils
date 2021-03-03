@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=east": { "model": "puffercreateutils:block/wall_tiny_torch"},
-        "facing=south": { "model": "puffercreateutils:block/wall_tiny_torch", "y": 90 },
-        "facing=west": { "model": "puffercreateutils:block/wall_tiny_torch", "y": 180 },
-        "facing=north": { "model": "puffercreateutils:block/wall_tiny_torch", "y": 270 }
-    }
-}

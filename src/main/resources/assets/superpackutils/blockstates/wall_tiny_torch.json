@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=east": { "model": "superpackutils:block/wall_tiny_torch"},
+        "facing=south": { "model": "superpackutils:block/wall_tiny_torch", "y": 90 },
+        "facing=west": { "model": "superpackutils:block/wall_tiny_torch", "y": 180 },
+        "facing=north": { "model": "superpackutils:block/wall_tiny_torch", "y": 270 }
+    }
+}
