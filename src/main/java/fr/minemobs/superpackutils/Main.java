@@ -2,6 +2,8 @@ package fr.minemobs.superpackutils;
 
 import fr.minemobs.superpackutils.events.CropEvent;
 import fr.minemobs.superpackutils.init.*;
+import fr.minemobs.superpackutils.objects.blocks.SuperPackBlock;
+import fr.minemobs.superpackutils.objects.items.SuperPackItem;
 import fr.minemobs.superpackutils.world.OreGeneration;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.TorchBlock;
@@ -50,7 +52,9 @@ public class Main
     public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
         final IForgeRegistry<Item> registry = event.getRegistry();
 
-        BlockInit.BLOCKS.getEntries().stream().filter(blockRegistryObject -> !(blockRegistryObject.get() instanceof FlowingFluidBlock) && !(blockRegistryObject.get() instanceof TorchBlock)).map(RegistryObject::get).forEach(block -> {
+        BlockInit.BLOCKS.getEntries().stream()
+                .filter(blockRegistryObject -> !(blockRegistryObject.get() instanceof FlowingFluidBlock) && !(blockRegistryObject.get() instanceof TorchBlock))
+                .map(RegistryObject::get).forEach(block -> {
             final Item.Properties properties = new Item.Properties().group(ModItemGroup.instance);
             final BlockItem blockItem = new BlockItem(block, properties.group(ModItemGroup.instance));
             blockItem.setRegistryName(block.getRegistryName());

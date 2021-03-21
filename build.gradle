@@ -3,6 +3,7 @@ buildscript {
         maven { url = 'https://files.minecraftforge.net/maven' }
         maven { url = 'https://plugins.gradle.org/m2/' }
         maven { url = 'https://dist.creeper.host/Sponge/maven' }
+        maven { url = 'https://repo.spongepowered.org/maven/'}
         jcenter()
         mavenCentral()
     }
@@ -140,6 +141,7 @@ dependencies {
 
     implementation fg.deobf("curse.maven:create-328085:3167531")
     implementation fg.deobf("curse.maven:immersive-engineering-231951:3102280")
+    implementation fg.deobf("curse.maven:JAOPCA-266936:3223206")
     runtimeOnly fg.deobf("curse.maven:ezzoom-422719:3128797")
     runtimeOnly fg.deobf("curse.maven:tellme-225781:3155161")
 

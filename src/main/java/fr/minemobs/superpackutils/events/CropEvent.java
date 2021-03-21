@@ -1,6 +1,5 @@
 package fr.minemobs.superpackutils.events;
 
-import blusunrize.immersiveengineering.api.utils.TagUtils;
 import fr.minemobs.superpackutils.world.WorldFunctions;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -33,9 +32,5 @@ public class CropEvent {
     public static Boolean isOneOfBlocks(List<Block> blocks, Block block) {
         if (blocks.size() < 1) return false;
         return blocks.contains(block);
-    }
-
-    public static List<Block> getIceblocks() {
-        return iceblocks;
     }
 }
