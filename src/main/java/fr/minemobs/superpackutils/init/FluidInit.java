@@ -1,9 +1,6 @@
 package fr.minemobs.superpackutils.init;
 
 import fr.minemobs.superpackutils.Main;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.util.ResourceLocation;
@@ -189,12 +186,12 @@ public class FluidInit {
     public static final ForgeFlowingFluid.Properties MOLTEN_ELECTRUM_PROPERTIES = new ForgeFlowingFluid.Properties(
             ELECTRUM_FLUID, ELECTRUM_FLOWING, FluidAttributes.builder(ELECTRUM_STILL_RL, ELECTRUM_FLOWING_RL)
             .viscosity(3).density(5).overlay(ELECTRUM_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
-            .block(BlockInit.MOLTEN_BRONZE_BLOCK).bucket(ItemInit.MOLTEN_ELECTRUM_BUCKET);
+            .block(BlockInit.MOLTEN_ELECTRUM_BLOCK).bucket(ItemInit.MOLTEN_ELECTRUM_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_INVAR_PROPERTIES = new ForgeFlowingFluid.Properties(
             INVAR_FLUID, INVAR_FLOWING, FluidAttributes.builder(INVAR_STILL_RL, INVAR_FLOWING_RL)
             .viscosity(3).density(5).overlay(INVAR_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
-            .block(BlockInit.MOLTEN_ELECTRUM_BLOCK).bucket(ItemInit.MOLTEN_INVAR_BUCKET);
+            .block(BlockInit.MOLTEN_INVAR_BLOCK).bucket(ItemInit.MOLTEN_INVAR_BUCKET);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_CONSTANTAN_PROPERTIES = new ForgeFlowingFluid.Properties(
             CONSTANTAN_FLUID, CONSTANTAN_FLOWING, FluidAttributes.builder(CONSTANTAN_STILL_RL, CONSTANTAN_FLOWING_RL)

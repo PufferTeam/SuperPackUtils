@@ -1,9 +1,10 @@
 package fr.minemobs.superpackutils;
 
 import fr.minemobs.superpackutils.events.CropEvent;
-import fr.minemobs.superpackutils.init.*;
-import fr.minemobs.superpackutils.objects.blocks.SuperPackBlock;
-import fr.minemobs.superpackutils.objects.items.SuperPackItem;
+import fr.minemobs.superpackutils.init.BlockInit;
+import fr.minemobs.superpackutils.init.FluidInit;
+import fr.minemobs.superpackutils.init.ItemInit;
+import fr.minemobs.superpackutils.init.TileEntityInit;
 import fr.minemobs.superpackutils.world.OreGeneration;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.TorchBlock;
@@ -12,6 +13,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -24,6 +27,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Objects;
 
 @Mod("superpackutils")
 @Mod.EventBusSubscriber(modid = "superpackutils", bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -57,7 +62,7 @@ public class Main
                 .map(RegistryObject::get).forEach(block -> {
             final Item.Properties properties = new Item.Properties().group(ModItemGroup.instance);
             final BlockItem blockItem = new BlockItem(block, properties.group(ModItemGroup.instance));
-            blockItem.setRegistryName(block.getRegistryName());
+            blockItem.setRegistryName(Objects.requireNonNull(block.getRegistryName()));
             registry.register(blockItem);
         });
     }
@@ -79,6 +84,8 @@ public class Main
             super(index, label);
         }
 
+        @SuppressWarnings("NullableProblems")
+        @OnlyIn(Dist.CLIENT)
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ItemInit.TINY_TORCH.get());
