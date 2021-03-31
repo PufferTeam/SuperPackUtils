@@ -21,6 +21,8 @@ public class ItemInit {
 
     public static final RegistryObject<Item> STEEL_GEAR = ITEMS.register("steel_gear", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
+    public static final RegistryObject<Item> BIO_PLASTIC = ITEMS.register("bio_plastic", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
     public static final RegistryObject<Item> CHROMIUM_ORE = ITEMS.register("chromium_ore", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> CHROMIUM_DUST = ITEMS.register("chromium_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> CHROMIUM_INGOT = ITEMS.register("chromium_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
@@ -38,6 +40,8 @@ public class ItemInit {
     public static final RegistryObject<Item> MYTHRIL_DUST = ITEMS.register("mythril_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> MYTHRIL_INGOT = ITEMS.register("mythril_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> MYTHRIL_NUGGET = ITEMS.register("mythril_nugget", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> DEPLETED_MYTHRIL_NUGGET = ITEMS.register("dep_mythril_nugget", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Buckets
 
