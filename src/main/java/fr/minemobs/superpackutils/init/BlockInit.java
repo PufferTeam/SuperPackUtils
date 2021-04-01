@@ -1,7 +1,6 @@
 package fr.minemobs.superpackutils.init;
 
 import fr.minemobs.superpackutils.Main;
-import fr.minemobs.superpackutils.objects.blocks.RedstoneClock;
 import fr.minemobs.superpackutils.objects.blocks.TinyTorch;
 import fr.minemobs.superpackutils.objects.blocks.WallTinyTorch;
 import net.minecraft.block.AbstractBlock;
@@ -28,30 +27,23 @@ public class BlockInit {
             () -> new WallTinyTorch(Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance()
                     .setLightLevel((state) -> 2).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
-    public static final RegistryObject<Block> TEMPNAME_STONE = BLOCKS.register("tempname_stone",
+    public static final RegistryObject<Block> DEEPSLATE = BLOCKS.register("deepslate",
             () -> new Block(AbstractBlock.Properties.from(Blocks.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(12)));
-
-    public static final RegistryObject<Block> REDSTONE_CLOCK = BLOCKS.register("redstone_clock",
-            RedstoneClock::new);
 
     public static final RegistryObject<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
-    public static final RegistryObject<Block> HARVESTING_WHEEL = BLOCKS.register("harvesting_wheel", () -> new Block(AbstractBlock.Properties.create(Material.WOOD)));
-
-    public static final RegistryObject<Block> PLATINIUM_BLOCK = BLOCKS.register("platinium_block",
+    public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
-    //Fluids
+    public static final RegistryObject<Block> MYTHRIL_BLOCK = BLOCKS.register("mythril_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
-    public static final RegistryObject<FlowingFluidBlock> VINEGAR_BLOCK = BlockInit.BLOCKS.register("vinegar",
-            () -> new FlowingFluidBlock(FluidInit.VINEGAR_FLUID, AbstractBlock.Properties.from(Blocks.WATER).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
-
-    public static final RegistryObject<FlowingFluidBlock> OLIVE_OIL_BLOCK = BlockInit.BLOCKS.register("olive_oil",
-            () -> new FlowingFluidBlock(FluidInit.OLIVE_FLUID, AbstractBlock.Properties.from(Blocks.WATER).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
+    public static final RegistryObject<Block> PLACEHOLDER = BLOCKS.register("placeholder",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_MYTHRIL_BLOCK = BlockInit.BLOCKS.register("molten_mythril_fluid",
             () -> new FlowingFluidBlock(FluidInit.MYTHRIL_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
 
-    public static final RegistryObject<FlowingFluidBlock> MOLTEN_PLATINIUM_BLOCK = BlockInit.BLOCKS.register("molten_platinium_fluid",
-            () -> new FlowingFluidBlock(FluidInit.PLATINIUM_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_PLATINUM_BLOCK = BlockInit.BLOCKS.register("molten_platinum_fluid",
+            () -> new FlowingFluidBlock(FluidInit.PLATINUM_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
 }

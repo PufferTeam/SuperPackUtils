@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "superpackutils:mythril_nugget"
+    }
+  },
+  "result": {
+    "item": "superpackutils:mythril_ingot",
+    "count": 1
+  }
+}

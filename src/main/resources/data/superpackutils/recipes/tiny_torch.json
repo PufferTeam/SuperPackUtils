@@ -1,12 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:torch"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/"
   ],
+  "key": {
+    "#": {
+      "item": "minecraft:coal"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
   "result": {
-    "item": "superpackutils:item_tiny_torch",
-    "count": 9
+    "item": "minecraft:coal_ore",
+    "count": 1
   }
 }

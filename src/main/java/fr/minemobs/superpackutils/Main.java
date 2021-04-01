@@ -43,7 +43,6 @@ public class Main
         ItemInit.VANILLA_ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
         FluidInit.FLUIDS.register(modEventBus);
-        TileEntityInit.TILE_ENTITIES.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::setup);
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);

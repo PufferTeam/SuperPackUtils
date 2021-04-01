@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "superpackutils:mythril_ingot"
+    }
+  ],
+  "result": {
+    "item": "superpackutils:mythril_nugget",
+    "count": 9
+  }
+}

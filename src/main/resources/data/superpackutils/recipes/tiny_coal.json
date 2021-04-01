@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " # ",
-    "   "
-  ],
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:coal"
     }
-  },
+  ],
   "result": {
     "item": "superpackutils:tiny_coal",
-    "count": 9
+    "count": 1
   }
 }

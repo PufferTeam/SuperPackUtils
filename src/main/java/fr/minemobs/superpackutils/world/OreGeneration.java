@@ -17,7 +17,7 @@ public class OreGeneration {
 
     public static void generateOres(final BiomeLoadingEvent event){
         if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))){
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.TEMPNAME_STONE.get().getDefaultState(), 4,
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.DEEPSLATE.get().getDefaultState(), 4,
                     5, 1, 256);
         }
     }
