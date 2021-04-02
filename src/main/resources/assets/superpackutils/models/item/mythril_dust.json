@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "superpackutils:items/mythryl_dust"
+    "layer0": "superpackutils:items/mythril_dust"
   }
 }
