@@ -1,8 +1,7 @@
 {
 
-  "item.superpackutils.steel_gear": "Steel gear",
-  "item.superpackutils.big_steel_casing": "Big steel casing",
-  "item.superpackutils.tiny_coal": "Tiny coal",
+  "item.superpackutils.steel_gear": "Steel Gear",
+  "item.superpackutils.tiny_coal": "Tiny Coal",
   "item.superpackutils.mythril_ingot": "Mythril Ingot",
   "item.superpackutils.mythril_dust": "Mythril Dust",
   "item.superpackutils.mythril_nugget": "Mythril Nugget",
@@ -16,12 +15,13 @@
   "item.superpackutils.bio_plastic": "Bio Plastic",
   "item.superpackutils.limestone_dust": "Limestone Dust",
   "item.superpackutils.harvesting_wheel": "Harvesting Wheel",
+  "item.superpackutils.placeholder": "Placeholder",
 
-  "block.superpackutils.tiny_torch": "Tiny torch",
+  "block.superpackutils.tiny_torch": "Tiny Torch",
+  "block.superpackutils.big_steel_casing": "Big Steel Casing",
   "block.superpackutils.dust_block": "Dust",
   "block.superpackutils.mythril_block": "Mythril Block",
   "block.superpackutils.platinum_block": "Platinum Block",
-  "block.superpackutils.placeholder": "Placeholder",
   "block.superpackutils.deepslate": "Deepslate",
 
   "fluid.superpackutils.mythril_fluid": "Molten Mythril",

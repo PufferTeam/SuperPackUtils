@@ -1,6 +1,7 @@
 package fr.minemobs.superpackutils.init;
 
 import fr.minemobs.superpackutils.Main;
+import fr.minemobs.superpackutils.objects.blocks.RedstoneClock;
 import fr.minemobs.superpackutils.objects.blocks.TinyTorch;
 import fr.minemobs.superpackutils.objects.blocks.WallTinyTorch;
 import net.minecraft.block.AbstractBlock;
@@ -23,6 +24,9 @@ public class BlockInit {
             () -> new TinyTorch(Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance()
                     .setLightLevel((state) -> 2).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
+    public static final RegistryObject<Block> REDSTONE_CLOCK = BLOCKS.register("redstone_clock",
+            RedstoneClock::new);
+
     public static final RegistryObject<Block> WALL_TINY_TORCH = BLOCKS.register("wall_tiny_torch",
             () -> new WallTinyTorch(Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance()
                     .setLightLevel((state) -> 2).sound(SoundType.WOOD), ParticleTypes.FLAME));
@@ -32,13 +36,12 @@ public class BlockInit {
 
     public static final RegistryObject<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
+    public static final RegistryObject<Block> BIG_STEEL_CASING = BLOCKS.register("big_steel_casing", () -> new Block(AbstractBlock.Properties.create(Material.IRON)));
+
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
     public static final RegistryObject<Block> MYTHRIL_BLOCK = BLOCKS.register("mythril_block",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
-
-    public static final RegistryObject<Block> PLACEHOLDER = BLOCKS.register("placeholder",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_MYTHRIL_BLOCK = BlockInit.BLOCKS.register("molten_mythril_fluid",
