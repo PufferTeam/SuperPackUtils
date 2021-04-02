@@ -35,10 +35,11 @@ public class TileClock extends TileEntity implements ITickableTileEntity {
         if(tickCount == 60){
             world.setBlockState(getPos(),this.getBlockState().with(RedstoneClock.EMITTING, Boolean.TRUE));
             informNeighborsOfPowerChange(world, getPos());
+        }else if(tickCount >= 70) {
             tickCount = 0;
             world.setBlockState(getPos(),this.getBlockState().with(RedstoneClock.EMITTING, Boolean.FALSE));
             informNeighborsOfPowerChange(world, getPos());
-        }else{
+        }else {
             tickCount++;
         }
     }

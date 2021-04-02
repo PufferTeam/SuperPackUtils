@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "RFR",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "R": {
+      "item": "minecraft:repeater"
+    },
+    "F": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "result": {
+    "item": "superpackutils:redstone_clock",
+    "count": 1
+  }
+}
