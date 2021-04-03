@@ -10,6 +10,8 @@ import net.minecraft.world.World;
 
 public class TileClock extends TileEntity implements ITickableTileEntity {
 
+    private int tickCount = 0;
+
     public TileClock(TileEntityType<?> tileEntityTypeIn) {
         super(tileEntityTypeIn);
     }
@@ -17,8 +19,6 @@ public class TileClock extends TileEntity implements ITickableTileEntity {
     public TileClock(){
         super(TileEntityInit.REDSTONE_CLOCK.get());
     }
-
-    int tickCount = 0;
 
     private void informNeighborsOfPowerChange(World world, BlockPos blockPos) {
         world.notifyNeighborsOfStateChange(blockPos, getBlockState().getBlock());
@@ -33,12 +33,14 @@ public class TileClock extends TileEntity implements ITickableTileEntity {
     @Override
     public void tick() {
         if(tickCount == 60){
-            world.setBlockState(getPos(),this.getBlockState().with(RedstoneClock.EMITTING, Boolean.TRUE));
+            world.setBlockState(getPos(), this.getBlockState().with(RedstoneClock.EMITTING, Boolean.TRUE));
             informNeighborsOfPowerChange(world, getPos());
+            tickCount++;
         }else if(tickCount >= 70) {
             tickCount = 0;
-            world.setBlockState(getPos(),this.getBlockState().with(RedstoneClock.EMITTING, Boolean.FALSE));
+            world.setBlockState(getPos(), this.getBlockState().with(RedstoneClock.EMITTING, Boolean.FALSE));
             informNeighborsOfPowerChange(world, getPos());
+            tickCount++;
         }else {
             tickCount++;
         }

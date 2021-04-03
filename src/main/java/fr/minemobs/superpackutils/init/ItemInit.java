@@ -22,9 +22,10 @@ public class ItemInit {
     public static final RegistryObject<Item> STEEL_GEAR = ITEMS.register("steel_gear", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> BIO_PLASTIC = ITEMS.register("bio_plastic", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> PLOUGH = ITEMS.register("plough", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
-    public static final RegistryObject<Item> PLACEHOLDER = ITEMS.register("placeholder", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> BIODIESEL_INFUSED_OSMIUM_INGOT = ITEMS.register("biodiesel_infused_osmium_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> PLOUGH = ITEMS.register("plough", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> LIMESTONE_DUST = ITEMS.register("limestone_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
