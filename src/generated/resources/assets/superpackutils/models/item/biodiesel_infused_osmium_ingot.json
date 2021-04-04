@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "superpackutils:item/biodiesel_infused_osmium_ingot"
+  }
+}

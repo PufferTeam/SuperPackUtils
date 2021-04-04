@@ -72,7 +72,10 @@ minecraft {
             properties 'mixin.env.disableRefMap': 'true'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', archivesBaseName, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', archivesBaseName, '--all',
+                    '--existing', file('src/main/resources').toString(),
+                    '--existing', file('src/generated/resources').toString(),
+                    '--output', file('src/generated/resources/')
 
             mods {
                 superpackutils {
@@ -142,10 +145,11 @@ dependencies {
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-51-SNAPSHOT")
 
     implementation fg.deobf("curse.maven:create-328085:3167531")
-    implementation fg.deobf("curse.maven:immersive-engineering-231951:3102280")
     implementation fg.deobf("curse.maven:JAOPCA-266936:3223206")
+    implementation fg.deobf("curse.maven:mrp-library-426641:3152420")
     runtimeOnly fg.deobf("curse.maven:ezzoom-422719:3128797")
     runtimeOnly fg.deobf("curse.maven:tellme-225781:3155161")
+    runtimeOnly fg.deobf("curse.maven:immersive-engineering-231951:3102280")
 
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.4-4.0.3.5:api")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.4-4.0.3.5")

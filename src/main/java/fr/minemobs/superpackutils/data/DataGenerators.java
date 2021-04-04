@@ -4,6 +4,7 @@ import fr.minemobs.superpackutils.Main;
 import fr.minemobs.superpackutils.data.client.ModBlockStateProvider;
 import fr.minemobs.superpackutils.data.client.ModItemModelProvider;
 import fr.minemobs.superpackutils.data.client.ModLanguageProvider;
+import fr.minemobs.superpackutils.data.client.ModTextureProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -21,6 +22,7 @@ public final class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
         gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
+        gen.addProvider(new ModTextureProvider(gen, existingFileHelper));
         gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
         gen.addProvider(new ModLootTableProvider(gen));
         gen.addProvider(new ModLanguageProvider(gen));

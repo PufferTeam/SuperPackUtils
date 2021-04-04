@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "superpackutils:block/dust_block"
+    }
+  }
+}

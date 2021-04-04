@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "superpackutils:block/redstone_clock"
+    }
+  }
+}

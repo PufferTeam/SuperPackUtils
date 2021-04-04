@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "superpackutils:item/molten_platinum_bucket"
+  }
+}
