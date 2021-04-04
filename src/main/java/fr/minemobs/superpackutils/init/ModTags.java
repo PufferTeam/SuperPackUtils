@@ -49,7 +49,7 @@ public class ModTags {
 
         //Nuggets
         public static final ITag.INamedTag<Item> MYTHRIL_NUGGET = forge("nuggets/mythril", ItemInit.MYTHRIL_NUGGET.get());
-        public static final ITag.INamedTag<Item> PLATINUM_NUGGET = forge("nuggets/platinum", ItemInit.PLATINUM_INGOT.get());
+        public static final ITag.INamedTag<Item> PLATINUM_NUGGET = forge("nuggets/platinum", ItemInit.PLATINUM_NUGGET.get());
 
         //Ingots
         public static final ITag.INamedTag<Item> MYTHRIL_INGOT = forge("ingots/mythril", ItemInit.MYTHRIL_INGOT.get());
