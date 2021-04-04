@@ -30,6 +30,6 @@
   "item.superpackutils.steel_gear": "Steel Gear",
   "item.superpackutils.tiny_coal": "Tiny Coal",
   "itemGroup.superpackutils": "Superpack: Utils",
-  "tooltip.superpackutils.redstoneclock": "This clock emits a signal every 3 seconds.",
+  "tooltip.superpackutils.redstoneclock": "This clock emits a signal every 3 seconds during 0,5 second.",
   "tooltip.superpackutils.shift": "HOLD\u00A7e SHIFT\u00A77 for more informations!"
 }

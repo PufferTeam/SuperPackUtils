@@ -6,7 +6,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "superpackutils:redstone_clock"
+          "name": "superpackutils:item_tiny_torch"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
         }
       ]
     }

@@ -2,13 +2,9 @@ package fr.minemobs.superpackutils.data.client;
 
 import fr.minemobs.superpackutils.Main;
 import fr.minemobs.superpackutils.init.BlockInit;
-import fr.minemobs.superpackutils.objects.blocks.TinyTorch;
-import fr.minemobs.superpackutils.objects.blocks.WallTinyTorch;
-import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider {
 

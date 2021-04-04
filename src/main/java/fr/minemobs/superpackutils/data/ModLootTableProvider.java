@@ -3,12 +3,14 @@ package fr.minemobs.superpackutils.data;
 import com.mojang.datafixers.util.Pair;
 import fr.minemobs.superpackutils.init.BlockInit;
 import net.minecraft.block.Block;
+import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.LootTableProvider;
 import net.minecraft.loot.*;
 import net.minecraft.loot.conditions.SurvivesExplosion;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.RegistryObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,13 +31,17 @@ public class ModLootTableProvider extends LootTableProvider {
     public List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootParameterSet>> getTables() {
         tables.clear();
 
-        standardDropTable(BlockInit.PLATINUM_BLOCK.get());
+        for (RegistryObject<Block> entry : BlockInit.BLOCKS.getEntries()) {
+            if(!(entry.get() instanceof FlowingFluidBlock)){
+                standardDropTable(entry);
+            }
+        }
 
         return tables;
     }
 
-    private void standardDropTable(Block b) {
-        blockTable(b, LootTable.builder().addLootPool(createStandardDrops(b)));
+    private void standardDropTable(RegistryObject<Block> b) {
+        blockTable(b.get(), LootTable.builder().addLootPool(createStandardDrops(b.get())));
     }
 
     private void blockTable(Block b, LootTable.Builder lootTable) {
