@@ -19,6 +19,7 @@ public class ItemInit {
     public static final RegistryObject<Item> BIODIESEL_INFUSED_OSMIUM_INGOT = ITEMS.register("biodiesel_infused_osmium_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> MYTHRIL_INGOT = ITEMS.register("mythril_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> INFUSED_DIAMOND = ITEMS.register("infused_diamond", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Nugget
 
@@ -41,6 +42,10 @@ public class ItemInit {
     public static final RegistryObject<Item> ALUMINIUM_GEAR = ITEMS.register("aluminium_gear", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Other
+
+    public static final RegistryObject<Item> INFUSED_SHARD = ITEMS.register("infused_shard", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> ULTIMATE_RUNE = ITEMS.register("ultimate_rune", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> TINY_TORCH = ITEMS.register("item_tiny_torch", () -> new TinyTorchItem(BlockInit.TINY_TORCH.get(),
             BlockInit.WALL_TINY_TORCH.get(), new Item.Properties().group(Main.ModItemGroup.instance)));
