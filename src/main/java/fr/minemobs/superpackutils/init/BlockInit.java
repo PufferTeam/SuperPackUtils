@@ -32,11 +32,11 @@ public class BlockInit {
                     .setLightLevel((state) -> 2).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
     public static final RegistryObject<Block> DEEPSLATE = BLOCKS.register("deepslate",
-            () -> new Block(AbstractBlock.Properties.from(Blocks.STONE).harvestTool(ToolType.PICKAXE).harvestLevel(12)));
+            () -> new Block(AbstractBlock.Properties.from(Blocks.STONE).hardnessAndResistance(0.75F, 3.0F).harvestTool(ToolType.PICKAXE).harvestLevel(4)));
 
-    public static final RegistryObject<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
+    public static final RegistryObject<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new Block(AbstractBlock.Properties.from(Blocks.SAND)));
 
-    public static final RegistryObject<Block> BIG_STEEL_CASING = BLOCKS.register("big_steel_casing", () -> new Block(AbstractBlock.Properties.create(Material.IRON)));
+    public static final RegistryObject<Block> BIG_STEEL_CASING = BLOCKS.register("big_steel_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
 
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
@@ -46,7 +46,4 @@ public class BlockInit {
 
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_MYTHRIL_BLOCK = BlockInit.BLOCKS.register("molten_mythril_fluid",
             () -> new FlowingFluidBlock(FluidInit.MYTHRIL_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
-
-    public static final RegistryObject<FlowingFluidBlock> MOLTEN_PLATINUM_BLOCK = BlockInit.BLOCKS.register("molten_platinum_fluid",
-            () -> new FlowingFluidBlock(FluidInit.PLATINUM_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
 }

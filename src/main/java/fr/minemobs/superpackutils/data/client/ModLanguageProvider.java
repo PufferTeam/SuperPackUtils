@@ -39,7 +39,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add("itemGroup." + Main.MOD_ID, "Superpack: Utils");
 
         add("tooltip", "shift", "HOLD\u00A7e SHIFT\u00A77 for more informations!");
-        add("tooltip", "redstoneclock", "This clock emits a signal every 3 seconds during 0,5 second.");
+        add("tooltip", "redstoneclock", "This clock emits a signal every 3 seconds for 0.5 second.");
     }
 
     private void addBlocks() {

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "superpackutils:item/dep_mythril_dust"
+    "layer0": "superpackutils:item/nickel_ore_piece"
   }
 }

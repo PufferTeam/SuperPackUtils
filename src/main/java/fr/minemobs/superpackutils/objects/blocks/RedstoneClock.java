@@ -5,7 +5,7 @@ import fr.minemobs.superpackutils.init.TileEntityInit;
 import fr.minemobs.superpackutils.utils.helper.KeyboardHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.BooleanProperty;
@@ -25,7 +25,7 @@ public class RedstoneClock extends Block {
     public static final BooleanProperty EMITTING = BooleanProperty.create("emitting");
 
     public RedstoneClock() {
-        super(Properties.create(Material.ROCK));
+        super(Properties.from(Blocks.STONE));
         this.setDefaultState(this.stateContainer.getBaseState().with(EMITTING, Boolean.FALSE));
     }
 

@@ -146,7 +146,6 @@ dependencies {
 
     implementation fg.deobf("curse.maven:create-328085:3167531")
     implementation fg.deobf("curse.maven:JAOPCA-266936:3223206")
-    implementation fg.deobf("curse.maven:mrp-library-426641:3152420")
     runtimeOnly fg.deobf("curse.maven:ezzoom-422719:3128797")
     runtimeOnly fg.deobf("curse.maven:tellme-225781:3155161")
     runtimeOnly fg.deobf("curse.maven:immersive-engineering-231951:3102280")

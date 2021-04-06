@@ -2,6 +2,7 @@ package fr.minemobs.superpackutils.data.client;
 
 import fr.minemobs.superpackutils.Main;
 import fr.minemobs.superpackutils.init.BlockInit;
+import fr.minemobs.superpackutils.objects.blocks.TinyTorch;
 import fr.minemobs.superpackutils.objects.blocks.WallTinyTorch;
 import net.minecraft.block.Block;
 import net.minecraft.block.FlowingFluidBlock;
