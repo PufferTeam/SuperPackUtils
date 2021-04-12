@@ -17,14 +17,26 @@ public class FluidInit {
     public static final ResourceLocation MYTHRIL_FLOWING_RL = Main.location("blocks/mythril_flowing");
     public static final ResourceLocation MYTHRIL_OVERLAY_RL = Main.location("blocks/mythril_overlay");
 
+    public static final ResourceLocation MOLTEN_BIO_PLASTIC_STILL_RL = Main.location("blocks/molten_bio_plastic_still");
+    public static final ResourceLocation MOLTEN_BIO_PLASTIC_FLOWING_RL = Main.location("blocks/molten_bio_plastic_flowing");
+    public static final ResourceLocation MOLTEN_BIO_PLASTIC_OVERLAY_RL = Main.location("blocks/molten_bio_plastic_overlay");
+
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
     
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLUID = FLUIDS.register("mythril_fluid", () -> new ForgeFlowingFluid.Source(FluidInit.MOLTEN_MYTHRIL_PROPERTIES));
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLOWING = FLUIDS.register("mythril_flowing", () -> new ForgeFlowingFluid.Flowing(FluidInit.MOLTEN_MYTHRIL_PROPERTIES));
-    
+
+    public static final RegistryObject<FlowingFluid> MOLTEN_BIO_PLASTIC_FLUID = FLUIDS.register("molten_bio_plastic_fluid", () -> new ForgeFlowingFluid.Source(FluidInit.MOLTEN_BIO_PLASTIC_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> MOLTEN_BIO_PLASTIC_FLOWING = FLUIDS.register("molten_bio_plastic_flowing", () -> new ForgeFlowingFluid.Flowing(FluidInit.MOLTEN_BIO_PLASTIC_PROPERTIES));
+
     public static final ForgeFlowingFluid.Properties MOLTEN_MYTHRIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             MYTHRIL_FLUID, MYTHRIL_FLOWING, FluidAttributes.builder(MYTHRIL_STILL_RL, MYTHRIL_FLOWING_RL)
             .viscosity(3).density(5).overlay(MYTHRIL_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
             .block(BlockInit.MOLTEN_MYTHRIL_BLOCK).bucket(ItemInit.MOLTEN_MYTHRIL_BUCKET);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_BIO_PLASTIC_PROPERTIES = new ForgeFlowingFluid.Properties(
+            MOLTEN_BIO_PLASTIC_FLUID, MOLTEN_BIO_PLASTIC_FLOWING, FluidAttributes.builder(MOLTEN_BIO_PLASTIC_STILL_RL, MOLTEN_BIO_PLASTIC_FLOWING_RL)
+            .viscosity(3).density(5).overlay(MOLTEN_BIO_PLASTIC_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
+            .block(BlockInit.MOLTEN_BIO_PLASTIC_BLOCK).bucket(ItemInit.MOLTEN_BIO_PLASTIC_BUCKET);
+    
 }

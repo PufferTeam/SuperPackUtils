@@ -44,6 +44,11 @@ public class BlockInit {
     public static final RegistryObject<Block> MYTHRIL_BLOCK = BLOCKS.register("mythril_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
+    //Fluids
+
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_MYTHRIL_BLOCK = BlockInit.BLOCKS.register("molten_mythril_fluid",
             () -> new FlowingFluidBlock(FluidInit.MYTHRIL_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
+
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_BIO_PLASTIC_BLOCK = BlockInit.BLOCKS.register("molten_bio_plastic_fluid",
+            () -> new FlowingFluidBlock(FluidInit.MOLTEN_BIO_PLASTIC_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
 }

@@ -23,7 +23,7 @@ public class ModTextureProvider extends TextureProvider {
 
     public ModTextureProvider(DataGenerator gen) {
         super(gen);
-        ignored_items.addAll(Arrays.asList(ItemInit.TINY_COAL.get(), ItemInit.INFUSED_DIAMOND.get(), ItemInit.INFUSED_SHARD.get(), ItemInit.MYTHRIL_DUST.get(), ItemInit.ULTIMATE_RUNE.get(),
+        ignored_items.addAll(Arrays.asList(ItemInit.TINY_COAL.get(), ItemInit.MYTHRIL_DUST.get(), ItemInit.ULTIMATE_RUNE.get(),
                 BlockInit.BIG_STEEL_CASING.get().asItem(), BlockInit.DEEPSLATE.get().asItem(), BlockInit.TINY_TORCH.get().asItem(), BlockInit.PLATINUM_BLOCK.get().asItem()));
     }
 

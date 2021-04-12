@@ -45,7 +45,6 @@ public class ModTags {
 
         //Dusts
         public static final ITag.INamedTag<Item> MYTHRIL_DUST = forge("dusts/mythril", ItemInit.MYTHRIL_DUST.get());
-        public static final ITag.INamedTag<Item> DEPLETED_MYTHRIL_DUST = forge("dusts/mythril", ItemInit.DEPLETED_MYTHRIL_DUST.get());
         public static final ITag.INamedTag<Item> PLATINUM_DUST = forge("dusts/platinum", ItemInit.PLATINUM_DUST.get());
 
         //Nuggets
