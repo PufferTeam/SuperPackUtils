@@ -31,6 +31,10 @@ public class ModLanguageProvider extends LanguageProvider {
     private void addFluids() {
         for (RegistryObject<Fluid> entry : FluidInit.FLUIDS.getEntries()) {
             String registryName = entry.get().getRegistryName().toString();
+            if(entry.get() == FluidInit.LUBRIFIED_LPG_FLUID.get()) {
+                add("fluid", registryName.replace("superpackutils:", ""), "Lubrified LPG");
+                return;
+            }
             add("fluid", registryName.replace("superpackutils:", ""), capitalizeWord(registryName));
         }
     }
@@ -44,7 +48,12 @@ public class ModLanguageProvider extends LanguageProvider {
 
     private void addBlocks() {
         for (RegistryObject<Block> entry : BlockInit.BLOCKS.getEntries()) {
-            addBlock(entry, capitalizeWord(entry.get().getRegistryName().toString()));
+            String registryName = entry.get().getRegistryName().toString();
+            if(entry.get() == BlockInit.LUBRIFIED_LPG_BLOCK.get()) {
+                addBlock(entry, "Lubrified LPG");
+                return;
+            }
+            addBlock(entry, capitalizeWord(registryName));
         }
     }
 

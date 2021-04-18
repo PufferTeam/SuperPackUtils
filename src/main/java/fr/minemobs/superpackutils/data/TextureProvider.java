@@ -41,13 +41,14 @@ public abstract class TextureProvider implements IDataProvider {
     }
 
     private void generateTextures() throws IOException {
+        if(!new File(this.gen.getOutputFolder().toUri()).exists()) new File(this.gen.getOutputFolder().toUri()).mkdirs();
         Path outputDirBlock = this.gen.getOutputFolder().resolve("assets/" + modId + "/textures/block/");
         Path outputDirItem = this.gen.getOutputFolder().resolve("assets/" + modId + "/textures/item/");
         if(!Files.exists(outputDirBlock) || !Files.exists(outputDirItem)) createFolders(outputDirBlock, outputDirItem);
         textures.forEach((texture, placeholder) -> {
             try{
                 final boolean created = texture.createNewFile();
-                if (created) LOGGER.warn("File with path " + texture.getPath() + " was not created.");
+                if (!created) LOGGER.warn("File with path " + texture.getPath() + " was not created.");
                 ImageIO.write(placeholder, "png", texture);
             }catch (IOException ex){
                 LOGGER.error(ex.getMessage());

@@ -116,7 +116,7 @@ repositories {
 
     maven {
         name "vazkiismods"
-        url "http://maven.blamejared.com/"
+        url "https://maven.blamejared.com/"
     }
 
     maven {
@@ -134,24 +134,6 @@ dependencies {
 
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
-
-    compileOnly "mekanism:Mekanism:${mekanism_version}:api"
-    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")
-    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}:additions")
-    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}:generators")
-    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}:tools")
-
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-51-SNAPSHOT:api")
-    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-51-SNAPSHOT")
-
-    implementation fg.deobf("curse.maven:create-328085:3167531")
-    implementation fg.deobf("curse.maven:JAOPCA-266936:3223206")
-    runtimeOnly fg.deobf("curse.maven:ezzoom-422719:3128797")
-    runtimeOnly fg.deobf("curse.maven:tellme-225781:3155161")
-    runtimeOnly fg.deobf("curse.maven:immersive-engineering-231951:3102280")
-
-    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.4-4.0.3.5:api")
-    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.4-4.0.3.5")
 }
 
 jar {
