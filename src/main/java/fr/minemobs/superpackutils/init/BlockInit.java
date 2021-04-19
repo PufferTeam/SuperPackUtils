@@ -35,6 +35,8 @@ public class BlockInit {
             () -> new Block(AbstractBlock.Properties.from(Blocks.STONE).hardnessAndResistance(0.75F, 3.0F).harvestTool(ToolType.PICKAXE).harvestLevel(4)));
 
     public static final RegistryObject<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new Block(AbstractBlock.Properties.from(Blocks.SAND)));
+    
+    public static final RegistryObject<Block> DIMENSIONAL_STONE = BLOCKS.register("dimensional_stone", () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE)));
 
     public static final RegistryObject<Block> BIG_STEEL_CASING = BLOCKS.register("big_steel_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
 
