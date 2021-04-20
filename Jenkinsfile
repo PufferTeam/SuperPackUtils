@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        archiveArtifacts(caseSensitive: true, defaultExcludes: true, artifacts: 'build/libs/')
+      }
+    }
+
   }
 }
