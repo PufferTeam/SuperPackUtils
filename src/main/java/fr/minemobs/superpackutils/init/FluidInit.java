@@ -52,7 +52,7 @@ public class FluidInit {
 
     public static final ForgeFlowingFluid.Properties LUBRIFIED_LPG_PROPERTIES = new ForgeFlowingFluid.Properties(
             LUBRIFIED_LPG_FLUID, LUBRIFIED_LPG_FLOWING, FluidAttributes.builder(LUBRIFIED_LPG_STILL_RL, LUBRIFIED_LPG_FLOWING_RL)
-            .viscosity(3).density(5).overlay(MOLTEN_BIO_PLASTIC_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
+            .viscosity(3).density(5).overlay(LUBRIFIED_LPG_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
             .block(BlockInit.LUBRIFIED_LPG_BLOCK).bucket(ItemInit.LUBRIFIED_LPG_BUCKET);
 
 }

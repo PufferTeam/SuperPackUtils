@@ -44,6 +44,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         for (RegistryObject<Block> entry : BlockInit.BLOCKS.getEntries().stream()
                 .filter(blockRegistryObject -> !(blockRegistryObject.get() instanceof FlowingFluidBlock) && !(blockRegistryObject.get() instanceof TinyTorch))
                 .collect(Collectors.toList())) {
+            if(entry.get() == BlockInit.TINY_TORCH.get()) return;
             String registryName = entry.get().getRegistryName().toString().replace("superpackutils:", "");
             withExistingParent(registryName);
         }

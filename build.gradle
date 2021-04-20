@@ -128,12 +128,11 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${version_forge}"
 
-    compile fg.deobf(project.dependencies.create("mcjty.theoneprobe:TheOneProbe-${top_version}") {
+    runtimeOnly fg.deobf(project.dependencies.create("mcjty.theoneprobe:TheOneProbe-${top_version}") {
         transitive = false
     })
 
-    compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:${jei_version}")
 }
 
 jar {
