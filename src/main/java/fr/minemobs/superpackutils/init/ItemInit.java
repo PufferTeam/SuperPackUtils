@@ -19,6 +19,8 @@ public class ItemInit {
     public static final RegistryObject<Item> BIODIESEL_INFUSED_OSMIUM_INGOT = ITEMS.register("biodiesel_infused_osmium_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> MYTHRIL_INGOT = ITEMS.register("mythril_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> ELECTRICAL_PLATINUM_INGOT = ITEMS.register("electrical_platinum_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
 
     //Nugget
 
@@ -48,6 +50,8 @@ public class ItemInit {
     public static final RegistryObject<Item> LEAD_ORE_PIECE = ITEMS.register("lead_ore_piece", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> TIN_ORE_PIECE = ITEMS.register("tin_ore_piece", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> COPPER_ORE_PIECE = ITEMS.register("copper_ore_piece", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> GOLD_ORE_PIECE = ITEMS.register("gold_ore_piece", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
     
     //Other
 
