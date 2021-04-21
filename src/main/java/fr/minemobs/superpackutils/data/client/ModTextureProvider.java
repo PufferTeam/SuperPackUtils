@@ -38,7 +38,9 @@ public class ModTextureProvider extends TextureProvider {
                 .filter(blockRegistryObject -> !(blockRegistryObject.get() instanceof TinyTorchItem)).collect(Collectors.toList())) {
             String sRegistryName = entry.get().getRegistryName().toString().replace("superpackutils:", "");
 
-            if (!ignored_items.contains(entry.get())) {
+            try{
+                getTexture(modLoc("item/" + sRegistryName));
+            }catch (IOException ex){
                 this.textures.put(genLoc("item/" + sRegistryName), getTexture(modLoc("block/placeholder")));
             }
         }
@@ -49,7 +51,9 @@ public class ModTextureProvider extends TextureProvider {
                 .filter(blockRegistryObject -> !(blockRegistryObject.get() instanceof TinyTorch)).filter(blockRegistryObject -> !(blockRegistryObject.get() instanceof WallTinyTorch)).collect(Collectors.toList())) {
             String sRegistryName = entry.get().getRegistryName().toString().replace("superpackutils:", "");
 
-            if(!ignored_items.contains(entry.get().asItem())){
+            try {
+                getTexture(modLoc("block/" + sRegistryName));
+            }catch (IOException ex){
                 this.textures.put(genLoc("block/" + sRegistryName), getTexture(modLoc("block/placeholder")));
             }
         }
