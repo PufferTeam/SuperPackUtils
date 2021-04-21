@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "superpackutils:block/dimensional_block"
+      "model": "superpackutils:block/dimensional_stone"
     }
   }
 }
