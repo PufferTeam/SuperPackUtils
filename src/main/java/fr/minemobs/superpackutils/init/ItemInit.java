@@ -16,7 +16,6 @@ public class ItemInit {
 
     //Ingot
 
-    public static final RegistryObject<Item> BIODIESEL_INFUSED_OSMIUM_INGOT = ITEMS.register("biodiesel_infused_osmium_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> MYTHRIL_INGOT = ITEMS.register("mythril_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> ELECTRICAL_PLATINUM_INGOT = ITEMS.register("electrical_platinum_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
