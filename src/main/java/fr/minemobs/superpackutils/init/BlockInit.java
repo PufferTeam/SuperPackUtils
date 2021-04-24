@@ -39,6 +39,8 @@ public class BlockInit {
     public static final RegistryObject<Block> DIMENSIONAL_STONE = BLOCKS.register("dimensional_stone", () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE)));
 
     public static final RegistryObject<Block> DYINGROCK = BLOCKS.register("dyingrock", () -> new Block(AbstractBlock.Properties.from(Blocks.STONE)));
+   
+    public static final RegistryObject<Block> INDUSTRIAL_SAND = BLOCKS.register("industrial_sand", () -> new Block(AbstractBlock.Properties.from(Blocks.SAND)));
 
     public static final RegistryObject<Block> BIG_STEEL_CASING = BLOCKS.register("big_steel_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
 
