@@ -1,10 +1,7 @@
 package fr.minemobs.superpackutils;
 
 import fr.minemobs.superpackutils.events.CropEvent;
-import fr.minemobs.superpackutils.init.BlockInit;
-import fr.minemobs.superpackutils.init.FluidInit;
-import fr.minemobs.superpackutils.init.ItemInit;
-import fr.minemobs.superpackutils.init.TileEntityInit;
+import fr.minemobs.superpackutils.init.*;
 import fr.minemobs.superpackutils.world.OreGeneration;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.TorchBlock;
@@ -44,6 +41,7 @@ public class Main
         BlockInit.BLOCKS.register(modEventBus);
         FluidInit.FLUIDS.register(modEventBus);
         TileEntityInit.TILE_ENTITIES.register(modEventBus);
+        ModSlurries.SLURRIES.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::setup);
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
