@@ -7,7 +7,7 @@ import net.minecraft.tags.Tag;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 
-import java.awt.*;
+import java.awt.Color;
 
 public class ModSlurries {
 

@@ -42,6 +42,7 @@ public class Main
         FluidInit.FLUIDS.register(modEventBus);
         TileEntityInit.TILE_ENTITIES.register(modEventBus);
         ModSlurries.SLURRIES.register(modEventBus);
+        GasesInit.GASES.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::setup);
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
