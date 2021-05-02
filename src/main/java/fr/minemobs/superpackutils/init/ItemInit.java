@@ -24,6 +24,7 @@ public class ItemInit {
     public static final RegistryObject<Item> COMPRESSED_STEEL_INGOT = ITEMS.register("compressed_steel_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> SUPERHEATED_BRONZE_INGOT = ITEMS.register("superheated_bronze_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> TIN_BRASS_INGOT = ITEMS.register("tin_brass_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TETRAETHYL_LEAD_INGOT = ITEMS.register("tetraethyl_lead_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Nugget
 
@@ -38,6 +39,7 @@ public class ItemInit {
     public static final RegistryObject<Item> LIMESTONE_DUST = ITEMS.register("limestone_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> BEDROCK_DUST = ITEMS.register("bedrock_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> ZINC_DUST = ITEMS.register("zinc_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TETRAETHYL_LEAD_DUST = ITEMS.register("tetraethyl_lead_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Gear
 

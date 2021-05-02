@@ -12,7 +12,6 @@ public class GasesInit {
 
     public static final DeferredRegister<Gas> GASES = DeferredRegister.create(Gas.class, Main.MOD_ID);
 
-    /* Example of gas
-    public static final RegistryObject<Gas> CACAHUETE_ACID = GASES.register("cacahuete_acid", () -> new Gas(GasBuilder.builder().color(new Color(147, 87, 38).getRGB())));
-    */
+    public static final RegistryObject<Gas> ETHYL_CHLORIDE = GASES.register("ethyl_chloride", () -> new Gas(GasBuilder.builder().color(new Color(201, 201, 201).getRGB())));
+
 }
