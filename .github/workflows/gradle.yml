@@ -30,11 +30,3 @@ jobs:
       with:
         name: Package
         path: build/libs
-    - uses: actions/upload-artifact@v2
-      with:
-        name: Package mod
-        path: build/libs/superpackutils-1.16.4-b1.7.jar
-    - uses: actions/upload-artifact@v2
-      with:
-        name: Package source mod
-        path: build/libs/superpackutils-1.16.4-b1.7-sources.jar
