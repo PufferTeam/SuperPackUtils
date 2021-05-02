@@ -4,15 +4,11 @@ import fr.minemobs.superpackutils.Main;
 import fr.minemobs.superpackutils.objects.items.TinyCoalItem;
 import fr.minemobs.superpackutils.objects.items.TinyTorchItem;
 import fr.minemobs.superpackutils.objects.items.foods.Bread;
-import mekanism.api.chemical.slurry.Slurry;
-import mekanism.api.chemical.slurry.SlurryBuilder;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import java.awt.*;
 
 public class ItemInit {
 
