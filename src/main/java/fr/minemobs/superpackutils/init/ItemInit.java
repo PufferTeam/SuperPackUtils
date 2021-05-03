@@ -67,11 +67,11 @@ public class ItemInit {
     public static final RegistryObject<Item> CHILLER_COIN_CAST = ITEMS.register("chiller_coin_cast", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Pickaxe
-    public static final RegistryObject<Item> SWORD = ITEMS.register("sword", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> PICKAXE = ITEMS.register("pickaxe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> AXE = ITEMS.register("axe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> SHOVEL = ITEMS.register("shovel", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> HOE = ITEMS.register("hoe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> SWORD = ITEMS.register("sword", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<Item> PICKAXE = ITEMS.register("pickaxe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<Item> AXE = ITEMS.register("axe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<Item> SHOVEL = ITEMS.register("shovel", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<Item> HOE = ITEMS.register("hoe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
 
     //Other
 
@@ -80,6 +80,8 @@ public class ItemInit {
     public static final RegistryObject<Item> REINFORCED_CAPACITOR = ITEMS.register("reinforced_capacitor", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> BASIC_ALLOY = ITEMS.register("basic_alloy", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> WEIRD_FUNGU = ITEMS.register("weird_fungu", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
@@ -106,6 +108,9 @@ public class ItemInit {
 
     public static final RegistryObject<Item> LUBRIFIED_LPG_BUCKET = ITEMS.register("lubrified_lpg_bucket",
             () -> new BucketItem(FluidInit.LUBRIFIED_LPG_FLUID, new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+
+    public static final RegistryObject<Item> LIQUID_SILICON_DIOXIDE_BUCKET = ITEMS.register("liquid_silicon_dioxide_bucket",
+            () -> new BucketItem(FluidInit.LIQUID_SILICON_DIOXIDE_FLUID, new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
 
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");

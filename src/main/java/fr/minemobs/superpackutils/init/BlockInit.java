@@ -58,6 +58,9 @@ public class BlockInit {
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_BIO_PLASTIC_BLOCK = BlockInit.BLOCKS.register("molten_bio_plastic_fluid",
             () -> new FlowingFluidBlock(FluidInit.MOLTEN_BIO_PLASTIC_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
 
+    public static final RegistryObject<FlowingFluidBlock> LIQUID_SILICON_DIOXIDE_BLOCK = BlockInit.BLOCKS.register("liquid_silicon_dioxide_block",
+            () -> new FlowingFluidBlock(FluidInit.LIQUID_SILICON_DIOXIDE_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
+
     public static final RegistryObject<FlowingFluidBlock> LUBRIFIED_LPG_BLOCK = BlockInit.BLOCKS.register("lubrified_lpg_fluid",
             () -> new FlowingFluidBlock(FluidInit.LUBRIFIED_LPG_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
 }
