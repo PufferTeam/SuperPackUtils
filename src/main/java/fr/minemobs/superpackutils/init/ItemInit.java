@@ -73,11 +73,14 @@ public class ItemInit {
     public static final RegistryObject<Item> SHOVEL = ITEMS.register("shovel", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
     public static final RegistryObject<Item> HOE = ITEMS.register("hoe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
 
+    //Capacitor
+    public static final RegistryObject<Item> REINFORCED_CAPACITOR = ITEMS.register("reinforced_capacitor", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> STURDY_CAPACITOR = ITEMS.register("sturdy_capacitor", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> DOUBLELAYERED_CAPACITOR = ITEMS.register("doublelayered_capacitor", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
     //Other
 
     public static final RegistryObject<Item> ULTIMATE_RUNE = ITEMS.register("ultimate_rune", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-
-    public static final RegistryObject<Item> REINFORCED_CAPACITOR = ITEMS.register("reinforced_capacitor", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> BASIC_ALLOY = ITEMS.register("basic_alloy", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
