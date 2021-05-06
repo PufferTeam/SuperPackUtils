@@ -23,6 +23,10 @@ public class ItemInit {
     public static final RegistryObject<Item> ELECTRICAL_PLATINUM_INGOT = ITEMS.register("electrical_platinum_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> COMPRESSED_STEEL_INGOT = ITEMS.register("compressed_steel_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> SUPERHEATED_BRONZE_INGOT = ITEMS.register("superheated_bronze_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TIN_BRASS_INGOT = ITEMS.register("tin_brass_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TETRAETHYL_LEAD_INGOT = ITEMS.register("tetraethyl_lead_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> VIBRANT_ALLOY_INGOT = ITEMS.register("vibrant_alloy_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> ENERGETIC_ALLOY_INGOT = ITEMS.register("energetic_alloy_ingot", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Nugget
 
@@ -35,7 +39,9 @@ public class ItemInit {
     public static final RegistryObject<Item> MYTHRIL_DUST = ITEMS.register("mythril_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> PLATINUM_DUST = ITEMS.register("platinum_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> LIMESTONE_DUST = ITEMS.register("limestone_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> BEDROCK_DUST = ITEMS.register("bedrock_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> ZINC_DUST = ITEMS.register("zinc_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TETRAETHYL_LEAD_DUST = ITEMS.register("tetraethyl_lead_dust", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Gear
 
@@ -63,17 +69,24 @@ public class ItemInit {
     public static final RegistryObject<Item> CHILLER_COIN_CAST = ITEMS.register("chiller_coin_cast", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Pickaxe
-    public static final RegistryObject<Item> SWORD = ITEMS.register("sword", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> PICKAXE = ITEMS.register("pickaxe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> AXE = ITEMS.register("axe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> SHOVEL = ITEMS.register("shovel", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> HOE = ITEMS.register("hoe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> SWORD = ITEMS.register("sword", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<Item> PICKAXE = ITEMS.register("pickaxe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<Item> AXE = ITEMS.register("axe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<Item> SHOVEL = ITEMS.register("shovel", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+    public static final RegistryObject<Item> HOE = ITEMS.register("hoe", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+
+    //Capacitor
+    public static final RegistryObject<Item> REINFORCED_CAPACITOR = ITEMS.register("reinforced_capacitor", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> STURDY_CAPACITOR = ITEMS.register("sturdy_capacitor", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> DOUBLELAYERED_CAPACITOR = ITEMS.register("doublelayered_capacitor", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     //Other
 
     public static final RegistryObject<Item> ULTIMATE_RUNE = ITEMS.register("ultimate_rune", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-    
+
     public static final RegistryObject<Item> BASIC_ALLOY = ITEMS.register("basic_alloy", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> WEIRD_FUNGU = ITEMS.register("weird_fungu", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
@@ -100,6 +113,9 @@ public class ItemInit {
 
     public static final RegistryObject<Item> LUBRIFIED_LPG_BUCKET = ITEMS.register("lubrified_lpg_bucket",
             () -> new BucketItem(FluidInit.LUBRIFIED_LPG_FLUID, new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+
+    public static final RegistryObject<Item> LIQUID_SILICON_DIOXIDE_BUCKET = ITEMS.register("liquid_silicon_dioxide_bucket",
+            () -> new BucketItem(FluidInit.LIQUID_SILICON_DIOXIDE_FLUID, new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
 
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
