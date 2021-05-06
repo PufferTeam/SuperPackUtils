@@ -4,7 +4,8 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "superpackutils.refmap.json",
   "mixins": [
-    "item.MixinItemTier"
+    "item.MixinItemTier",
+    "item.MixinIafItemRegistry"
   ],
   "client": [],
   "injectors": {
