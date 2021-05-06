@@ -141,28 +141,29 @@ dependencies {
     compileOnly "mekanism:Mekanism:${mekanism_version}:api"
     runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")
 
-    /*implementation fg.deobf("curse.maven:citadel-331936:3198842")
-    implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:3217622")*/
     implementation fg.deobf(files("libs/citadel.jar"))
     implementation fg.deobf(files("libs/iceandfire.jar"))
 }
 
 jar {
     manifest {
-        attributes([
-            "Specification-Title": "${mod_name}",
-            "Specification-Vendor": "${mod_author}",
-            "Specification-Version": "${mod_version}", // We are version 1 of ourselves
-            "Implementation-Title": "${mod_name}",
-            "Implementation-Version": "${mod_version}",
-            "Implementation-Vendor" :"${mod_author}",
-            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-            "MixinCoinfigs": "${mod_id}.mixins.json"],)
+        attributes(
+                [
+                "Specification-Title": "${mod_name}",
+                "Specification-Vendor": "${mod_author}",
+                "Specification-Version": "${version}", // We are version 1 of ourselves
+                "Implementation-Title": "${mod_name}",
+                "Implementation-Version": "${version}",
+                "Implementation-Vendor" :"${mod_author}",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                "MixinConfigs": "${mod_id}.mixins.json"
+                ],
+        )
     }
 }
 
 task sourcesJar(type: Jar) {
-    properties.classifier = 'sources'
+    classifier = 'sources'
     from sourceSets.main.allJava
 }
 

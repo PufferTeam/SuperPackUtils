@@ -3,7 +3,7 @@ loaderVersion="[35,)"
 license="MIT"
 [[mods]]
     modId="superpackutils"
-    version="${file.jarVersion}}"
+    version="${file.jarVersion}"
     displayName="SuperPack: Utils"
     issueTrackerURL="https://github.com/PufferTeam/SuperPackUtils/issues"
     displayURL="https://github.com/PufferTeam/SuperPackUtils"
