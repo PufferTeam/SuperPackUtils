@@ -3,7 +3,9 @@
   "package": "fr.minemobs.superpackutils.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "superpackutils.refmap.json",
-  "mixins": [],
+  "mixins": [
+    "item.MixinItemTier"
+  ],
   "client": [],
   "injectors": {
     "defaultRequire": 1
