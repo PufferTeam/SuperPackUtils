@@ -29,6 +29,14 @@ public class FluidInit {
     public static final ResourceLocation LIQUID_SILICON_DIOXIDE_FLOWING_RL = Main.location("blocks/liquid_silicon_dioxide_flowing");
     public static final ResourceLocation LIQUID_SILICON_DIOXIDE_OVERLAY_RL = Main.location("blocks/liquid_silicon_dioxide_overlay");
 
+    public static final ResourceLocation MOLTEN_VIBRANT_ALLOY_STILL_RL = Main.location("blocks/molten_vibrant_alloy_still");
+    public static final ResourceLocation MOLTEN_VIBRANT_ALLOY_FLOWING_RL = Main.location("blocks/molten_vibrant_alloy_flowing");
+    public static final ResourceLocation MOLTEN_VIBRANT_ALLOY_OVERLAY_RL = Main.location("blocks/molten_vibrant_alloy_overlay");
+
+    public static final ResourceLocation MOLTEN_ENERGETIC_ALLOY_STILL_RL = Main.location("blocks/molten_vibrant_alloy_still");
+    public static final ResourceLocation MOLTEN_ENERGETIC_ALLOY_FLOWING_RL = Main.location("blocks/molten_vibrant_alloy_flowing");
+    public static final ResourceLocation MOLTEN_ENERGETIC_ALLOY_OVERLAY_RL = Main.location("blocks/molten_vibrant_alloy_overlay");
+
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
     
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLUID = FLUIDS.register("mythril_fluid",
@@ -51,6 +59,16 @@ public class FluidInit {
     public static final RegistryObject<FlowingFluid> LIQUID_SILICON_DIOXIDE_FLOWING = FLUIDS.register("liquid_silicon_dioxide_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.LIQUID_SILICON_DIOXIDE_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> MOLTEN_VIBRANT_ALLOY_FLUID = FLUIDS.register("molten_vibrant_alloy_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.MOLTEN_VIBRANT_ALLOY_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> MOLTEN_VIBRANT_ALLOY_FLOWING = FLUIDS.register("molten_vibrant_alloy_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.MOLTEN_VIBRANT_ALLOY_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> MOLTEN_ENERGETIC_ALLOY_FLUID = FLUIDS.register("molten_energetic_alloy_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.MOLTEN_ENERGETIC_ALLOY_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> MOLTEN_ENERGETIC_ALLOY_FLOWING = FLUIDS.register("molten_energetic_alloy_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.MOLTEN_ENERGETIC_ALLOY_PROPERTIES));
+
     public static final ForgeFlowingFluid.Properties MOLTEN_MYTHRIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             MYTHRIL_FLUID, MYTHRIL_FLOWING, FluidAttributes.builder(MYTHRIL_STILL_RL, MYTHRIL_FLOWING_RL)
             .viscosity(3).density(5).overlay(MYTHRIL_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
@@ -70,4 +88,14 @@ public class FluidInit {
             LIQUID_SILICON_DIOXIDE_FLUID, LIQUID_SILICON_DIOXIDE_FLOWING, FluidAttributes.builder(LIQUID_SILICON_DIOXIDE_STILL_RL, LIQUID_SILICON_DIOXIDE_FLOWING_RL)
             .viscosity(3).density(5).overlay(LIQUID_SILICON_DIOXIDE_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
             .block(BlockInit.LIQUID_SILICON_DIOXIDE_BLOCK).bucket(ItemInit.LIQUID_SILICON_DIOXIDE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_VIBRANT_ALLOY_PROPERTIES = new ForgeFlowingFluid.Properties(
+            MOLTEN_VIBRANT_ALLOY_FLUID, MOLTEN_VIBRANT_ALLOY_FLOWING, FluidAttributes.builder(MOLTEN_VIBRANT_ALLOY_STILL_RL, MOLTEN_VIBRANT_ALLOY_FLOWING_RL)
+            .viscosity(3).density(5).overlay(MOLTEN_VIBRANT_ALLOY_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
+            .block(BlockInit.MOLTEN_VIBRANT_ALLOY_BLOCK).bucket(ItemInit.MOLTEN_VIBRANT_ALLOY_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_ENERGETIC_ALLOY_PROPERTIES = new ForgeFlowingFluid.Properties(
+            MOLTEN_ENERGETIC_ALLOY_FLUID, MOLTEN_ENERGETIC_ALLOY_FLOWING, FluidAttributes.builder(MOLTEN_ENERGETIC_ALLOY_STILL_RL, MOLTEN_ENERGETIC_ALLOY_FLOWING_RL)
+            .viscosity(3).density(5).overlay(MOLTEN_ENERGETIC_ALLOY_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
+            .block(BlockInit.MOLTEN_ENERGETIC_ALLOY_BLOCK).bucket(ItemInit.MOLTEN_ENERGETIC_ALLOY_BUCKET);
 }

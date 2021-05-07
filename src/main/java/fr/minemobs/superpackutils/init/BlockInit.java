@@ -63,4 +63,10 @@ public class BlockInit {
 
     public static final RegistryObject<FlowingFluidBlock> LUBRIFIED_LPG_BLOCK = BlockInit.BLOCKS.register("lubrified_lpg_fluid",
             () -> new FlowingFluidBlock(FluidInit.LUBRIFIED_LPG_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
+
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_VIBRANT_ALLOY_BLOCK = BlockInit.BLOCKS.register("molten_vibrant_alloy_fluid",
+            () -> new FlowingFluidBlock(FluidInit.MOLTEN_VIBRANT_ALLOY_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
+
+    public static final RegistryObject<FlowingFluidBlock> MOLTEN_ENERGETIC_ALLOY_BLOCK = BlockInit.BLOCKS.register("molten_energetic_alloy_fluid",
+            () -> new FlowingFluidBlock(FluidInit.MOLTEN_ENERGETIC_ALLOY_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
 }

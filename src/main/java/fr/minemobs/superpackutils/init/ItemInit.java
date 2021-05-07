@@ -114,6 +114,12 @@ public class ItemInit {
     public static final RegistryObject<Item> LIQUID_SILICON_DIOXIDE_BUCKET = ITEMS.register("liquid_silicon_dioxide_bucket",
             () -> new BucketItem(FluidInit.LIQUID_SILICON_DIOXIDE_FLUID, new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
 
+    public static final RegistryObject<Item> MOLTEN_VIBRANT_ALLOY_BUCKET = ITEMS.register("molten_vibrant_alloy_bucket",
+            () -> new BucketItem(FluidInit.MOLTEN_VIBRANT_ALLOY_FLUID, new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+
+    public static final RegistryObject<Item> MOLTEN_ENERGETIC_ALLOY_BUCKET = ITEMS.register("molten_energetic_alloy_bucket",
+            () -> new BucketItem(FluidInit.MOLTEN_ENERGETIC_ALLOY_FLUID, new Item.Properties().group(Main.ModItemGroup.instance).maxStackSize(1)));
+
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
 
