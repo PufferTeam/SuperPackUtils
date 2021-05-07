@@ -77,8 +77,6 @@ public class ItemInit {
 
     public static final RegistryObject<Item> ULTIMATE_RUNE = ITEMS.register("ultimate_rune", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
-    public static final RegistryObject<Item> CHARGED_MANA_PEARL = ITEMS.register("charged_mana_pearl", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-
     public static final RegistryObject<Item> BASIC_ALLOY = ITEMS.register("basic_alloy", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
