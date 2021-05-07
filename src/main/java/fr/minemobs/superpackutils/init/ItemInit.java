@@ -79,8 +79,6 @@ public class ItemInit {
 
     public static final RegistryObject<Item> BASIC_ALLOY = ITEMS.register("basic_alloy", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
-    public static final RegistryObject<Item> SILICON = ITEMS.register("silicon", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
-
     public static final RegistryObject<Item> WEIRD_FUNGU = ITEMS.register("weird_fungu", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> RUNE = ITEMS.register("rune", () -> new Item(new Item.Properties().group(Main.ModItemGroup.instance)));
