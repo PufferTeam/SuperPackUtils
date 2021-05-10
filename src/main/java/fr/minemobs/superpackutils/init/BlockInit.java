@@ -50,6 +50,7 @@ public class BlockInit {
     public static final RegistryObject<Block> MYTHRIL_BLOCK = BLOCKS.register("mythril_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
+    public static final RegistryObject<Block> MACHINERY_CASING = BLOCKS.register("machinery_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
     //Fluids
 
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_MYTHRIL_BLOCK = BlockInit.BLOCKS.register("molten_mythril_fluid",
