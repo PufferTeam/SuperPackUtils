@@ -48,6 +48,8 @@ public class BlockInit {
 
     public static final RegistryObject<Block> METALLURGIC_CASING = BLOCKS.register("metallurgic_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
 
+    public static final RegistryObject<Block> IMPROVED_METALLURGIC_CASING = BLOCKS.register("improved_metallurgic_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
+
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
