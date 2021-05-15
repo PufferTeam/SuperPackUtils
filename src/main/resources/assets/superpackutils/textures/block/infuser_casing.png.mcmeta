@@ -9,22 +9,28 @@
       "extra":{
          "connect_to":[
             {
-               "block":"superpackutils:infuser_casing"
+               "block":"masterfulmachinery:infuser_controller"
             },
             {
-               "block":"masterfulmachinery:infuser_controller"
+               "block":"masterfulmachinery:infuser_basic_port_items_input"
             },
             {
                "block":"masterfulmachinery:infuser_basic_port_items_output"
             },
             {
-               "block":"masterfulmachinery:inscriber_basic_port_mekanism_gas_input"
+               "block":"masterfulmachinery:infuser_basic_port_fluids_input"
             },
             {
-               "block":"masterfulmachinery:inscriber_basic_fluids_input"
+               "block":"masterfulmachinery:infuser_basic_port_mekanism_gas_input"
             },
             {
-               "block":"masterfulmachinery:inscriber_basic_port_energy_input"
+               "block":"masterfulmachinery:infuser_basic_port_mekanism_gas_output"
+            },
+            {
+               "block":"masterfulmachinery:infuser_basic_port_energy_input"
+            },
+            {
+               "block":"superpackutils:infuser_casing"
             }
          ]
       }
