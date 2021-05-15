@@ -25,10 +25,6 @@ public class FluidInit {
     public static final ResourceLocation LUBRIFIED_LPG_FLOWING_RL = Main.location("blocks/lubrified_lpg_flowing");
     public static final ResourceLocation LUBRIFIED_LPG_OVERLAY_RL = Main.location("blocks/lubrified_lpg_overlay");
 
-    public static final ResourceLocation LIQUID_SILICON_DIOXIDE_STILL_RL = Main.location("blocks/liquid_silicon_dioxide_still");
-    public static final ResourceLocation LIQUID_SILICON_DIOXIDE_FLOWING_RL = Main.location("blocks/liquid_silicon_dioxide_flowing");
-    public static final ResourceLocation LIQUID_SILICON_DIOXIDE_OVERLAY_RL = Main.location("blocks/liquid_silicon_dioxide_overlay");
-
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
     
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLUID = FLUIDS.register("mythril_fluid",
@@ -46,11 +42,6 @@ public class FluidInit {
     public static final RegistryObject<FlowingFluid> LUBRIFIED_LPG_FLOWING = FLUIDS.register("lubrified_lpg_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.LUBRIFIED_LPG_PROPERTIES));
 
-    public static final RegistryObject<FlowingFluid> LIQUID_SILICON_DIOXIDE_FLUID = FLUIDS.register("liquid_silicon_dioxide_fluid",
-            () -> new ForgeFlowingFluid.Source(FluidInit.LIQUID_SILICON_DIOXIDE_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> LIQUID_SILICON_DIOXIDE_FLOWING = FLUIDS.register("liquid_silicon_dioxide_flowing",
-            () -> new ForgeFlowingFluid.Flowing(FluidInit.LIQUID_SILICON_DIOXIDE_PROPERTIES));
-
     public static final ForgeFlowingFluid.Properties MOLTEN_MYTHRIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             MYTHRIL_FLUID, MYTHRIL_FLOWING, FluidAttributes.builder(MYTHRIL_STILL_RL, MYTHRIL_FLOWING_RL)
             .viscosity(3).density(5).overlay(MYTHRIL_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
@@ -65,9 +56,4 @@ public class FluidInit {
             LUBRIFIED_LPG_FLUID, LUBRIFIED_LPG_FLOWING, FluidAttributes.builder(LUBRIFIED_LPG_STILL_RL, LUBRIFIED_LPG_FLOWING_RL)
             .viscosity(3).density(5).overlay(LUBRIFIED_LPG_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
             .block(BlockInit.LUBRIFIED_LPG_BLOCK).bucket(ItemInit.LUBRIFIED_LPG_BUCKET);
-
-    public static final ForgeFlowingFluid.Properties LIQUID_SILICON_DIOXIDE_PROPERTIES = new ForgeFlowingFluid.Properties(
-            LIQUID_SILICON_DIOXIDE_FLUID, LIQUID_SILICON_DIOXIDE_FLOWING, FluidAttributes.builder(LIQUID_SILICON_DIOXIDE_STILL_RL, LIQUID_SILICON_DIOXIDE_FLOWING_RL)
-            .viscosity(3).density(5).overlay(LIQUID_SILICON_DIOXIDE_OVERLAY_RL).sound(SoundEvents.BLOCK_LAVA_AMBIENT))
-            .block(BlockInit.LIQUID_SILICON_DIOXIDE_BLOCK).bucket(ItemInit.LIQUID_SILICON_DIOXIDE_BUCKET);
 }
