@@ -1,0 +1,32 @@
+{
+   "ctm":{
+      "ctm_version":1,
+      "type":"CTM",
+      "layer":"SOLID",
+      "textures":[
+         "superpackutils:block/infuser_casing-ctm"
+      ],
+      "extra":{
+         "connect_to":[
+            {
+               "block":"superpackutils:infuser_casing"
+            },
+            {
+               "block":"masterfulmachinery:infuser_controller"
+            },
+            {
+               "block":"masterfulmachinery:infuser_basic_port_items_output"
+            },
+            {
+               "block":"masterfulmachinery:inscriber_basic_port_mekanism_gas_input"
+            },
+            {
+               "block":"masterfulmachinery:inscriber_basic_fluids_input"
+            },
+            {
+               "block":"masterfulmachinery:inscriber_basic_port_energy_input"
+            }
+         ]
+      }
+   }
+}

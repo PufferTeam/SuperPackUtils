@@ -20,6 +20,7 @@ public class BlockInit {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Main.MOD_ID);
 
+    //Specials Blocks
     public static final RegistryObject<Block> TINY_TORCH = BLOCKS.register("tiny_torch",
             () -> new TinyTorch(Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance()
                     .setLightLevel((state) -> 2).sound(SoundType.WOOD), ParticleTypes.FLAME));
@@ -34,22 +35,20 @@ public class BlockInit {
     public static final RegistryObject<Block> DEEPSLATE = BLOCKS.register("deepslate",
             () -> new Block(AbstractBlock.Properties.from(Blocks.STONE).hardnessAndResistance(0.75F, 3.0F).harvestTool(ToolType.PICKAXE).harvestLevel(4)));
 
+    //Blocks
     public static final RegistryObject<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new Block(AbstractBlock.Properties.from(Blocks.SAND)));
-    
     public static final RegistryObject<Block> DIMENSIONAL_STONE = BLOCKS.register("dimensional_stone", () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE)));
-
     public static final RegistryObject<Block> DYINGROCK = BLOCKS.register("dyingrock", () -> new Block(AbstractBlock.Properties.from(Blocks.STONE)));
-   
     public static final RegistryObject<Block> INDUSTRIAL_SAND = BLOCKS.register("industrial_sand", () -> new Block(AbstractBlock.Properties.from(Blocks.SAND)));
 
+    //Casing
     public static final RegistryObject<Block> BIG_STEEL_CASING = BLOCKS.register("big_steel_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
-
     public static final RegistryObject<Block> INSCRIBER_CASING = BLOCKS.register("inscriber_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
-
+    public static final RegistryObject<Block> INFUSER_CASING = BLOCKS.register("infuser_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
     public static final RegistryObject<Block> METALLURGIC_CASING = BLOCKS.register("metallurgic_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
-
     public static final RegistryObject<Block> IMPROVED_METALLURGIC_CASING = BLOCKS.register("improved_metallurgic_casing", () -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_BLOCK)));
 
+    //Ore Blocks
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
@@ -57,7 +56,6 @@ public class BlockInit {
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)));
 
     //Fluids
-
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_MYTHRIL_BLOCK = BlockInit.BLOCKS.register("molten_mythril_fluid",
             () -> new FlowingFluidBlock(FluidInit.MYTHRIL_FLUID, AbstractBlock.Properties.from(Blocks.LAVA).doesNotBlockMovement().hardnessAndResistance(100.0f).noDrops().notSolid()));
 
