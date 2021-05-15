@@ -14,11 +14,11 @@ public class ClientEventSubscriber {
 
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent e) {
-        RenderType solid = RenderType.getSolid();
-        RenderType cutout = RenderType.getCutout();
-        RenderType cutoutmipped = RenderType.getCutoutMipped();
-        RenderType translucent = RenderType.getTranslucent();
-        RenderType translucentmipped = RenderType.getTranslucentNoCrumbling();
+        RenderType solid = RenderType.solid();
+        RenderType cutout = RenderType.cutout();
+        RenderType cutoutmipped = RenderType.cutoutMipped();
+        RenderType translucent = RenderType.translucent();
+        RenderType translucentmipped = RenderType.translucentNoCrumbling();
 
         RenderTypeLookup.setRenderLayer(BlockInit.TINY_TORCH.get(), cutout);
         RenderTypeLookup.setRenderLayer(BlockInit.WALL_TINY_TORCH.get(), cutout);

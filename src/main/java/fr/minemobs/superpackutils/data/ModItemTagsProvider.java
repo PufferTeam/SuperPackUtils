@@ -16,7 +16,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     }
 
     @Override
-    protected void registerTags() {
-        ModTags.Items.ITEM_TAGS.forEach((itemINamedTag, item) -> getOrCreateBuilder(itemINamedTag).add(item));
+    protected void addTags() {
+        ModTags.Items.ITEM_TAGS.forEach((itemINamedTag, item) -> tag(itemINamedTag).add(item));
     }
 }

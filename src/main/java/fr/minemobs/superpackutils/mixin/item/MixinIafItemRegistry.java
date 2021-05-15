@@ -16,32 +16,18 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(IafItemRegistry.class)
 public abstract class MixinIafItemRegistry {
 
-    @Mutable
-    @Shadow
-    public static CustomToolMaterial SILVER_TOOL_MATERIAL;
-    @Mutable
-    @Shadow
-    public static CustomToolMaterial COPPER_TOOL_MATERIAL;
-    @Mutable
-    @Shadow @Final public static Item SILVER_SWORD;
-    @Mutable
-    @Shadow @Final public static Item SILVER_SHOVEL;
-    @Mutable
-    @Shadow @Final public static Item SILVER_PICKAXE;
-    @Mutable
-    @Shadow @Final public static Item SILVER_AXE;
-    @Mutable
-    @Shadow @Final public static Item COPPER_AXE;
-    @Mutable
-    @Shadow @Final public static Item SILVER_HOE;
-    @Mutable
-    @Shadow @Final public static Item COPPER_SWORD;
-    @Mutable
-    @Shadow @Final public static Item COPPER_SHOVEL;
-    @Mutable
-    @Shadow @Final public static Item COPPER_PICKAXE;
-    @Mutable
-    @Shadow @Final public static Item COPPER_HOE;
+    @Mutable @Shadow(remap = false) public static CustomToolMaterial SILVER_TOOL_MATERIAL;
+    @Mutable @Shadow(remap = false) public static CustomToolMaterial COPPER_TOOL_MATERIAL;
+    @Mutable @Shadow(remap = false) @Final public static Item SILVER_SWORD;
+    @Mutable @Shadow(remap = false) @Final public static Item SILVER_SHOVEL;
+    @Mutable @Shadow(remap = false) @Final public static Item SILVER_PICKAXE;
+    @Mutable @Shadow(remap = false) @Final public static Item SILVER_AXE;
+    @Mutable @Shadow(remap = false) @Final public static Item COPPER_AXE;
+    @Mutable @Shadow(remap = false) @Final public static Item SILVER_HOE;
+    @Mutable @Shadow(remap = false) @Final public static Item COPPER_SWORD;
+    @Mutable @Shadow(remap = false) @Final public static Item COPPER_SHOVEL;
+    @Mutable @Shadow(remap = false) @Final public static Item COPPER_PICKAXE;
+    @Mutable @Shadow(remap = false) @Final public static Item COPPER_HOE;
 
     @Inject(method = "registerItems", at = @At("HEAD"), remap = false)
     private static void registerItems(RegistryEvent.Register<Item> event, CallbackInfo ci){

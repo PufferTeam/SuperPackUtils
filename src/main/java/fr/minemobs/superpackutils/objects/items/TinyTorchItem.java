@@ -4,6 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.WallOrFloorItem;
 
+import net.minecraft.item.Item.Properties;
+
 public class TinyTorchItem extends WallOrFloorItem {
 
     public TinyTorchItem(Block floorBlock, Block wallBlockIn, Properties propertiesIn) {

@@ -9,12 +9,13 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import java.awt.Color;
 
-public class ModSlurries {
+public class SlurriesInit {
 
     public static final DeferredRegister<Slurry> SLURRIES = DeferredRegister.create(Slurry.class, Main.MOD_ID);
 
-    public static final RegistryObject<Slurry>[] NICKEL_SLURRY = createSlurry("nickel", new Color(217, 201, 137), Tag.getEmptyTag());
+    public static final RegistryObject<Slurry>[] NICKEL_SLURRY = createSlurry("nickel", new Color(217, 201, 137), Tag.empty());
 
+    @SuppressWarnings("unchecked")
     private static RegistryObject<Slurry>[] createSlurry(String name, Color color, Tag tag){
 
         RegistryObject<Slurry> cleanSlurry = SLURRIES.register("clean_" + name.toLowerCase(),  () -> new Slurry(SlurryBuilder.clean().color(color.getRGB()).ore(tag)));

@@ -30,7 +30,7 @@ public abstract class TextureProvider implements IDataProvider {
     public abstract void registerTextures() throws IOException;
 
     @Override
-    public void act(DirectoryCache cache) throws IOException {
+    public void run(DirectoryCache cache) throws IOException {
         registerTextures();
         generateTextures();
     }

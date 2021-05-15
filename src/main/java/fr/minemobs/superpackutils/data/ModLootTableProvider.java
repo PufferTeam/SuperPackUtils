@@ -41,7 +41,7 @@ public class ModLootTableProvider extends LootTableProvider {
     }
 
     private void standardDropTable(RegistryObject<Block> b) {
-        blockTable(b.get(), LootTable.builder().addLootPool(createStandardDrops(b.get())));
+        blockTable(b.get(), LootTable.lootTable().withPool(createStandardDrops(b.get())));
     }
 
     private void blockTable(Block b, LootTable.Builder lootTable) {
@@ -53,12 +53,12 @@ public class ModLootTableProvider extends LootTableProvider {
     }
 
     private LootPool.Builder createStandardDrops(IItemProvider itemProvider) {
-        return LootPool.builder().rolls(ConstantRange.of(1)).acceptCondition(SurvivesExplosion.builder())
-                .addEntry(ItemLootEntry.builder(itemProvider));
+        return LootPool.lootPool().setRolls(ConstantRange.exactly(1)).when(SurvivesExplosion.survivesExplosion())
+                .add(ItemLootEntry.lootTableItem(itemProvider));
     }
 
     @Override
     protected void validate(Map<ResourceLocation, LootTable> map, ValidationTracker validationtracker) {
-        map.forEach((loc, table) -> LootTableManager.validateLootTable(validationtracker, loc, table));
+        map.forEach((loc, table) -> LootTableManager.validate(validationtracker, loc, table));
     }
 }

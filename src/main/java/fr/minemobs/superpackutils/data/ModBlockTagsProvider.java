@@ -15,7 +15,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     }
 
     @Override
-    protected void registerTags() {
-        ModTags.Blocks.BLOCK_TAGS.forEach((blockINamedTag, block) -> getOrCreateBuilder(blockINamedTag).add(block));
+    protected void addTags() {
+        ModTags.Blocks.BLOCK_TAGS.forEach((blockINamedTag, block) -> tag(blockINamedTag).add(block));
     }
 }

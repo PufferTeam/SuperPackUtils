@@ -23,7 +23,7 @@ public class CropEvent {
         World world = WorldFunctions.getWorldIfIsNotRemote(event.getWorld());
         if (world == null) return;
         BlockPos pos = event.getPos();
-        Block blockBelow = world.getBlockState(pos.down(2)).getBlock();
+        Block blockBelow = world.getBlockState(pos.below(2)).getBlock();
         if (iceblocks.contains(blockBelow)){
             event.setResult(Event.Result.DENY);
         }

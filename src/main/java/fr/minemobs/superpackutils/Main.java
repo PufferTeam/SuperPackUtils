@@ -41,7 +41,7 @@ public class Main
         BlockInit.BLOCKS.register(modEventBus);
         FluidInit.FLUIDS.register(modEventBus);
         TileEntityInit.TILE_ENTITIES.register(modEventBus);
-        ModSlurries.SLURRIES.register(modEventBus);
+        SlurriesInit.SLURRIES.register(modEventBus);
         GasesInit.GASES.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::setup);
@@ -59,8 +59,8 @@ public class Main
         BlockInit.BLOCKS.getEntries().stream()
                 .filter(blockRegistryObject -> !(blockRegistryObject.get() instanceof FlowingFluidBlock) && !(blockRegistryObject.get() instanceof TorchBlock))
                 .map(RegistryObject::get).forEach(block -> {
-            final Item.Properties properties = new Item.Properties().group(ModItemGroup.instance);
-            final BlockItem blockItem = new BlockItem(block, properties.group(ModItemGroup.instance));
+            final Item.Properties properties = new Item.Properties().tab(ModItemGroup.instance);
+            final BlockItem blockItem = new BlockItem(block, properties.tab(ModItemGroup.instance));
             blockItem.setRegistryName(Objects.requireNonNull(block.getRegistryName()));
             registry.register(blockItem);
         });
@@ -77,7 +77,7 @@ public class Main
 
     public static class ModItemGroup extends ItemGroup {
 
-        public static final ModItemGroup instance = new ModItemGroup(ItemGroup.GROUPS.length, "superpackutils");
+        public static final ModItemGroup instance = new ModItemGroup(ItemGroup.TABS.length, "superpackutils");
 
         public ModItemGroup(int index, String label) {
             super(index, label);
@@ -86,7 +86,7 @@ public class Main
         @SuppressWarnings("NullableProblems")
         @OnlyIn(Dist.CLIENT)
         @Override
-        public ItemStack createIcon() {
+        public ItemStack makeIcon() {
             return new ItemStack(ItemInit.TINY_TORCH.get());
         }
     }

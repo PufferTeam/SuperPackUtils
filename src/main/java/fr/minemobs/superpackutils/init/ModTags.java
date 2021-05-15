@@ -20,14 +20,20 @@ public class ModTags {
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_MYTHRIL = forge("storage_blocks/mythril", BlockInit.MYTHRIL_BLOCK.get());
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_PLATINUM = forge("storage_blocks/platinum", BlockInit.PLATINUM_BLOCK.get());
 
-        private static ITag.INamedTag<Block> forge(String path, Block block){
-            ITag.INamedTag<Block> blockTag = BlockTags.makeWrapperTag(new ResourceLocation("forge", path).toString());
+        private static ITag.INamedTag<Block> forge(String path, Block block) {
+            ITag.INamedTag<Block> blockTag = BlockTags.bind(new ResourceLocation("forge", path).toString());
             BLOCK_TAGS.put(blockTag, block);
             return blockTag;
         }
 
-        private static ITag.INamedTag<Block> mod(String path, Block block){
-            ITag.INamedTag<Block> blockTag = BlockTags.makeWrapperTag(Main.location(path).toString());
+        private static ITag.INamedTag<Block> mod(String path, Block block) {
+            ITag.INamedTag<Block> blockTag = BlockTags.bind(Main.location(path).toString());
+            BLOCK_TAGS.put(blockTag, block);
+            return blockTag;
+        }
+
+        private static ITag.INamedTag<Block> mod(String modid, String path, Block block) {
+            ITag.INamedTag<Block> blockTag = BlockTags.bind(new ResourceLocation(modid, path).toString());
             BLOCK_TAGS.put(blockTag, block);
             return blockTag;
         }
@@ -60,14 +66,20 @@ public class ModTags {
         public static final ITag.INamedTag<Item> STORAGE_BLOCKS_MYTHRIL = forge("storage_blocks/mythril", BlockInit.MYTHRIL_BLOCK.get().asItem());
         public static final ITag.INamedTag<Item> STORAGE_BLOCKS_PLATINUM = forge("storage_blocks/platinum", BlockInit.PLATINUM_BLOCK.get().asItem());
 
-        private static ITag.INamedTag<Item> forge(String path, Item item){
-            ITag.INamedTag<Item> itemTag = ItemTags.makeWrapperTag(new ResourceLocation("forge", path).toString());
+        private static ITag.INamedTag<Item> forge(String path, Item item) {
+            ITag.INamedTag<Item> itemTag = ItemTags.bind(new ResourceLocation("forge", path).toString());
             ITEM_TAGS.put(itemTag, item);
             return itemTag;
         }
 
-        private static ITag.INamedTag<Item> mod(String path, Item item){
-            ITag.INamedTag<Item> itemTag = ItemTags.makeWrapperTag(Main.location(path).toString());
+        private static ITag.INamedTag<Item> mod(String path, Item item) {
+            ITag.INamedTag<Item> itemTag = ItemTags.bind(Main.location(path).toString());
+            ITEM_TAGS.put(itemTag, item);
+            return itemTag;
+        }
+
+        private static ITag.INamedTag<Item> mod(String modid, String path, Item item) {
+            ITag.INamedTag<Item> itemTag = ItemTags.bind(new ResourceLocation(modid, path).toString());
             ITEM_TAGS.put(itemTag, item);
             return itemTag;
         }

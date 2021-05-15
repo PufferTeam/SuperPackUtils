@@ -26,7 +26,8 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'snapshot', version: "${version_mcp}".toString()
+    //mappings channel: 'snapshot', version: "${version_mcp}".toString()
+    mappings channel: "official", version: "${mc_version}".toString()
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -132,6 +133,8 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${version_forge}"
 
+    annotationProcessor "org.spongepowered:mixin:0.8.2:processor"
+
     runtimeOnly fg.deobf(project.dependencies.create("mcjty.theoneprobe:TheOneProbe-${top_version}") {
         transitive = false
     })
@@ -141,8 +144,8 @@ dependencies {
     compileOnly "mekanism:Mekanism:${mekanism_version}:api"
     runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")
 
-    implementation fg.deobf(files("libs/citadel.jar"))
-    implementation fg.deobf(files("libs/iceandfire.jar"))
+    compileOnly fg.deobf(files("libs/citadel.jar"))
+    compileOnly fg.deobf(files("libs/iceandfire.jar"))
 }
 
 jar {

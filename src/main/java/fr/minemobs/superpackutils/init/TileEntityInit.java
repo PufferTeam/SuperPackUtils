@@ -13,5 +13,5 @@ public class TileEntityInit {
             DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, Main.MOD_ID);
 
     public static final RegistryObject<TileEntityType<TileClock>> REDSTONE_CLOCK = TILE_ENTITIES.register("redstone_clock",
-            () -> TileEntityType.Builder.create(TileClock::new, BlockInit.REDSTONE_CLOCK.get()).build(null));
+            () -> TileEntityType.Builder.of(TileClock::new, BlockInit.REDSTONE_CLOCK.get()).build(null));
 }
