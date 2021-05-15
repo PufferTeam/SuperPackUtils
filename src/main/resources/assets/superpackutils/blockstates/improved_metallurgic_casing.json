@@ -1,1 +1,7 @@
-{"variants":{"":{"model":"superpackutils:block/improved_metallurgic_casing"}}}
+{
+   "variants":{
+      "":{
+         "model":"superpackutils:block/improved_metallurgic_casing"
+      }
+   }
+}
