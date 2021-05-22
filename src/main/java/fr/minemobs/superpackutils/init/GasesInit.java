@@ -16,5 +16,6 @@ public class GasesInit {
     public static final RegistryObject<Gas> SILICON_DIOXIDE = GASES.register("silicon_dioxide", () -> new Gas(GasBuilder.builder().color(new Color(255, 255, 255).getRGB())));
     public static final RegistryObject<Gas> POLYETHENE = GASES.register("polyethene", () -> new Gas(GasBuilder.builder().color(new Color(133, 136, 140).getRGB())));
     public static final RegistryObject<Gas> CHEMICAL_DEATH = GASES.register("chemical_death", () -> new Gas(GasBuilder.builder().color(new Color(133, 136, 140).getRGB())));
+    public static final RegistryObject<Gas> NITROGEN = GASES.register("nitrogen", () -> new Gas(GasBuilder.builder().color(new Color(154, 171, 242).getRGB())));
 
 }
