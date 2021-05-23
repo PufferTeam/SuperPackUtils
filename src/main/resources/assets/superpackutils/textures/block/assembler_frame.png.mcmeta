@@ -1,0 +1,32 @@
+{
+   "ctm":{
+      "ctm_version":1,
+      "type":"CTM",
+      "layer":"SOLID",
+      "textures":[
+         "superpackutils:block/assembler_frame-ctm"
+      ],
+      "extra":{
+         "connect_to":[
+            {
+               "block":"superpackutils:assembler_frame"
+            },
+            {
+               "block":"masterfulmachinery:assembler_controller"
+            },
+            {
+               "block":"masterfulmachinery:assembler_basic_port_energy_input"
+            },
+            {
+               "block":"masterfulmachinery:assembler_basic_port_items_input"
+            },
+            {
+               "block":"masterfulmachinery:assembler_basic_port_items_output"
+            },
+            {
+               "block":"masterfulmachinery:assembler_basic_port_fluids_input"
+            }
+         ]
+      }
+   }
+}
