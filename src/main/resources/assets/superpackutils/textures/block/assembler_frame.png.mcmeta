@@ -15,6 +15,9 @@
                "block":"masterfulmachinery:assembler_controller"
             },
             {
+               "block":"masterfulmachinery:assembler_basic_port_pncr_pressure_input"
+            },
+            {
                "block":"masterfulmachinery:assembler_basic_port_energy_input"
             },
             {
