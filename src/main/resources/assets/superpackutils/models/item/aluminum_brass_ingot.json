@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "superpackutils:item/tin_brass_ingot"
+    "layer0": "superpackutils:item/aluminum_brass_ingot"
   }
 }
