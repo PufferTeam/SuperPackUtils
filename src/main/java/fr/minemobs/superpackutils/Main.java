@@ -42,6 +42,8 @@ public class Main
         FluidInit.FLUIDS.register(modEventBus);
         TileEntityInit.TILE_ENTITIES.register(modEventBus);
         SlurriesInit.SLURRIES.register(modEventBus);
+        InfuseTypeInit.INFUSE_TYPES.register(modEventBus);
+        ContainerInit.CONTAINERS.register(modEventBus);
         GasesInit.GASES.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::setup);
