@@ -48,6 +48,7 @@ public class BlockInit {
     public static final RegistryObject<Block> METALLURGIC_CASING = BLOCKS.register("metallurgic_casing", () -> new Block(AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK)));
     public static final RegistryObject<Block> IMPROVED_METALLURGIC_CASING = BLOCKS.register("improved_metallurgic_casing", () -> new Block(AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK)));
     public static final RegistryObject<Block> ASSEMBLER_FRAME = BLOCKS.register("assembler_frame", () -> new Block(AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK)));
+    public static final RegistryObject<Block> SIEVE_CASING = BLOCKS.register("sieve_casing", () -> new Block(AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
     //Ore Blocks
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block",
