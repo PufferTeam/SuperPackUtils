@@ -53,6 +53,7 @@ public class BlockInit {
     //Infused Ore
     public static final RegistryObject<Block> INFUSED_OSMIUM_ORE = BLOCKS.register("infused_osmium_ore", () -> new Block(AbstractBlock.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> INFUSED_URANIUM_ORE = BLOCKS.register("infused_uranium_ore", () -> new Block(AbstractBlock.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> PLATINUM_ORE = BLOCKS.register("platinum_ore", () -> new Block(AbstractBlock.Properties.copy(Blocks.IRON_BLOCK)));
 
     //Ore Blocks
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block",
