@@ -85,9 +85,6 @@ public class ItemInit {
     //Crystal
     public static final RegistryObject<Item> CRYSTAL_NICKEL = ITEMS.register("crystal_nickel", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
-    //Chunks
-    public static final RegistryObject<Item> OSMIUM_CHUNKS = ITEMS.register("osmium_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-
     //Gear
     public static final RegistryObject<Item> STEEL_GEAR = ITEMS.register("steel_gear", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> OSMIUM_GEAR = ITEMS.register("osmium_gear", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
