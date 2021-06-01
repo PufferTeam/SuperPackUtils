@@ -50,6 +50,10 @@ public class BlockInit {
     public static final RegistryObject<Block> ASSEMBLER_FRAME = BLOCKS.register("assembler_frame", () -> new Block(AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK)));
     public static final RegistryObject<Block> SIEVE_CASING = BLOCKS.register("sieve_casing", () -> new Block(AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
+    //Infused Ore
+    public static final RegistryObject<Block> INFUSED_OSMIUM_ORE = BLOCKS.register("infused_osmium_ore", () -> new Block(AbstractBlock.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> INFUSED_URANIUM_ORE = BLOCKS.register("infused_uranium_ore", () -> new Block(AbstractBlock.Properties.copy(Blocks.IRON_BLOCK)));
+
     //Ore Blocks
     public static final RegistryObject<Block> PLATINUM_BLOCK = BLOCKS.register("platinum_block",
             () -> new Block(AbstractBlock.Properties.of(Material.STONE)));
