@@ -103,6 +103,7 @@ public class ItemInit {
     public static final RegistryObject<Item> IRON_ORE_PIECE = ITEMS.register("iron_ore_piece", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> OSMIUM_ORE_PIECE = ITEMS.register("osmium_ore_piece", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> PLATINUM_ORE_PIECE = ITEMS.register("platinum_ore_piece", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> ZINC_ORE_PIECE = ITEMS.register("zinc_ore_piece", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     //Chunks
     public static final RegistryObject<Item> IRON_CHUNKS = ITEMS.register("iron_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
