@@ -111,7 +111,7 @@ public class ItemInit {
     public static final RegistryObject<Item> TIN_CHUNKS = ITEMS.register("tin_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> LEAD_CHUNKS = ITEMS.register("lead_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> SILVER_CHUNKS = ITEMS.register("silver_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> NICKEL_CHUNKS = ITEMS.register("silver_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> NICKEL_CHUNKS = ITEMS.register("nickel_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> URANIUM_CHUNKS = ITEMS.register("uranium_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> ALUMINUM_CHUNKS = ITEMS.register("aluminum_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> OSMIUM_CHUNKS = ITEMS.register("osmium_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
