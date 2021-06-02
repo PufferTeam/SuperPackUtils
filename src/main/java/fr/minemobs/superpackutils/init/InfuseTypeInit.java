@@ -10,6 +10,7 @@ public class InfuseTypeInit {
 
     public static final DeferredRegister<InfuseType> INFUSE_TYPES = DeferredRegister.create(InfuseType.class, Main.MOD_ID);
 
+    //Alchemical
     public static final RegistryObject<InfuseType> ALCHEMICAL_NICKEL = register("alchemical_nickel", 0xB2AC66);
     public static final RegistryObject<InfuseType> ALCHEMICAL_IRON = register("alchemical_iron", 0xD6CBA9);
     public static final RegistryObject<InfuseType> ALCHEMICAL_GOLD = register("alchemical_gold", 0xFFFF00);
@@ -22,6 +23,9 @@ public class InfuseTypeInit {
     public static final RegistryObject<InfuseType> ALCHEMICAL_URANIUM = register("alchemical_uranium", 0x43D655);
     public static final RegistryObject<InfuseType> ALCHEMICAL_ALUMINUM = register("alchemical_aluminum", 0xBF7699);
     public static final RegistryObject<InfuseType> ALCHEMICAL_ZINC = register("alchemical_zinc", 0xC3C3C3);
+
+    //Other
+    public static final RegistryObject<InfuseType> PETROLEUM_COKE = register("petroleum_coke", 0x3C3838);
 
     /**
      * @param tint hexadecimal color

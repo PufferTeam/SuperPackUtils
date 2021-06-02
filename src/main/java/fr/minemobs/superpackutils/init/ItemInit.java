@@ -37,6 +37,7 @@ public class ItemInit {
     public static final RegistryObject<Item> MIXED_ALLOY_INGOT = ITEMS.register("mixed_alloy_ingot", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> BORON_INGOT = ITEMS.register("boron_ingot", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> LITHIUM_INGOT = ITEMS.register("lithium_ingot", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> RICH_SLAG_ALLOY = ITEMS.register("rich_slag_alloy", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     //Polished
     public static final RegistryObject<Item> POLISHED_QUARTZ = ITEMS.register("polished_quartz", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
