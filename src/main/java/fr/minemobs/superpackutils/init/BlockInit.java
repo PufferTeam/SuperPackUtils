@@ -39,6 +39,7 @@ public class BlockInit {
     public static final RegistryObject<Block> DUST_BLOCK = BLOCKS.register("dust_block", () -> new Block(AbstractBlock.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> DIMENSIONAL_STONE = BLOCKS.register("dimensional_stone", () -> new Block(AbstractBlock.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> DYINGROCK = BLOCKS.register("dyingrock", () -> new Block(AbstractBlock.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> INFUSED_STONE = BLOCKS.register("infused_stone", () -> new Block(AbstractBlock.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> INDUSTRIAL_SAND = BLOCKS.register("industrial_sand", () -> new Block(AbstractBlock.Properties.copy(Blocks.SAND)));
 
     //Casing
