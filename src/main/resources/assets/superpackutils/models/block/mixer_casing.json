@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "superpackutils:block/sieve_casing"
+    "all": "superpackutils:block/mixer_casing"
   }
 }

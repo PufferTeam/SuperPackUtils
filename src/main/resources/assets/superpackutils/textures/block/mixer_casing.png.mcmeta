@@ -1,0 +1,35 @@
+{
+   "ctm":{
+      "ctm_version":1,
+      "type":"CTM",
+      "layer":"SOLID",
+      "textures":[
+         "superpackutils:block/mixer_casing-ctm"
+      ],
+      "extra":{
+         "connect_to":[
+            {
+               "block":"superpackutils:mixer_casing"
+            },
+            {
+               "block":"masterfulmachinery:mixer_controller"
+            },
+            {
+               "block":"masterfulmachinery:mixer_basic_port_pncr_pressure_input"
+            },
+            {
+               "block":"masterfulmachinery:mixer_basic_port_items_input"
+            },
+            {
+               "block":"masterfulmachinery:mixer_basic_port_energy_input"
+            },
+            {
+               "block":"masterfulmachinery:mixer_basic_port_botania_mana_input"
+            },
+            {
+               "block":"masterfulmachinery:mixer_basic_port_items_output"
+            }
+         ]
+      }
+   }
+}

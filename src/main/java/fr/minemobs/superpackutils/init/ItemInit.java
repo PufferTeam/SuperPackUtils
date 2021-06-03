@@ -107,20 +107,6 @@ public class ItemInit {
     public static final RegistryObject<Item> PLATINUM_ORE_PIECE = ITEMS.register("platinum_ore_piece", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> ZINC_ORE_PIECE = ITEMS.register("zinc_ore_piece", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
-    //Chunks
-    public static final RegistryObject<Item> IRON_CHUNKS = ITEMS.register("iron_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> GOLD_CHUNKS = ITEMS.register("gold_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> COPPER_CHUNKS = ITEMS.register("copper_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> TIN_CHUNKS = ITEMS.register("tin_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> LEAD_CHUNKS = ITEMS.register("lead_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> SILVER_CHUNKS = ITEMS.register("silver_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> NICKEL_CHUNKS = ITEMS.register("nickel_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> URANIUM_CHUNKS = ITEMS.register("uranium_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> ALUMINUM_CHUNKS = ITEMS.register("aluminum_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> OSMIUM_CHUNKS = ITEMS.register("osmium_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> ZINC_CHUNKS = ITEMS.register("zinc_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> PLATINUM_CHUNKS = ITEMS.register("platinum_chunks", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-
     //Sawdust
     public static final RegistryObject<Item> BLOODY_SAWDUST = ITEMS.register("bloody_sawdust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> GRASSY_SAWDUST = ITEMS.register("grassy_sawdust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
