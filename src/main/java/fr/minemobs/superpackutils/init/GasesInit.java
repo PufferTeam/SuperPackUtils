@@ -22,5 +22,6 @@ public class GasesInit {
     public static final RegistryObject<Gas> CYANIDE = GASES.register("cyanide", () -> new Gas(GasBuilder.builder().color(new Color(230, 230, 230).getRGB())));
     public static final RegistryObject<Gas> CARBON_DIOXIDE = GASES.register("carbon_dioxide", () -> new Gas(GasBuilder.builder().color(new Color(13, 13, 13).getRGB())));
     public static final RegistryObject<Gas> METHANE = GASES.register("methane", () -> new Gas(GasBuilder.builder().color(new Color(242, 242, 242).getRGB())));
+    public static final RegistryObject<Gas> PURE_SULFURIC_ACID = GASES.register("pure_sulfuric_acid", () -> new Gas(GasBuilder.builder().color(new Color(150, 146, 59).getRGB())));
 
 }
