@@ -5,7 +5,9 @@
   "refmap": "superpackutils.refmap.json",
   "mixins": [
     "item.MixinItemTier",
-    "item.MixinIafItemRegistry"
+    "item.MixinIafItemRegistry",
+    "recipes.MixinWorktableRegistry",
+    "recipes.MixinCrucibleRegistry"
   ],
   "client": [],
   "injectors": {
