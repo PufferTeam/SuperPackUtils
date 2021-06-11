@@ -146,6 +146,7 @@ dependencies {
 
     compileOnly fg.deobf(files("libs/citadel.jar"))
     compileOnly fg.deobf(files("libs/iceandfire.jar"))
+    compileOnly fg.deobf(files("libs/eidolon-0.2.7.jar"))
 }
 
 jar {
