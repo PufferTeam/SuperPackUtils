@@ -70,11 +70,11 @@ public class BlockInit {
     //Register functions
 
     private static RegistryObject<Block> registerBlock(String name) {
-        return registerBlock(name.toLowerCase(Locale.ROOT).replaceAll(" ","_"), new Block(AbstractBlock.Properties.copy(Blocks.STONE)));
+        return BLOCKS.register(name.toLowerCase(Locale.ROOT).replaceAll(" ","_"), () -> new Block(AbstractBlock.Properties.copy(Blocks.STONE)));
     }
 
     private static RegistryObject<Block> registerBlock(String name, Block.Properties properties) {
-        return registerBlock(name.toLowerCase(Locale.ROOT).replaceAll(" ","_"), new Block(properties));
+        return BLOCKS.register(name.toLowerCase(Locale.ROOT).replaceAll(" ","_"), () -> new Block(properties));
     }
 
     private static RegistryObject<Block> registerBlock(String name, Block block) {
