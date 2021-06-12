@@ -261,6 +261,11 @@ public abstract class MixinWorktableRegistry {
                 ItemStack.EMPTY, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))), Tags.Items.ENDER_PEARLS,
                 ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))),
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                ItemStack.EMPTY,
+                ItemStack.EMPTY,
+                ItemStack.EMPTY,
+                ItemStack.EMPTY
         }, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(/*MOD_ID*/"astralsorcery", "wand")))));
         
     }
