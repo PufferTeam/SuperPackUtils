@@ -27,6 +27,8 @@ public abstract class MixinWorktableRegistry {
      */
     @Overwrite
     public static void init() {
+
+        //Void Amulet
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Registry.PEWTER_INGOT.get(), ItemStack.EMPTY,
                 Registry.PEWTER_INLAY.get(), Registry.BASIC_AMULET.get(), Registry.PEWTER_INLAY.get(),
@@ -37,6 +39,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.SOUL_SHARD.get(),
                 ItemStack.EMPTY
         }, new ItemStack(Registry.VOID_AMULET.get())).setRegistryName(Eidolon.MODID, "void_amulet"));
+
+        //Warded Mail
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Registry.LESSER_SOUL_GEM.get(), ItemStack.EMPTY,
                 Registry.ENCHANTED_ASH.get(), Items.IRON_CHESTPLATE, Registry.ENCHANTED_ASH.get(),
@@ -47,6 +51,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.PEWTER_INLAY.get(),
                 Registry.PEWTER_INLAY.get()
         }, new ItemStack(Registry.WARDED_MAIL.get())).setRegistryName(Eidolon.MODID, "warded_mail"));
+
+        //Reaper Scythe
         register(new WorktableRecipe(new Object[]{
                 Registry.PEWTER_INGOT.get(), Registry.PEWTER_INGOT.get(), ItemStack.EMPTY,
                 ItemStack.EMPTY, Items.STICK, Registry.PEWTER_INGOT.get(),
@@ -57,6 +63,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.TATTERED_CLOTH.get(),
                 Registry.SOUL_SHARD.get()
         }, new ItemStack(Registry.REAPER_SCYTHE.get())).setRegistryName(Eidolon.MODID, "reaper_scythe"));
+
+        //Cleaving Axe
         register(new WorktableRecipe(new Object[]{
                 Registry.PEWTER_INGOT.get(), Registry.PEWTER_INGOT.get(), ItemStack.EMPTY,
                 Registry.PEWTER_INGOT.get(), Items.STICK, ItemStack.EMPTY,
@@ -67,6 +75,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.PEWTER_INLAY.get(),
                 ItemStack.EMPTY
         }, new ItemStack(Registry.CLEAVING_AXE.get())).setRegistryName(Eidolon.MODID, "cleaving_axe"));
+
+        //Soul Enchanter
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Items.BOOK, ItemStack.EMPTY,
                 Registry.ARCANE_GOLD_INGOT.get(), Blocks.OBSIDIAN, Registry.ARCANE_GOLD_INGOT.get(),
@@ -77,6 +87,8 @@ public abstract class MixinWorktableRegistry {
                 Tags.Items.GEMS_DIAMOND,
                 Registry.GOLD_INLAY.get()
         }, new ItemStack(Registry.SOUL_ENCHANTER.get())).setRegistryName(Eidolon.MODID, "soul_enchanter"));
+
+        //Reversal Pick
         register(new WorktableRecipe(new Object[]{
                 Blocks.OBSIDIAN, Blocks.CRYING_OBSIDIAN, Blocks.OBSIDIAN,
                 ItemStack.EMPTY, Registry.PEWTER_INGOT.get(), ItemStack.EMPTY,
@@ -87,6 +99,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.LESSER_SOUL_GEM.get(),
                 Registry.SOUL_SHARD.get()
         }, new ItemStack(Registry.REVERSAL_PICK.get())).setRegistryName(Eidolon.MODID, "reversal_pick"));
+
+        //Soulfire Wand
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Registry.ARCANE_GOLD_INGOT.get(), Registry.SHADOW_GEM.get(),
                 ItemStack.EMPTY, Items.STICK, Registry.ARCANE_GOLD_INGOT.get(),
@@ -97,6 +111,8 @@ public abstract class MixinWorktableRegistry {
                 Items.BLAZE_POWDER,
                 Items.BLAZE_POWDER
         }, new ItemStack(Registry.SOULFIRE_WAND.get())).setRegistryName(Eidolon.MODID, "soulfire_wand"));
+
+        //Bonechill Wand
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Registry.PEWTER_INGOT.get(), Registry.WRAITH_HEART.get(),
                 ItemStack.EMPTY, Items.STICK, Registry.PEWTER_INGOT.get(),
@@ -107,6 +123,8 @@ public abstract class MixinWorktableRegistry {
                 Items.BONE_MEAL,
                 Items.BONE_MEAL
         }, new ItemStack(Registry.BONECHILL_WAND.get())).setRegistryName(Eidolon.MODID, "bonechill_wand"));
+
+        //Stone Altar
         register(new WorktableRecipe(new Object[]{
                 Blocks.SMOOTH_STONE_SLAB, Blocks.SMOOTH_STONE_SLAB, Blocks.SMOOTH_STONE_SLAB,
                 Tags.Items.STONE, Tags.Items.STONE, Tags.Items.STONE,
@@ -117,6 +135,8 @@ public abstract class MixinWorktableRegistry {
                 ItemStack.EMPTY,
                 ItemStack.EMPTY
         }, new ItemStack(Registry.STONE_ALTAR.get(), 3)).setRegistryName(Eidolon.MODID, "stone_altar"));
+
+        //Unholy Effigy
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Blocks.SMOOTH_STONE, ItemStack.EMPTY,
                 Tags.Items.STONE, Tags.Items.STONE, Tags.Items.STONE,
@@ -127,6 +147,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.GOLD_INLAY.get(),
                 ItemStack.EMPTY
         }, new ItemStack(Registry.UNHOLY_EFFIGY.get())).setRegistryName(Eidolon.MODID, "unholy_effigy"));
+
+        //Wicked Weave
         register(new WorktableRecipe(new Object[]{
                 Blocks.WHITE_WOOL, Blocks.WHITE_WOOL, Blocks.WHITE_WOOL,
                 Blocks.WHITE_WOOL, Registry.SHADOW_GEM.get(), Blocks.WHITE_WOOL,
@@ -137,6 +159,8 @@ public abstract class MixinWorktableRegistry {
                 Tags.Items.DYES_BLUE,
                 ItemStack.EMPTY
         }, new ItemStack(Registry.WICKED_WEAVE.get(), 8)).setRegistryName(Eidolon.MODID, "wicked_weave"));
+
+        //Warlock Hat
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Registry.WICKED_WEAVE.get(), ItemStack.EMPTY,
                 ItemStack.EMPTY, Registry.WICKED_WEAVE.get(), ItemStack.EMPTY,
@@ -147,6 +171,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.SOUL_SHARD.get(),
                 ItemStack.EMPTY
         }, new ItemStack(Registry.WARLOCK_HAT.get())).setRegistryName(Eidolon.MODID, "warlock_hat"));
+
+        //Warlock Cloak
         register(new WorktableRecipe(new Object[]{
                 Registry.WICKED_WEAVE.get(), Registry.WICKED_WEAVE.get(), Registry.WICKED_WEAVE.get(),
                 Registry.WICKED_WEAVE.get(), Registry.WICKED_WEAVE.get(), Registry.WICKED_WEAVE.get(),
@@ -157,6 +183,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.SOUL_SHARD.get(),
                 ItemStack.EMPTY
         }, new ItemStack(Registry.WARLOCK_CLOAK.get())).setRegistryName(Eidolon.MODID, "warlock_cloak"));
+
+        //Warlock Boots
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, ItemStack.EMPTY, ItemStack.EMPTY,
                 Registry.WICKED_WEAVE.get(), ItemStack.EMPTY, Registry.WICKED_WEAVE.get(),
@@ -167,6 +195,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.SOUL_SHARD.get(),
                 ItemStack.EMPTY
         }, new ItemStack(Registry.WARLOCK_BOOTS.get())).setRegistryName(Eidolon.MODID, "warlock_boots"));
+
+        //Gravity Belt
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Tags.Items.ENDER_PEARLS, ItemStack.EMPTY,
                 Tags.Items.FEATHERS, Registry.BASIC_BELT.get(), Tags.Items.FEATHERS,
@@ -177,6 +207,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.ENDER_CALX.get(),
                 Registry.PEWTER_INLAY.get()
         }, new ItemStack(Registry.GRAVITY_BELT.get())).setRegistryName(Eidolon.MODID, "gravity_belt"));
+
+        //Resolute Belt
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Registry.GOLD_INLAY.get(), ItemStack.EMPTY,
                 Registry.ARCANE_GOLD_INGOT.get(), Registry.BASIC_BELT.get(), Registry.ARCANE_GOLD_INGOT.get(),
@@ -187,6 +219,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.ENCHANTED_ASH.get(),
                 Registry.SOUL_SHARD.get()
         }, new ItemStack(Registry.RESOLUTE_BELT.get())).setRegistryName(Eidolon.MODID, "resolute_belt"));
+
+        //Prestigious Palm
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Registry.WICKED_WEAVE.get(), ItemStack.EMPTY,
                 Registry.WICKED_WEAVE.get(), Registry.WICKED_WEAVE.get(), Registry.WICKED_WEAVE.get(),
@@ -197,6 +231,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.SOUL_SHARD.get(),
                 Registry.ENDER_CALX.get()
         }, new ItemStack(Registry.PRESTIGIOUS_PALM.get())).setRegistryName(Eidolon.MODID, "prestigious_palm"));
+
+        //Mind Shielding Plate
         register(new WorktableRecipe(new Object[]{
                 new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))),
                 new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))),
@@ -207,6 +243,8 @@ public abstract class MixinWorktableRegistry {
                 Tags.Items.GEMS_QUARTZ,
                 ItemStack.EMPTY
         }, new ItemStack(Registry.MIND_SHIELDING_PLATE.get())).setRegistryName(Eidolon.MODID, "mind_shielding_plate"));
+
+        //Glass Hand
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, Tags.Items.STORAGE_BLOCKS_DIAMOND, ItemStack.EMPTY,
                 ItemStack.EMPTY, Registry.BASIC_AMULET.get(), ItemStack.EMPTY,
@@ -217,15 +255,13 @@ public abstract class MixinWorktableRegistry {
                 Registry.WRAITH_HEART.get(),
                 Registry.LESSER_SOUL_GEM.get()
         }, new ItemStack(Registry.GLASS_HAND.get())).setRegistryName(Eidolon.MODID, "glass_hand"));
+
+        //Resonating Wand
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))), Tags.Items.ENDER_PEARLS,
                 ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))),
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
-        }, new Object[]{
-                Registry.LESSER_SOUL_GEM.get(),
-                Registry.ENDER_CALX.get(),
-                Registry.ENDER_CALX.get(),
-                Registry.ENDER_CALX.get()
         }, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(/*MOD_ID*/"astralsorcery", "wand")))));
+        
     }
 }
