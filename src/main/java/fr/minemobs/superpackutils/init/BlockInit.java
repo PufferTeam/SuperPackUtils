@@ -38,7 +38,6 @@ public class BlockInit {
             AbstractBlock.Properties.copy(Blocks.STONE).strength(0.75F, 3.0F).harvestTool(ToolType.PICKAXE).harvestLevel(4));
 
     //Blocks
-    public static final RegistryObject<Block> DUST_BLOCK = registerBlock("dust_block", Blocks.SAND);
     public static final RegistryObject<Block> DIMENSIONAL_STONE = registerBlock("dimensional_stone", Blocks.IRON_ORE);
     public static final RegistryObject<Block> DYINGROCK = registerBlock("dyingrock", Blocks.STONE);
     public static final RegistryObject<Block> INDUSTRIAL_SAND = registerBlock("industrial_sand", Blocks.SAND);
