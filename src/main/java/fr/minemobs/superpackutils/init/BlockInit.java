@@ -38,18 +38,18 @@ public class BlockInit {
             AbstractBlock.Properties.copy(Blocks.STONE).strength(0.75F, 3.0F).harvestTool(ToolType.PICKAXE).harvestLevel(4));
 
     //Blocks
-    public static final RegistryObject<Block> DIMENSIONAL_STONE = registerBlock("dimensional_stone", Blocks.IRON_ORE);
-    public static final RegistryObject<Block> DYINGROCK = registerBlock("dyingrock", Blocks.STONE);
-    public static final RegistryObject<Block> INDUSTRIAL_SAND = registerBlock("industrial_sand", Blocks.SAND);
+    public static final RegistryObject<Block> DIMENSIONAL_STONE = registerBlock("dimensional_stone", AbstractBlock.Properties.copy(Blocks.IRON_ORE));
+    public static final RegistryObject<Block> DYINGROCK = registerBlock("dyingrock");
+    public static final RegistryObject<Block> INDUSTRIAL_SAND = registerBlock("industrial_sand", AbstractBlock.Properties.copy(Blocks.SAND));
 
     //Casing
-    public static final RegistryObject<Block> BIG_STEEL_CASING = registerBlock("big_steel_casing", Blocks.DIAMOND_BLOCK);
-    public static final RegistryObject<Block> INSCRIBER_CASING = registerBlock("inscriber_casing", Blocks.DIAMOND_BLOCK);
-    public static final RegistryObject<Block> INFUSER_CASING = registerBlock("infuser_casing", Blocks.DIAMOND_BLOCK);
-    public static final RegistryObject<Block> METALLURGIC_CASING = registerBlock("metallurgic_casing", Blocks.DIAMOND_BLOCK);
-    public static final RegistryObject<Block> IMPROVED_METALLURGIC_CASING = registerBlock("improved_metallurgic_casing", Blocks.DIAMOND_BLOCK);
-    public static final RegistryObject<Block> ASSEMBLER_FRAME = registerBlock("assembler_frame", Blocks.DIAMOND_BLOCK);
-    public static final RegistryObject<Block> SIEVE_CASING = registerBlock("sieve_casing", Blocks.DIAMOND_BLOCK);
+    public static final RegistryObject<Block> BIG_STEEL_CASING = registerBlock("big_steel_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> INSCRIBER_CASING = registerBlock("inscriber_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> INFUSER_CASING = registerBlock("infuser_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> METALLURGIC_CASING = registerBlock("metallurgic_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> IMPROVED_METALLURGIC_CASING = registerBlock("improved_metallurgic_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> ASSEMBLER_FRAME = registerBlock("assembler_frame", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> SIEVE_CASING = registerBlock("sieve_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
 
     //Ore Blocks
     public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block");
