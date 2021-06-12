@@ -54,14 +54,14 @@ public class BlockInit {
     public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore");
 
     //Infused Ores
-    public static final RegistryObject<Block> INFUSED_STONE = registerBlock("infused_stone", Blocks.DIAMOND_BLOCK);
-    public static final RegistryObject<Block> INFUSED_URANIUM_ORE = registerBlock("infused_uranium_ore", Blocks.DIAMOND_BLOCK);
-    public static final RegistryObject<Block> INFUSED_OSMIUM_ORE = registerBlock("infused_osmium_ore", Blocks.DIAMOND_BLOCK);
+    public static final RegistryObject<Block> INFUSED_STONE = registerBlock("infused_stone", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> INFUSED_URANIUM_ORE = registerBlock("infused_uranium_ore", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> INFUSED_OSMIUM_ORE = registerBlock("infused_osmium_ore", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
 
     //Ore Blocks
-    public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block");
+    public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
 
-    public static final RegistryObject<Block> MYTHRIL_BLOCK = registerBlock("mythril_block");
+    public static final RegistryObject<Block> MYTHRIL_BLOCK = registerBlock("mythril_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
 
     //Fluids
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_MYTHRIL_BLOCK = registerBlock("molten_mythril_fluid",
