@@ -8,8 +8,9 @@ import fr.minemobs.superpackutils.init.ItemInit;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.Tags;
-import fr.minemobs.superpackutils.init.ModTags;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
@@ -216,5 +217,15 @@ public abstract class MixinWorktableRegistry {
                 Registry.WRAITH_HEART.get(),
                 Registry.LESSER_SOUL_GEM.get()
         }, new ItemStack(Registry.GLASS_HAND.get())).setRegistryName(Eidolon.MODID, "glass_hand"));
+        register(new WorktableRecipe(new Object[]{
+                ItemStack.EMPTY, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))), Tags.Items.ENDER_PEARLS,
+                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))),
+                ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                Registry.GOLD_INLAY.get(),
+                Registry.GOLD_INLAY.get(),
+                Registry.ENDER_CALX.get(),
+                Registry.ENDER_CALX.get()
+        }, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(/*MOD_ID*/"astralsorcery", "wand")))));
     }
 }

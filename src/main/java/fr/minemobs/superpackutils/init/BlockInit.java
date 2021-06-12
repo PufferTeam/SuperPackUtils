@@ -27,8 +27,7 @@ public class BlockInit {
             () -> new TinyTorch(Block.Properties.of(Material.DECORATION).noCollission().instabreak()
                     .lightLevel((state) -> 2).sound(SoundType.WOOD), ParticleTypes.FLAME));
 
-    public static final RegistryObject<Block> REDSTONE_CLOCK = registerBlock("redstone_clock",
-            new RedstoneClock());
+    public static final RegistryObject<Block> REDSTONE_CLOCK = registerBlock("redstone_clock", new RedstoneClock());
 
     public static final RegistryObject<Block> WALL_TINY_TORCH = BLOCKS.register("wall_tiny_torch",
             () -> new WallTinyTorch(Block.Properties.of(Material.DECORATION).noCollission().instabreak()
