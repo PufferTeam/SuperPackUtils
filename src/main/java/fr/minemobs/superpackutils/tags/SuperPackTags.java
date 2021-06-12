@@ -8,7 +8,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tags.ITag.INamedTag;
 
-public class Tags
+public class SuperPackTags
 {
     public static void init ()
     {
