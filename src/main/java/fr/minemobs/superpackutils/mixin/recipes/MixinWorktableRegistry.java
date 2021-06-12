@@ -198,8 +198,8 @@ public abstract class MixinWorktableRegistry {
                 Registry.ENDER_CALX.get()
         }, new ItemStack(Registry.PRESTIGIOUS_PALM.get())).setRegistryName(Eidolon.MODID, "prestigious_palm"));
         register(new WorktableRecipe(new Object[]{
-                ItemInit.PLATINUM_INGOT.get(), Registry.LEAD_INGOT.get(), ItemInit.PLATINUM_INGOT.get(),
-                Registry.LEAD_INGOT.get(), Registry.LEAD_INGOT.get(), Registry.LEAD_INGOT.get(),
+                new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))),
+                new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))),
                 Items.LEATHER, Registry.SOUL_SHARD.get(), Items.LEATHER
         }, new Object[]{
                 Tags.Items.STORAGE_BLOCKS_LAPIS,
@@ -222,8 +222,8 @@ public abstract class MixinWorktableRegistry {
                 ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))),
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
         }, new Object[]{
-                Registry.GOLD_INLAY.get(),
-                Registry.GOLD_INLAY.get(),
+                Registry.LESSER_SOUL_GEM.get(),
+                Registry.ENDER_CALX.get(),
                 Registry.ENDER_CALX.get(),
                 Registry.ENDER_CALX.get()
         }, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(/*MOD_ID*/"astralsorcery", "wand")))));
