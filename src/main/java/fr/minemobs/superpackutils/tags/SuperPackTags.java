@@ -1,11 +1,9 @@
 package fr.minemobs.superpackutils.tags;
 
 import net.minecraft.block.Block;
-import net.minecraft.fluid.Fluid;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tags.ITag.INamedTag;
