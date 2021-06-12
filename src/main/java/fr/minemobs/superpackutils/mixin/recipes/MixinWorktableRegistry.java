@@ -234,8 +234,8 @@ public abstract class MixinWorktableRegistry {
 
         //Mind Shielding Plate
         register(new WorktableRecipe(new Object[]{
-                new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))),
-                new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermal", "lead_ingot"))),
+                getItem("thermal", "lead_ingot"), getItem("thermal", "lead_ingot"), getItem("thermal", "lead_ingot"),
+                getItem("thermal", "lead_ingot"), getItem("thermal", "lead_ingot"), getItem("thermal", "lead_ingot"),
                 Items.LEATHER, Registry.SOUL_SHARD.get(), Items.LEATHER
         }, new Object[]{
                 Tags.Items.STORAGE_BLOCKS_LAPIS,
@@ -258,15 +258,18 @@ public abstract class MixinWorktableRegistry {
 
         //Resonating Wand
         register(new WorktableRecipe(new Object[]{
-                ItemStack.EMPTY, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))), Tags.Items.ENDER_PEARLS,
-                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("astralsorcery", "aquamarine"))),
+                ItemStack.EMPTY, getItem("astralsorcery", "aquamarine"), Tags.Items.ENDER_PEARLS,
+                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "aquamarine"),
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
         }, new Object[]{
                 ItemStack.EMPTY,
                 ItemStack.EMPTY,
                 ItemStack.EMPTY,
                 ItemStack.EMPTY
-        }, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(/*MOD_ID*/"astralsorcery", "wand")))));
-        
+        }, getItem("astralsorcery", "wand")));
+    }
+
+    private static ItemStack getItem(String modID, String itemRegistryName) {
+        return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(modID, itemRegistryName)));
     }
 }
