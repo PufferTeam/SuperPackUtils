@@ -116,12 +116,12 @@ public abstract class MixinCrucibleRegistry {
         //Crimson Essence Roots
         register(new CrucibleRecipe(new ItemStack(Registry.CRIMSON_ESSENCE.get(), 2)).setRegistryName(Eidolon.MODID, "crimson_essence_roots")
                 .addStep(Items.CRIMSON_ROOTS, Items.NETHER_WART)
-                .addStirringStep(1, Registry.SULFUR.get()));
+                .addStirringStep(1, getItem("thermal", "sulfur_dust")));
 
         //Crimson Essence Vines
         register(new CrucibleRecipe(new ItemStack(Registry.CRIMSON_ESSENCE.get(), 2)).setRegistryName(Eidolon.MODID, "crimson_essence_vines")
                 .addStep(Items.WEEPING_VINES, Items.NETHER_WART)
-                .addStirringStep(1, Registry.SULFUR.get()));
+                .addStirringStep(1, getItem("thermal", "sulfur_dust")));
 
         //Fungus Sprout
         register(new CrucibleRecipe(new ItemStack(Registry.FUNGUS_SPROUTS.get(), 2)).setRegistryName(Eidolon.MODID, "fungus_sprouts")
@@ -145,7 +145,7 @@ public abstract class MixinCrucibleRegistry {
                         ItemTags.PLANKS, ItemTags.PLANKS, ItemTags.PLANKS, ItemTags.PLANKS,
                         ItemTags.PLANKS, ItemTags.PLANKS, ItemTags.PLANKS, ItemTags.PLANKS,
                         ItemTags.PLANKS, ItemTags.PLANKS, ItemTags.PLANKS, ItemTags.PLANKS)
-                .addStirringStep(1, Registry.SOUL_SHARD.get(), Registry.ENCHANTED_ASH.get()));
+                .addStirringStep(1, Registry.ENCHANTED_ASH.get()));
     }
 
     private static ItemStack getItem(String modID, String itemRegistryName) {

@@ -5,6 +5,7 @@ import elucent.eidolon.Registry;
 import elucent.eidolon.recipe.WorktableRecipe;
 import elucent.eidolon.recipe.WorktableRegistry;
 import fr.minemobs.superpackutils.init.ItemInit;
+import fr.minemobs.superpackutils.init.BlockInit;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -262,27 +263,27 @@ public abstract class MixinWorktableRegistry {
                 ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "aquamarine"),
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
         }, new Object[]{
-                ItemStack.EMPTY,
-                ItemStack.EMPTY,
-                ItemStack.EMPTY,
-                ItemStack.EMPTY
+                getItem("astralsorcery", "marble_runed"),
+                getItem("astralsorcery", "marble_runed"),
+                getItem("astralsorcery", "marble_runed"),
+                getItem("astralsorcery", "marble_runed")
         }, getItem("astralsorcery", "wand")));
 
         //Dimensional Stone
         register(new WorktableRecipe(new Object[]{
-                getItem("botania", "mana_pearl"), getItem("astralsorcery", "aquamarine"), getItem("botania", "mana_pearl"),
-                getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "obsidian"),
-                getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl")
+                getItem("minecraft", "blaze_powder"), getItem("astralsorcery", "aquamarine"), getItem("minecraft", "blaze_powder"),
+                getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "blaze_powder"),
+                getItem("minecraft", "blaze_powder"), getItem("minecraft", "obsidian"), getItem("minecraft", "blaze_powder")
         }, new Object[]{
                 Registry.SOUL_SHARD.get(),
                 Registry.ENDER_CALX.get(),
                 Registry.SOUL_SHARD.get(),
                 Registry.ENDER_CALX.get()
-        }, getItem("superpackutils", "dimensional_stone")));
+        }, BlockInit.DIMENSIONAL_STONE.get()));
 
         //Reclaimer
         register(new WorktableRecipe(new Object[]{
-                getItem("botania", "mana_pearl"), getItem("astralsorcery", "aquamarine"), getItem("botania", "mana_pearl"),
+                getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl"),
                 getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "obsidian"),
                 getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl")
         }, new Object[]{
@@ -292,8 +293,6 @@ public abstract class MixinWorktableRegistry {
                 Registry.WARPED_SPROUTS.get()
         }, getItem("betterportals", "reclaimer")));
     }
-
-
 
     private static ItemStack getItem(String modID, String itemRegistryName) {
         return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(modID, itemRegistryName)));
