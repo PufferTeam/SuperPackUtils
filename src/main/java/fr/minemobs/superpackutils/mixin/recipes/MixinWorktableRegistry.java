@@ -273,7 +273,7 @@ public abstract class MixinWorktableRegistry {
         register(new WorktableRecipe(new Object[]{
                 getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl"),
                 getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "obsidian"),
-                getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("minecraft", "blaze_powder")
+                getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl")
         }, new Object[]{
                 Registry.SOUL_SHARD.get(),
                 Registry.ENDER_CALX.get(),
