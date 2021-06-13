@@ -279,7 +279,7 @@ public abstract class MixinWorktableRegistry {
                 Registry.ENDER_CALX.get(),
                 Registry.SOUL_SHARD.get(),
                 Registry.ENDER_CALX.get()
-        }, BlockInit.DIMENSIONAL_STONE.get()));
+        }, new ItemStack(BlockInit.DIMENSIONAL_STONE.get())).setRegistryName("superpackutils", "dimensional_stone")));
 
         //Reclaimer
         register(new WorktableRecipe(new Object[]{
