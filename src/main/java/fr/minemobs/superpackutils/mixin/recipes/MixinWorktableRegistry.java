@@ -150,13 +150,13 @@ public abstract class MixinWorktableRegistry {
 
         //Wicked Weave
         register(new WorktableRecipe(new Object[]{
-                Blocks.WHITE_WOOL, Blocks.WHITE_WOOL, Blocks.WHITE_WOOL,
-                Blocks.WHITE_WOOL, Registry.SHADOW_GEM.get(), Blocks.WHITE_WOOL,
-                Blocks.WHITE_WOOL, Blocks.WHITE_WOOL, Blocks.WHITE_WOOL
+                getItem("botania", "manaweave_cloth"), getItem("botania", "manaweave_cloth"), getItem("botania", "manaweave_cloth"),
+                getItem("botania", "manaweave_cloth"), Registry.SHADOW_GEM.get(), getItem("botania", "manaweave_cloth"),
+                getItem("botania", "manaweave_cloth"), getItem("botania", "manaweave_cloth"), getItem("botania", "manaweave_cloth")
         }, new Object[]{
                 Registry.UNHOLY_SYMBOL.get(),
                 ItemStack.EMPTY,
-                Tags.Items.DYES_BLUE,
+                getItem("botania", "spell_cloth"),
                 ItemStack.EMPTY
         }, new ItemStack(Registry.WICKED_WEAVE.get(), 8)).setRegistryName(Eidolon.MODID, "wicked_weave"));
 
@@ -267,7 +267,33 @@ public abstract class MixinWorktableRegistry {
                 ItemStack.EMPTY,
                 ItemStack.EMPTY
         }, getItem("astralsorcery", "wand")));
+
+        //Dimensional Stone
+        register(new WorktableRecipe(new Object[]{
+                getItem("botania", "mana_pearl"), getItem("astralsorcery", "aquamarine"), getItem("botania", "mana_pearl"),
+                getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "obsidian"),
+                getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl")
+        }, new Object[]{
+                Registry.SOUL_SHARD.get(),
+                Registry.ENDER_CALX.get(),
+                Registry.SOUL_SHARD.get(),
+                Registry.ENDER_CALX.get()
+        }, getItem("superpackutils", "dimensional_stone")));
+
+        //Reclaimer
+        register(new WorktableRecipe(new Object[]{
+                getItem("botania", "mana_pearl"), getItem("astralsorcery", "aquamarine"), getItem("botania", "mana_pearl"),
+                getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "obsidian"),
+                getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl")
+        }, new Object[]{
+                Registry.CRIMSON_ESSENCE.get(),
+                Registry.WARPED_SPROUTS.get(),
+                Registry.CRIMSON_ESSENCE.get(),
+                Registry.WARPED_SPROUTS.get()
+        }, getItem("betterportals", "reclaimer")));
     }
+
+
 
     private static ItemStack getItem(String modID, String itemRegistryName) {
         return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(modID, itemRegistryName)));
