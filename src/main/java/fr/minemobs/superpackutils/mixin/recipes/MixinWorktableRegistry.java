@@ -257,18 +257,6 @@ public abstract class MixinWorktableRegistry {
                 Registry.LESSER_SOUL_GEM.get()
         }, new ItemStack(Registry.GLASS_HAND.get())).setRegistryName(Eidolon.MODID, "glass_hand"));
 
-        //Resonating Wand
-        register(new WorktableRecipe(new Object[]{
-                ItemStack.EMPTY, getItem("astralsorcery", "aquamarine"), Tags.Items.ENDER_PEARLS,
-                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "aquamarine"),
-                ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
-        }, new Object[]{
-                Registry.PEWTER_INLAY.get(),
-                Registry.ENDER_CALX.get(),
-                Registry.PEWTER_INLAY.get(),
-                Registry.ENDER_CALX.get()
-        }, getItem("astralsorcery", "wand")));
-
         //Dimensional Stone
         register(new WorktableRecipe(new Object[]{
                 getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl"),
@@ -283,7 +271,7 @@ public abstract class MixinWorktableRegistry {
 
         //Reclaimer
         register(new WorktableRecipe(new Object[]{
-                getItem("minecraft", "blaze_powder"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl"),
+                getItem("minecraft", "blaze_powder"), getItem("minecraft", "obsidian"), getItem("minecraft", "blaze_powder"),
                 getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "obsidian"),
                 getItem("minecraft", "blaze_powder"), getItem("minecraft", "obsidian"), getItem("minecraft", "blaze_powder")
         }, new Object[]{
@@ -292,6 +280,18 @@ public abstract class MixinWorktableRegistry {
                 Registry.CRIMSON_ESSENCE.get(),
                 Registry.WARPED_SPROUTS.get()
         }, getItem("betterportals", "reclaimer")));
+
+        //Resonating Wand
+        register(new WorktableRecipe(new Object[]{
+                ItemStack.EMPTY, getItem("astralsorcery", "aquamarine"), getItem("astralsorcery", "ender_pearl"),
+                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "aquamarine"),
+                ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                Registry.ENDER_CALX.get(),
+                Registry.PEWTER_INLAY.get(),
+                Registry.ENDER_CALX.get(),
+                Registry.PEWTER_INLAY.get()
+        }, getItem("astralsorcery", "wand")));
     }
 
     private static ItemStack getItem(String modID, String itemRegistryName) {

@@ -52,7 +52,7 @@ public abstract class MixinCrucibleRegistry {
 
         //Ender Calx
         register(new CrucibleRecipe(new ItemStack(Registry.ENDER_CALX.get(), 2)).setRegistryName(Eidolon.MODID, "ender_calx")
-                .addStep(Tags.Items.ENDER_PEARLS, Registry.ENCHANTED_ASH.get()));
+                .addStep(getItem("waystones", "warp_dust"), Registry.ENCHANTED_ASH.get()));
 
         //Leather
         register(new CrucibleRecipe(new ItemStack(Items.LEATHER, 1)).setRegistryName(Eidolon.MODID, "leather_from_flesh")
