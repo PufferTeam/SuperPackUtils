@@ -264,9 +264,9 @@ public abstract class MixinWorktableRegistry {
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
         }, new Object[]{
                 Registry.PEWTER_INLAY.get(),
+                Registry.ENDER_CALX.get(),
                 Registry.PEWTER_INLAY.get(),
-                Registry.PEWTER_INLAY.get(),
-                Registry.PEWTER_INLAY.get()
+                Registry.ENDER_CALX.get()
         }, getItem("astralsorcery", "wand")));
 
         //Dimensional Stone
