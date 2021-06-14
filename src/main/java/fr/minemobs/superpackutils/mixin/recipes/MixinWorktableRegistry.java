@@ -279,11 +279,11 @@ public abstract class MixinWorktableRegistry {
                 Registry.WARPED_SPROUTS.get(),
                 Registry.CRIMSON_ESSENCE.get(),
                 Registry.WARPED_SPROUTS.get()
-        }, getItem("betterportals", "reclaimer")));
+        }, getItem("betterportals", "reclaimer"))).setRegistryName("betterportals", "reclaimer"));
 
         //Resonating Wand
         register(new WorktableRecipe(new Object[]{
-                ItemStack.EMPTY, getItem("astralsorcery", "aquamarine"), getItem("astralsorcery", "ender_pearl"),
+                ItemStack.EMPTY, getItem("astralsorcery", "aquamarine"), getItem("minecraft", "ender_pearl"),
                 ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "aquamarine"),
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
         }, new Object[]{
@@ -292,6 +292,7 @@ public abstract class MixinWorktableRegistry {
                 Registry.ENDER_CALX.get(),
                 Registry.PEWTER_INLAY.get()
         }, getItem("astralsorcery", "wand")));
+
     }
 
     private static ItemStack getItem(String modID, String itemRegistryName) {
