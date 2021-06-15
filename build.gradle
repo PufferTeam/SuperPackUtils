@@ -149,9 +149,6 @@ dependencies {
     compileOnly "mekanism:Mekanism:${mekanism_version}:api"
     runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")
     
-    compileOnly fg.deobf("hellfirepvp.astralsorcery:astralsorcery-1.16:1.16.5-1.13.12.v90")
-    runtimeOnly "hellfirepvp.astralsorcery:astralsorcery-1.16:1.16.5-1.13.12.v90:deobf"
-
     compileOnly fg.deobf(files("libs/citadel.jar"))
     compileOnly fg.deobf(files("libs/iceandfire.jar"))
     compileOnly fg.deobf(files("libs/eidolon-0.2.7.jar"))
