@@ -4,8 +4,8 @@ import elucent.eidolon.Eidolon;
 import elucent.eidolon.Registry;
 import elucent.eidolon.recipe.WorktableRecipe;
 import elucent.eidolon.recipe.WorktableRegistry;
-import fr.minemobs.superpackutils.init.ItemInit;
 import fr.minemobs.superpackutils.init.BlockInit;
+import fr.minemobs.superpackutils.init.ItemInit;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -19,9 +19,7 @@ import org.spongepowered.asm.mixin.Shadow;
 @Mixin(WorktableRegistry.class)
 public abstract class MixinWorktableRegistry {
 
-    @Shadow
-    public static void register(WorktableRecipe recipe) {
-    }
+    @Shadow public static void register(WorktableRecipe recipe) {}
 
     /**
      * @author elucent
@@ -259,9 +257,9 @@ public abstract class MixinWorktableRegistry {
 
         //Dimensional Stone
         register(new WorktableRecipe(new Object[]{
-                getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl"),
-                getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "obsidian"),
-                getItem("botania", "mana_pearl"), getItem("minecraft", "obsidian"), getItem("botania", "mana_pearl")
+                getItem("botania", "mana_pearl"), Items.OBSIDIAN, getItem("botania", "mana_pearl"),
+                Items.OBSIDIAN, getItem("botania", "rune_mana"), Items.OBSIDIAN,
+                getItem("botania", "mana_pearl"), Items.OBSIDIAN, getItem("botania", "mana_pearl")
         }, new Object[]{
                 Registry.SOUL_SHARD.get(),
                 Registry.ENDER_CALX.get(),
@@ -271,15 +269,15 @@ public abstract class MixinWorktableRegistry {
 
         //Reclaimer
         register(new WorktableRecipe(new Object[]{
-                getItem("minecraft", "blaze_powder"), getItem("minecraft", "obsidian"), getItem("minecraft", "blaze_powder"),
-                getItem("minecraft", "obsidian"), getItem("botania", "rune_mana"), getItem("minecraft", "obsidian"),
-                getItem("minecraft", "blaze_powder"), getItem("minecraft", "obsidian"), getItem("minecraft", "blaze_powder")
+                Items.BLAZE_POWDER, Items.OBSIDIAN, Items.BLAZE_POWDER,
+                Items.OBSIDIAN, getItem("botania", "rune_mana"), Items.OBSIDIAN,
+                Items.BLAZE_POWDER, Items.OBSIDIAN, Items.BLAZE_POWDER
         }, new Object[]{
                 Registry.CRIMSON_ESSENCE.get(),
                 Registry.WARPED_SPROUTS.get(),
                 Registry.CRIMSON_ESSENCE.get(),
                 Registry.WARPED_SPROUTS.get()
-        }, getItem("betterportals", "reclaimer"))).setRegistryName("betterportals", "reclaimer"));
+        }, getItem("betterportals", "reclaimer")).setRegistryName("betterportals", "reclaimer"));
 
         //Resonating Wand
         register(new WorktableRecipe(new Object[]{
@@ -296,6 +294,6 @@ public abstract class MixinWorktableRegistry {
     }
 
     private static ItemStack getItem(String modID, String itemRegistryName) {
-        return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(modID, itemRegistryName)));
+        return ForgeRegistries.ITEMS.getValue(new ResourceLocation(modID, itemRegistryName)).getDefaultInstance();
     }
 }
