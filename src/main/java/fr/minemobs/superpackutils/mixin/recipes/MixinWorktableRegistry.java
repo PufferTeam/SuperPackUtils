@@ -281,7 +281,7 @@ public abstract class MixinWorktableRegistry {
 
         //Resonating Wand
         register(new WorktableRecipe(new Object[]{
-                ItemStack.EMPTY, getItem("astralsorcery", "aquamarine"), getItem("minecraft", "ender_pearl"),
+                ItemStack.EMPTY, getItem("astralsorcery", "aquamarine"), Items.ENDER_PEARL,
                 ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "aquamarine"),
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
         }, new Object[]{
