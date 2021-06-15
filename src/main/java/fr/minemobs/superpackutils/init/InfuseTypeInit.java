@@ -23,6 +23,7 @@ public class InfuseTypeInit {
     public static final RegistryObject<InfuseType> ALCHEMICAL_URANIUM = register("alchemical_uranium", 0x43D655);
     public static final RegistryObject<InfuseType> ALCHEMICAL_ALUMINUM = register("alchemical_aluminum", 0xBF7699);
     public static final RegistryObject<InfuseType> ALCHEMICAL_ZINC = register("alchemical_zinc", 0xC3C3C3);
+    public static final RegistryObject<InfuseType> ALCHEMICAL_COBALT = register("alchemical_cobalt", 0x0035FF);
 
     //Other
     public static final RegistryObject<InfuseType> PETROLEUM_COKE = register("petroleum_coke", 0x3C3838);

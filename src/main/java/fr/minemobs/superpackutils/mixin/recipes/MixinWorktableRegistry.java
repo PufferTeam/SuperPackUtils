@@ -289,7 +289,43 @@ public abstract class MixinWorktableRegistry {
                 Registry.PEWTER_INLAY.get(),
                 Registry.ENDER_CALX.get(),
                 Registry.PEWTER_INLAY.get()
-        }, getItem("astralsorcery", "wand")));
+        }, getItem("astralsorcery", "wand")).setRegistryName("astralsorcery", "wand"));
+
+        //Illumination Wand
+        register(new WorktableRecipe(new Object[]{
+                ItemStack.EMPTY, getItem("astralsorcery", "starmetal_ingot"), getItem("astralsorcery", "illumination_powder"),
+                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "starmetal_ingot"),
+                ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                Registry.LESSER_SOUL_GEM.get(),
+                Registry.GOLD_INLAY.get(),
+                Registry.SOUL_SHARD.get(),
+                Registry.GOLD_INLAY.get()
+        }, getItem("astralsorcery", "illumination_wand")).setRegistryName("astralsorcery", "illumination_wand"));
+
+        //Formation Wand
+        register(new WorktableRecipe(new Object[]{
+                ItemStack.EMPTY, getItem("astralsorcery", "starmetal_ingot"), Registry.SHADOW_GEM.get(),
+                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "starmetal_ingot"),
+                ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                Registry.LESSER_SOUL_GEM.get(),
+                Registry.GOLD_INLAY.get(),
+                Registry.SOUL_SHARD.get(),
+                Registry.GOLD_INLAY.get()
+        }, getItem("astralsorcery", "architect_wand")).setRegistryName("astralsorcery", "architect_wand"));
+
+        //Formation Wand
+        register(new WorktableRecipe(new Object[]{
+                ItemStack.EMPTY, getItem("astralsorcery", "starmetal_ingot"), getItem("botania", "mana_diamond"),
+                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "starmetal_ingot"),
+                ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                Registry.LESSER_SOUL_GEM.get(),
+                Registry.GOLD_INLAY.get(),
+                Registry.SOUL_SHARD.get(),
+                Registry.GOLD_INLAY.get()
+        }, getItem("astralsorcery", "architect_wand")).setRegistryName("astralsorcery", "architect_wand"));
 
     }
 
