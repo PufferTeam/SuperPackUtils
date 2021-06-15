@@ -287,10 +287,10 @@ public abstract class MixinWorktableRegistry {
                 ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "aquamarine"),
                 ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
         }, new Object[]{
-                Registry.ENDER_CALX.get(),
-                Registry.PEWTER_INLAY.get(),
-                Registry.ENDER_CALX.get(),
-                Registry.PEWTER_INLAY.get()
+                ItemStack.EMPTY,
+                ItemStack.EMPTY,
+                ItemStack.EMPTY,
+                ItemStack.EMPTY
         }, getItem("astralsorcery", "wand")).setRegistryName("astralsorcery", "wand"));
 
     }
