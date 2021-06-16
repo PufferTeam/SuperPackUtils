@@ -255,6 +255,18 @@ public abstract class MixinWorktableRegistry {
                 Registry.LESSER_SOUL_GEM.get()
         }, new ItemStack(Registry.GLASS_HAND.get())).setRegistryName(Eidolon.MODID, "glass_hand"));
 
+        //Magic Tallow
+        register(new WorktableRecipe(new Object[]{
+                ItemStack.EMPTY, ItemStack.EMPTY, ItemStack.EMPTY,
+                ItemStack.EMPTY, getItem("quark", "tallow"), ItemStack.EMPTY,
+                ItemStack.EMPTY, ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                Registry.ENCHANTED_ASH.get(),
+                Registry.ENCHANTED_ASH.get(),
+                Registry.ENCHANTED_ASH.get(),
+                Registry.ENCHANTED_ASH.get()
+        }, new ItemStack(Registry.TALLOW.get())).setRegistryName(Eidolon.MODID, "tallow"));
+
         //Dimensional Stone
         register(new WorktableRecipe(new Object[]{
                 getItem("botania", "mana_pearl"), Items.OBSIDIAN, getItem("botania", "mana_pearl"),
@@ -315,7 +327,7 @@ public abstract class MixinWorktableRegistry {
                 Registry.GOLD_INLAY.get()
         }, getItem("astralsorcery", "architect_wand")).setRegistryName("astralsorcery", "architect_wand"));
 
-        //Formation Wand
+        //Conversion Wand
         register(new WorktableRecipe(new Object[]{
                 ItemStack.EMPTY, getItem("astralsorcery", "starmetal_ingot"), getItem("botania", "mana_diamond"),
                 ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "starmetal_ingot"),
@@ -325,7 +337,31 @@ public abstract class MixinWorktableRegistry {
                 Registry.GOLD_INLAY.get(),
                 Registry.SOUL_SHARD.get(),
                 Registry.GOLD_INLAY.get()
-        }, getItem("astralsorcery", "architect_wand")).setRegistryName("astralsorcery", "architect_wand"));
+        }, getItem("astralsorcery", "exchange_wand")).setRegistryName("astralsorcery", "exchange_wand"));
+
+        //Impulsion Wand
+        register(new WorktableRecipe(new Object[]{
+                ItemStack.EMPTY, getItem("astralsorcery", "starmetal_ingot"), Registry.PRESTIGIOUS_PALM.get(),
+                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "starmetal_ingot"),
+                ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                Registry.LESSER_SOUL_GEM.get(),
+                Registry.GOLD_INLAY.get(),
+                Registry.SOUL_SHARD.get(),
+                Registry.GOLD_INLAY.get()
+        }, getItem("astralsorcery", "grapple_wand")).setRegistryName("astralsorcery", "grapple_wand"));
+
+        //Traversal Wand
+        register(new WorktableRecipe(new Object[]{
+                ItemStack.EMPTY, getItem("astralsorcery", "starmetal_ingot"), getItem("tconstruct", "ender_slime_ball"),
+                ItemStack.EMPTY, ItemInit.STARLIGHT_STICK.get(), getItem("astralsorcery", "starmetal_ingot"),
+                ItemInit.STARLIGHT_STICK.get(), ItemStack.EMPTY, ItemStack.EMPTY
+        }, new Object[]{
+                Registry.LESSER_SOUL_GEM.get(),
+                Registry.GOLD_INLAY.get(),
+                Registry.SOUL_SHARD.get(),
+                Registry.GOLD_INLAY.get()
+        }, getItem("astralsorcery", "blink_wand")).setRegistryName("astralsorcery", "blink_wand"));
 
     }
 
