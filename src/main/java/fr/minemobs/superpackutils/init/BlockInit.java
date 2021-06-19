@@ -75,6 +75,14 @@ public class BlockInit {
     public static final RegistryObject<FlowingFluidBlock> LUBRIFIED_LPG_BLOCK = registerBlock("lubrified_lpg_fluid",
             new FlowingFluidBlock(FluidInit.LUBRIFIED_LPG_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
+    public static final RegistryObject<FlowingFluidBlock> CONDENSED_LPG_BLOCK = registerBlock("condensed_lpg_fluid",
+            new FlowingFluidBlock(FluidInit.CONDENSED_LPG_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> PROPYLENE_BLOCK = registerBlock("propylene_fluid",
+            new FlowingFluidBlock(FluidInit.PROPYLENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> BENZENE_BLOCK = registerBlock("benzene_fluid",
+            new FlowingFluidBlock(FluidInit.BENZENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
     //Register functions
 
     private static RegistryObject<Block> registerBlock(String name) {

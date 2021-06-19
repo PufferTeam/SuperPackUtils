@@ -202,6 +202,15 @@ public class ItemInit {
     public static final RegistryObject<Item> LUBRIFIED_LPG_BUCKET = ITEMS.register("lubrified_lpg_bucket",
             () -> new BucketItem(FluidInit.LUBRIFIED_LPG_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
+    public static final RegistryObject<Item> CONDENSED_LPG_BUCKET = ITEMS.register("condensed_lpg_bucket",
+            () -> new BucketItem(FluidInit.CONDENSED_LPG_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> PROPYLENE_BUCKET = ITEMS.register("propylene_bucket",
+            () -> new BucketItem(FluidInit.PROPYLENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> BENZENE_BUCKET = ITEMS.register("benzene_bucket",
+            () -> new BucketItem(FluidInit.BENZENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
 
