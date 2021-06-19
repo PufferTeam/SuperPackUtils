@@ -29,12 +29,12 @@ public class FluidInit {
     public static final ResourceLocation CONDENSED_LPG_FLOWING_RL = Main.location("block/condensed_lpg_flowing");
     public static final ResourceLocation CONDENSED_LPG_OVERLAY_RL = Main.location("block/condensed_lpg_overlay");
 
-    public static final ResourceLocation PROPYLENE_LPG_STILL_RL = Main.location("block/propylene_still");
-    public static final ResourceLocation PROPYLENE_LPG_FLOWING_RL = Main.location("block/propylene_flowing");
+    public static final ResourceLocation PROPYLENE_STILL_RL = Main.location("block/propylene_still");
+    public static final ResourceLocation PROPYLENE_FLOWING_RL = Main.location("block/propylene_flowing");
     public static final ResourceLocation PROPYLENE_OVERLAY_RL = Main.location("block/propylene_overlay");
 
-    public static final ResourceLocation BENZENE_LPG_STILL_RL = Main.location("block/benzene_still");
-    public static final ResourceLocation BENZENE_LPG_FLOWING_RL = Main.location("block/benzene_flowing");
+    public static final ResourceLocation BENZENE_STILL_RL = Main.location("block/benzene_still");
+    public static final ResourceLocation BENZENE_FLOWING_RL = Main.location("block/benzene_flowing");
     public static final ResourceLocation BENZENE_OVERLAY_RL = Main.location("block/benzene_overlay");
 
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
