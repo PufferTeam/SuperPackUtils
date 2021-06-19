@@ -199,9 +199,6 @@ public class ItemInit {
     public static final RegistryObject<Item> MOLTEN_BIO_PLASTIC_BUCKET = ITEMS.register("molten_bio_plastic_bucket",
             () -> new BucketItem(FluidInit.MOLTEN_BIO_PLASTIC_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
-    public static final RegistryObject<Item> LUBRIFIED_LPG_BUCKET = ITEMS.register("lubrified_lpg_bucket",
-            () -> new BucketItem(FluidInit.LUBRIFIED_LPG_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
-
     public static final RegistryObject<Item> CONDENSED_LPG_BUCKET = ITEMS.register("condensed_lpg_bucket",
             () -> new BucketItem(FluidInit.CONDENSED_LPG_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
@@ -210,6 +207,21 @@ public class ItemInit {
 
     public static final RegistryObject<Item> BENZENE_BUCKET = ITEMS.register("benzene_bucket",
             () -> new BucketItem(FluidInit.BENZENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> BUTADIENE_BUCKET = ITEMS.register("butadiene_bucket",
+            () -> new BucketItem(FluidInit.BUTADIENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ABS_BUCKET = ITEMS.register("abs_bucket",
+            () -> new BucketItem(FluidInit.ABS_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ACRYLONITRILE_BUCKET = ITEMS.register("acrylonitrile_bucket",
+            () -> new BucketItem(FluidInit.ACRYLONITRILE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> STYRENE_BUCKET = ITEMS.register("styrene_bucket",
+            () -> new BucketItem(FluidInit.STYRENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ETHYL_BENZENE_BUCKET = ITEMS.register("ethyl_benzene_bucket",
+            () -> new BucketItem(FluidInit.ETHYL_BENZENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
