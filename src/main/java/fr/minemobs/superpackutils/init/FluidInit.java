@@ -57,6 +57,10 @@ public class FluidInit {
     public static final ResourceLocation PYROTHEUM_FLOWING_RL = Main.location("block/pyrotheum_flowing");
     public static final ResourceLocation PYROTHEUM_OVERLAY_RL = Main.location("block/pyrotheum_overlay");
 
+    public static final ResourceLocation PHENYLETHANOL_STILL_RL = Main.location("block/phenylethanol_still");
+    public static final ResourceLocation PHENYLETHANOL_FLOWING_RL = Main.location("block/phenylethanol_flowing");
+    public static final ResourceLocation PHENYLETHANOL_OVERLAY_RL = Main.location("block/phenylethanol_overlay");
+
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
     
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLUID = FLUIDS.register("mythril_fluid",
@@ -114,6 +118,11 @@ public class FluidInit {
     public static final RegistryObject<FlowingFluid> PYROTHEUM_FLOWING = FLUIDS.register("pyrotheum_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.PYROTHEUM_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> PHENYLETHANOL_FLUID = FLUIDS.register("phenylethanol_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.PHENYLETHANOL_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> PHENYLETHANOL_FLOWING = FLUIDS.register("phenylethanol_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.PHENYLETHANOL_PROPERTIES));
+
     public static final ForgeFlowingFluid.Properties MOLTEN_MYTHRIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             MYTHRIL_FLUID, MYTHRIL_FLOWING, FluidAttributes.builder(MYTHRIL_STILL_RL, MYTHRIL_FLOWING_RL)
             .viscosity(3).density(5).overlay(MYTHRIL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
@@ -168,5 +177,10 @@ public class FluidInit {
             PYROTHEUM_FLUID, PYROTHEUM_FLOWING, FluidAttributes.builder(PYROTHEUM_STILL_RL, PYROTHEUM_FLOWING_RL)
             .viscosity(3).density(5).overlay(PYROTHEUM_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.PYROTHEUM_BLOCK).bucket(ItemInit.PYROTHEUM_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties PHENYLETHANOL_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PHENYLETHANOL_FLUID, PHENYLETHANOL_FLOWING, FluidAttributes.builder(PHENYLETHANOL_STILL_RL, PHENYLETHANOL_FLOWING_RL)
+            .viscosity(3).density(5).overlay(PHENYLETHANOL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.PHENYLETHANOL_BLOCK).bucket(ItemInit.PHENYLETHANOL_BUCKET);
 
 }

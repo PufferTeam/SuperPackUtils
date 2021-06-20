@@ -152,6 +152,10 @@ public class ItemInit {
 
     public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
+    public static final RegistryObject<Item> PYROTHEUM_DUST = ITEMS.register("pyrotheum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> SILICIUM_DIOXIDE = ITEMS.register("silicium_dioxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
     public static final RegistryObject<Item> ALCHEMICAL_POWDER = ITEMS.register("alchemical_powder", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> CIRCUIT_BOARD = ITEMS.register("circuit_board", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
@@ -225,6 +229,9 @@ public class ItemInit {
 
     public static final RegistryObject<Item> PYROTHEUM_BUCKET = ITEMS.register("pyrotheum_bucket",
             () -> new BucketItem(FluidInit.PYROTHEUM_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> PHENYLETHANOL_BUCKET = ITEMS.register("phenylethanol_bucket",
+            () -> new BucketItem(FluidInit.PHENYLETHANOL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");

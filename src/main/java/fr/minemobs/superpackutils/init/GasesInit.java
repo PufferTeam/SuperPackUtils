@@ -30,6 +30,7 @@ public class GasesInit {
     public static final RegistryObject<Gas> ACRYLONITRILE = GASES.register("acrylonitrile", () -> new Gas(GasBuilder.builder().color(new Color(192, 209, 171).getRGB())));
     public static final RegistryObject<Gas> STYRENE = GASES.register("styrene", () -> new Gas(GasBuilder.builder().color(new Color(117, 122, 111).getRGB())));
     public static final RegistryObject<Gas> ETHYL_BENZENE = GASES.register("ethyl_benzene", () -> new Gas(GasBuilder.builder().color(new Color(170, 179, 159).getRGB())));
+    public static final RegistryObject<Gas> PHENYLETHANOL = GASES.register("phenylethanol", () -> new Gas(GasBuilder.builder().color(new Color(173, 171, 147).getRGB())));
 
     //Corundum
 
