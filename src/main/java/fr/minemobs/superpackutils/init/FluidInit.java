@@ -53,6 +53,10 @@ public class FluidInit {
     public static final ResourceLocation ETHYL_BENZENE_FLOWING_RL = Main.location("block/ethyl_benzene_flowing");
     public static final ResourceLocation ETHYL_BENZENE_OVERLAY_RL = Main.location("block/ethyl_benzene_overlay");
 
+    public static final ResourceLocation PYROTHEUM_STILL_RL = Main.location("block/pyrotheum_still");
+    public static final ResourceLocation PYROTHEUM_FLOWING_RL = Main.location("block/pyrotheum_flowing");
+    public static final ResourceLocation PYROTHEUM_OVERLAY_RL = Main.location("block/pyrotheum_overlay");
+
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
     
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLUID = FLUIDS.register("mythril_fluid",
@@ -105,6 +109,16 @@ public class FluidInit {
     public static final RegistryObject<FlowingFluid> ETHYL_BENZENE_FLOWING = FLUIDS.register("ethyl_benzene_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.ETHYL_BENZENE_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> MANGENE_FLUID = FLUIDS.register("ethyl_benzene_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.ETHYL_BENZENE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> ETHYL_BENZENE_FLOWING = FLUIDS.register("ethyl_benzene_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.ETHYL_BENZENE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> PYROTHEUM_FLUID = FLUIDS.register("pyrotheum_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.PYROTHEUM_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> PYROTHEUM_FLOWING = FLUIDS.register("pyrotheum_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.PYROTHEUM_PROPERTIES));
+
     public static final ForgeFlowingFluid.Properties MOLTEN_MYTHRIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             MYTHRIL_FLUID, MYTHRIL_FLOWING, FluidAttributes.builder(MYTHRIL_STILL_RL, MYTHRIL_FLOWING_RL)
             .viscosity(3).density(5).overlay(MYTHRIL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
@@ -154,5 +168,10 @@ public class FluidInit {
             ETHYL_BENZENE_FLUID, ETHYL_BENZENE_FLOWING, FluidAttributes.builder(ETHYL_BENZENE_STILL_RL, ETHYL_BENZENE_FLOWING_RL)
             .viscosity(3).density(5).overlay(ETHYL_BENZENE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.ETHYL_BENZENE_BLOCK).bucket(ItemInit.ETHYL_BENZENE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties PYROTHEUM_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PYROTHEUM_FLUID, PYROTHEUM_FLOWING, FluidAttributes.builder(PYROTHEUM_STILL_RL, PYROTHEUM_FLOWING_RL)
+            .viscosity(3).density(5).overlay(PYROTHEUM_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.PYROTHEUM_BLOCK).bucket(ItemInit.PYROTHEUM_BUCKET);
 
 }

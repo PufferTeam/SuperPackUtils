@@ -96,6 +96,9 @@ public class BlockInit {
     public static final RegistryObject<FlowingFluidBlock> ETHYL_BENZENE_BLOCK = registerBlock("ethyl_benzene_fluid",
             new FlowingFluidBlock(FluidInit.ETHYL_BENZENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
+    public static final RegistryObject<FlowingFluidBlock> PYROTHEUM_BLOCK = registerBlock("pyrotheum_fluid",
+            new FlowingFluidBlock(FluidInit.PYROTHEUM_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
     //Register functions
 
     private static RegistryObject<Block> registerBlock(String name) {
