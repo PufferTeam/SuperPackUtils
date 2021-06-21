@@ -21,8 +21,18 @@ public class GasesInit {
     public static final RegistryObject<Gas> AMMONIA = GASES.register("ammonia", () -> new Gas(GasBuilder.builder().color(new Color(155, 180, 186).getRGB())));
     public static final RegistryObject<Gas> CYANIDE = GASES.register("cyanide", () -> new Gas(GasBuilder.builder().color(new Color(230, 230, 230).getRGB())));
     public static final RegistryObject<Gas> CARBON_DIOXIDE = GASES.register("carbon_dioxide", () -> new Gas(GasBuilder.builder().color(new Color(13, 13, 13).getRGB())));
-    public static final RegistryObject<Gas> METHANE = GASES.register("methane", () -> new Gas(GasBuilder.builder().color(new Color(242, 242, 242).getRGB())));
+    public static final RegistryObject<Gas> METHANE = GASES.register("methane", () -> new Gas(GasBuilder.builder().color(new Color(171, 130, 166).getRGB())));
     public static final RegistryObject<Gas> PURE_SULFURIC_ACID = GASES.register("pure_sulfuric_acid", () -> new Gas(GasBuilder.builder().color(new Color(150, 146, 59).getRGB())));
+    public static final RegistryObject<Gas> PROPYLENE = GASES.register("propylene", () -> new Gas(GasBuilder.builder().color(new Color(176, 188, 209).getRGB())));
+    public static final RegistryObject<Gas> BENZENE = GASES.register("benzene", () -> new Gas(GasBuilder.builder().color(new Color(200, 209, 176).getRGB())));
+    public static final RegistryObject<Gas> BUTADIENE = GASES.register("butadiene", () -> new Gas(GasBuilder.builder().color(new Color(184, 209, 176).getRGB())));
+    public static final RegistryObject<Gas> ABS = GASES.register("abs", () -> new Gas(GasBuilder.builder().color(new Color(196, 196, 196).getRGB())));
+    public static final RegistryObject<Gas> ACRYLONITRILE = GASES.register("acrylonitrile", () -> new Gas(GasBuilder.builder().color(new Color(192, 209, 171).getRGB())));
+    public static final RegistryObject<Gas> STYRENE = GASES.register("styrene", () -> new Gas(GasBuilder.builder().color(new Color(117, 122, 111).getRGB())));
+    public static final RegistryObject<Gas> ETHYL_BENZENE = GASES.register("ethyl_benzene", () -> new Gas(GasBuilder.builder().color(new Color(170, 179, 159).getRGB())));
+    public static final RegistryObject<Gas> ETHYL_BENZENE_PEROXYDE = GASES.register("ethyl_benzene_peroxyde", () -> new Gas(GasBuilder.builder().color(new Color(116, 125, 96).getRGB())));
+    public static final RegistryObject<Gas> PHENYLETHANOL = GASES.register("phenylethanol", () -> new Gas(GasBuilder.builder().color(new Color(173, 171, 147).getRGB())));
+    public static final RegistryObject<Gas> TOLUENE = GASES.register("toluene", () -> new Gas(GasBuilder.builder().color(new Color(145, 117, 89).getRGB())));
 
     //Corundum
 

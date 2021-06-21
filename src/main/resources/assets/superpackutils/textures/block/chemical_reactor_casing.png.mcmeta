@@ -1,0 +1,32 @@
+{
+   "ctm":{
+      "ctm_version":1,
+      "type":"CTM",
+      "layer":"SOLID",
+      "textures":[
+         "superpackutils:block/chemical_reactor_casing-ctm"
+      ],
+      "extra":{
+         "connect_to":[
+            {
+               "block":"superpackutils:chemical_reactor_casing"
+            },
+            {
+               "block":"masterfulmachinery:chemical_reactor_controller"
+            },
+            {
+               "block":"masterfulmachinery:chemical_reactor_basic_port_pncr_pressure_input"
+            },
+            {
+               "block":"masterfulmachinery:chemical_reactor_basic_port_items_input"
+            },
+            {
+               "block":"masterfulmachinery:chemical_reactor_basic_port_mekanism_gas_input"
+            },
+            {
+               "block":"masterfulmachinery:chemical_reactor_basic_port_mekanism_gas_output"
+            }
+         ]
+      }
+   }
+}

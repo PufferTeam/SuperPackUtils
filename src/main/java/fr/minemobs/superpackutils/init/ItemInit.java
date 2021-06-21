@@ -154,6 +154,14 @@ public class ItemInit {
 
     public static final RegistryObject<Item> CRYSTAL_SHARD = registerItem("crystal_shard", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
+    public static final RegistryObject<Item> PYROTHEUM_DUST = registerItem("pyrotheum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> SILICIUM_DIOXIDE = registerItem("silicium_dioxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> MAGNESIUM_OXIDE = registerItem("magnesium_oxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> TALC = registerItem("talc", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
     public static final RegistryObject<Item> ALCHEMICAL_POWDER = registerItem("alchemical_powder", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> CIRCUIT_BOARD = registerItem("circuit_board", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
@@ -201,23 +209,59 @@ public class ItemInit {
     public static final RegistryObject<Item> MOLTEN_BIO_PLASTIC_BUCKET = registerItem("molten_bio_plastic_bucket",
             () -> new BucketItem(FluidInit.MOLTEN_BIO_PLASTIC_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
-    public static final RegistryObject<Item> LUBRIFIED_LPG_BUCKET = registerItem("lubrified_lpg_bucket",
-            () -> new BucketItem(FluidInit.LUBRIFIED_LPG_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
-
-    public static final RegistryObject<Item> CONDENSED_LPG_BUCKET = registerItem("condensed_lpg_bucket",
-            () -> new BucketItem(FluidInit.CONDENSED_LPG_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
-
-    public static final RegistryObject<Item> PROPYLENE_BUCKET = registerItem("propylene_bucket",
+    public static final RegistryObject<Item> PROPYLENE_BUCKET = ITEMS.register("propylene_bucket",
             () -> new BucketItem(FluidInit.PROPYLENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
     public static final RegistryObject<Item> BENZENE_BUCKET = registerItem("benzene_bucket",
             () -> new BucketItem(FluidInit.BENZENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
+    public static final RegistryObject<Item> BUTADIENE_BUCKET = registerItem("butadiene_bucket",
+            () -> new BucketItem(FluidInit.BUTADIENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ABS_BUCKET = registerItem("abs_bucket",
+            () -> new BucketItem(FluidInit.ABS_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ACRYLONITRILE_BUCKET = registerItem("acrylonitrile_bucket",
+            () -> new BucketItem(FluidInit.ACRYLONITRILE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> STYRENE_BUCKET = registerItem("styrene_bucket",
+            () -> new BucketItem(FluidInit.STYRENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ETHYL_BENZENE_BUCKET = registerItem("ethyl_benzene_bucket",
+            () -> new BucketItem(FluidInit.ETHYL_BENZENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ETHYL_BENZENE_PEROXYDE_BUCKET = registerItem("ethyl_benzene_peroxyde_bucket",
+            () -> new BucketItem(FluidInit.ETHYL_BENZENE_PEROXYDE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> PYROTHEUM_BUCKET = registerItem("pyrotheum_bucket",
+            () -> new BucketItem(FluidInit.PYROTHEUM_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> PHENYLETHANOL_BUCKET = registerItem("phenylethanol_bucket",
+            () -> new BucketItem(FluidInit.PHENYLETHANOL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> METHANE_BUCKET = registerItem("methane_bucket",
+            () -> new BucketItem(FluidInit.METHANE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> TOLUENE_BUCKET = registerItem("toluene_bucket",
+            () -> new BucketItem(FluidInit.TOLUENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> NAPHTHA_BUCKET = registerItem("naphtha_bucket",
+            () -> new BucketItem(FluidInit.NAPHTHA_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> SULFURIZED_NAPHTHA_BUCKET = registerItem("sulfurized_naphtha_bucket",
+            () -> new BucketItem(FluidInit.SULFURIZED_NAPHTHA_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> SULFURIZED_LIGHT_FUEL_BUCKET = registerItem("sulfurized_light_fuel_bucket",
+            () -> new BucketItem(FluidInit.SULFURIZED_LIGHT_FUEL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> SULFURIZED_HEAVY_FUEL_BUCKET = registerItem("sulfurized_heavy_fuel_bucket",
+            () -> new BucketItem(FluidInit.SULFURIZED_HEAVY_FUEL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
 
     public static final RegistryObject<Item> BREAD = VANILLA_ITEMS.register("bread", Bread::new);
-    
+
 
     private static RegistryObject<Item> registerItem(String name) {
         return registerItem(name, new Item.Properties().tab(Main.ModItemGroup.instance));
@@ -226,11 +270,11 @@ public class ItemInit {
     private static RegistryObject<Item> registerItem(String name, Supplier<Item> sup) {
         return registerItem(name, sup);
     }
-    
+
     private static RegistryObject<Item> registerItem(String name, Item item) {
         return registerItem(name, () -> item);
     }
-    
+
 
     private static RegistryObject<Item> registerItem(String name, Item.Properties properties) {
         return registerItem(name, new Item(properties));

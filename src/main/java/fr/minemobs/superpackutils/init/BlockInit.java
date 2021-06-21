@@ -49,6 +49,7 @@ public class BlockInit {
     public static final RegistryObject<Block> IMPROVED_METALLURGIC_CASING = registerBlock("improved_metallurgic_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
     public static final RegistryObject<Block> ASSEMBLER_FRAME = registerBlock("assembler_frame", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
     public static final RegistryObject<Block> MIXER_CASING = registerBlock("mixer_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> CHEMICAL_REACTOR_CASING = registerBlock("chemical_reactor_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
 
     //Platinum Ore
     public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore");
@@ -72,17 +73,54 @@ public class BlockInit {
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_BIO_PLASTIC_BLOCK = registerBlock("molten_bio_plastic_fluid",
             new FlowingFluidBlock(FluidInit.MOLTEN_BIO_PLASTIC_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
-    public static final RegistryObject<FlowingFluidBlock> LUBRIFIED_LPG_BLOCK = registerBlock("lubrified_lpg_fluid",
-            new FlowingFluidBlock(FluidInit.LUBRIFIED_LPG_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
-
-    public static final RegistryObject<FlowingFluidBlock> CONDENSED_LPG_BLOCK = registerBlock("condensed_lpg_fluid",
-            new FlowingFluidBlock(FluidInit.CONDENSED_LPG_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
-
     public static final RegistryObject<FlowingFluidBlock> PROPYLENE_BLOCK = registerBlock("propylene_fluid",
             new FlowingFluidBlock(FluidInit.PROPYLENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
     public static final RegistryObject<FlowingFluidBlock> BENZENE_BLOCK = registerBlock("benzene_fluid",
             new FlowingFluidBlock(FluidInit.BENZENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> BUTADIENE_BLOCK = registerBlock("butadiene_fluid",
+            new FlowingFluidBlock(FluidInit.BUTADIENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> ABS_BLOCK = registerBlock("abs_fluid",
+            new FlowingFluidBlock(FluidInit.ABS_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> ACRYLONITRILE_BLOCK = registerBlock("acrylonitrile_fluid",
+            new FlowingFluidBlock(FluidInit.ACRYLONITRILE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> STYRENE_BLOCK = registerBlock("styrene_fluid",
+            new FlowingFluidBlock(FluidInit.STYRENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> ETHYL_BENZENE_BLOCK = registerBlock("ethyl_benzene_fluid",
+            new FlowingFluidBlock(FluidInit.ETHYL_BENZENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> ETHYL_BENZENE_PEROXYDE_BLOCK = registerBlock("ethyl_benzene_peroxyde_fluid",
+            new FlowingFluidBlock(FluidInit.ETHYL_BENZENE_PEROXYDE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> PYROTHEUM_BLOCK = registerBlock("pyrotheum_fluid",
+            new FlowingFluidBlock(FluidInit.PYROTHEUM_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> PHENYLETHANOL_BLOCK = registerBlock("phenylethanol_fluid",
+            new FlowingFluidBlock(FluidInit.PHENYLETHANOL_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> METHANE_BLOCK = registerBlock("methane_fluid",
+            new FlowingFluidBlock(FluidInit.METHANE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> TOLUENE_BLOCK = registerBlock("toluene_fluid",
+            new FlowingFluidBlock(FluidInit.TOLUENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> NAPHTHA_BLOCK = registerBlock("naphtha_fluid",
+            new FlowingFluidBlock(FluidInit.NAPHTHA_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> SULFURIZED_NAPHTHA_BLOCK = registerBlock("sulfurized_naphtha_fluid",
+            new FlowingFluidBlock(FluidInit.SULFURIZED_NAPHTHA_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> SULFURIZED_LIGHT_FUEL_BLOCK = registerBlock("sulfurized_light_fuel_fluid",
+            new FlowingFluidBlock(FluidInit.SULFURIZED_LIGHT_FUEL_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> SULFURIZED_HEAVY_FUEL_BLOCK = registerBlock("sulfurized_heavy_fuel_fluid",
+            new FlowingFluidBlock(FluidInit.SULFURIZED_HEAVY_FUEL_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
     //Register functions
 
     private static RegistryObject<Block> registerBlock(String name) {
