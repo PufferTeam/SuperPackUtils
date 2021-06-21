@@ -73,9 +73,6 @@ public class BlockInit {
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_BIO_PLASTIC_BLOCK = registerBlock("molten_bio_plastic_fluid",
             new FlowingFluidBlock(FluidInit.MOLTEN_BIO_PLASTIC_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
-    public static final RegistryObject<FlowingFluidBlock> CONDENSED_LPG_BLOCK = registerBlock("condensed_lpg_fluid",
-            new FlowingFluidBlock(FluidInit.CONDENSED_LPG_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
-
     public static final RegistryObject<FlowingFluidBlock> PROPYLENE_BLOCK = registerBlock("propylene_fluid",
             new FlowingFluidBlock(FluidInit.PROPYLENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
@@ -105,6 +102,24 @@ public class BlockInit {
 
     public static final RegistryObject<FlowingFluidBlock> PHENYLETHANOL_BLOCK = registerBlock("phenylethanol_fluid",
             new FlowingFluidBlock(FluidInit.PHENYLETHANOL_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> METHANE_BLOCK = registerBlock("methane_fluid",
+            new FlowingFluidBlock(FluidInit.METHANE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> TOLUENE_BLOCK = registerBlock("toluene_fluid",
+            new FlowingFluidBlock(FluidInit.TOLUENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> NAPHTHA_BLOCK = registerBlock("naphtha_fluid",
+            new FlowingFluidBlock(FluidInit.NAPHTHA_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> SULFURIZED_NAPHTHA_BLOCK = registerBlock("sulfurized_naphtha_fluid",
+            new FlowingFluidBlock(FluidInit.SULFURIZED_NAPHTHA_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> SULFURIZED_LIGHT_FUEL_BLOCK = registerBlock("sulfurized_light_fuel_fluid",
+            new FlowingFluidBlock(FluidInit.SULFURIZED_LIGHT_FUEL_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> SULFURIZED_HEAVY_FUEL_BLOCK = registerBlock("sulfurized_heavy_fuel_fluid",
+            new FlowingFluidBlock(FluidInit.SULFURIZED_HEAVY_FUEL_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
     //Register functions
 
