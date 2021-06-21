@@ -36,4 +36,8 @@ public class GasesInit {
     public static final RegistryObject<Gas> WHITE_CORUNDUM = GASES.register("white_corundum", () -> new Gas(GasBuilder.builder().color(new Color(255, 255, 255).getRGB())));
     public static final RegistryObject<Gas> BLACK_CORUNDUM = GASES.register("black_corundum", () -> new Gas(GasBuilder.builder().color(new Color(0, 0, 0).getRGB())));
 
+    private static RegistryObject<Gas> register(String name, Color color) {
+        return GASES.register(name.toLowerCase().replaceAll("\\s+", "_"), () -> new Gas(GasBuilder.builder().color(color.getRGB())));
+    }
+
 }

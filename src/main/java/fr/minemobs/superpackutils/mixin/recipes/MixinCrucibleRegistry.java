@@ -18,14 +18,14 @@ import org.spongepowered.asm.mixin.Shadow;
 @Mixin(CrucibleRegistry.class)
 public abstract class MixinCrucibleRegistry {
 
-    @Shadow
+    @Shadow(remap = false)
     public static void register(CrucibleRecipe recipe) {
     }
 
     /**
      * @author elucent
      */
-    @Overwrite
+    @Overwrite(remap = false)
     public static void init() {
 
         //Arcane Gold

@@ -19,12 +19,12 @@ import org.spongepowered.asm.mixin.Shadow;
 @Mixin(WorktableRegistry.class)
 public abstract class MixinWorktableRegistry {
 
-    @Shadow public static void register(WorktableRecipe recipe) {}
+    @Shadow(remap = false) public static void register(WorktableRecipe recipe) {}
 
     /**
      * @author elucent
      */
-    @Overwrite
+    @Overwrite(remap = false)
     public static void init() {
 
         //Void Amulet

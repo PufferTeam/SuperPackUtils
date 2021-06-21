@@ -29,6 +29,7 @@ public class InfuseTypeInit {
     public static final RegistryObject<InfuseType> PETROLEUM_COKE = register("petroleum_coke", 0x3C3838);
 
     /**
+     * @param name Registry name of the infused type ?
      * @param tint hexadecimal color
      */
     private static RegistryObject<InfuseType> register(String name, int tint) {

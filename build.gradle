@@ -41,7 +41,8 @@ minecraft {
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            properties 'mixin.env.disableRefMap': 'true'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
             mods {
                 superpackutils {
@@ -56,7 +57,8 @@ minecraft {
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            properties 'mixin.env.disableRefMap': 'true'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
             mods {
                 superpackutils {
@@ -70,7 +72,7 @@ minecraft {
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            properties 'mixin.env.disableRefMap': 'true'
+            property 'mixin.env.remapRefMap', 'true'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', archivesBaseName, '--all',
@@ -145,13 +147,14 @@ dependencies {
     })
 
     runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:${jei_version}")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${mc_version}-4.0.5.2")
 
     compileOnly "mekanism:Mekanism:${mekanism_version}:api"
     runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")
-    
-    compileOnly fg.deobf(files("libs/citadel.jar"))
-    compileOnly fg.deobf(files("libs/iceandfire.jar"))
-    compileOnly fg.deobf(files("libs/eidolon-0.2.7.jar"))
+
+    implementation files("libs/citadel.jar")
+    implementation fg.deobf(files("libs/iceandfire.jar"))
+    implementation fg.deobf(files("libs/eidolon-0.2.7.jar"))
 }
 
 jar {
