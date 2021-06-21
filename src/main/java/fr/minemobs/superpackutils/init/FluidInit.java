@@ -53,6 +53,10 @@ public class FluidInit {
     public static final ResourceLocation ETHYL_BENZENE_FLOWING_RL = Main.location("block/ethyl_benzene_flowing");
     public static final ResourceLocation ETHYL_BENZENE_OVERLAY_RL = Main.location("block/ethyl_benzene_overlay");
 
+    public static final ResourceLocation ETHYL_BENZENE_PEROXYDE_STILL_RL = Main.location("block/ethyl_benzene_peroxyde_still");
+    public static final ResourceLocation ETHYL_BENZENE_PEROXYDE_FLOWING_RL = Main.location("block/ethyl_benzene_peroxyde_flowing");
+    public static final ResourceLocation ETHYL_BENZENE_PEROXYDE_OVERLAY_RL = Main.location("block/ethyl_benzene_peroxyde_overlay");
+
     public static final ResourceLocation PYROTHEUM_STILL_RL = Main.location("block/pyrotheum_still");
     public static final ResourceLocation PYROTHEUM_FLOWING_RL = Main.location("block/pyrotheum_flowing");
     public static final ResourceLocation PYROTHEUM_OVERLAY_RL = Main.location("block/pyrotheum_overlay");
@@ -113,6 +117,11 @@ public class FluidInit {
     public static final RegistryObject<FlowingFluid> ETHYL_BENZENE_FLOWING = FLUIDS.register("ethyl_benzene_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.ETHYL_BENZENE_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> ETHYL_BENZENE_PEROXYDE_FLUID = FLUIDS.register("ethyl_benzene_peroxyde_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.ETHYL_BENZENE_PEROXYDE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> ETHYL_BENZENE_PEROXYDE_FLOWING = FLUIDS.register("ethyl_benzene_peroxyde_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.ETHYL_BENZENE_PEROXYDE_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> PYROTHEUM_FLUID = FLUIDS.register("pyrotheum_fluid",
             () -> new ForgeFlowingFluid.Source(FluidInit.PYROTHEUM_PROPERTIES));
     public static final RegistryObject<FlowingFluid> PYROTHEUM_FLOWING = FLUIDS.register("pyrotheum_flowing",
@@ -172,6 +181,11 @@ public class FluidInit {
             ETHYL_BENZENE_FLUID, ETHYL_BENZENE_FLOWING, FluidAttributes.builder(ETHYL_BENZENE_STILL_RL, ETHYL_BENZENE_FLOWING_RL)
             .viscosity(3).density(5).overlay(ETHYL_BENZENE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.ETHYL_BENZENE_BLOCK).bucket(ItemInit.ETHYL_BENZENE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties ETHYL_BENZENE_PEROXYDE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ETHYL_BENZENE_PEROXYDE_FLUID, ETHYL_BENZENE_PEROXYDE_FLOWING, FluidAttributes.builder(ETHYL_BENZENE_PEROXYDE_STILL_RL, ETHYL_BENZENE_PEROXYDE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(ETHYL_BENZENE_PEROXYDE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.ETHYL_BENZENE_PEROXYDE_BLOCK).bucket(ItemInit.ETHYL_BENZENE_PEROXYDE_BUCKET);
 
     public static final ForgeFlowingFluid.Properties PYROTHEUM_PROPERTIES = new ForgeFlowingFluid.Properties(
             PYROTHEUM_FLUID, PYROTHEUM_FLOWING, FluidAttributes.builder(PYROTHEUM_STILL_RL, PYROTHEUM_FLOWING_RL)

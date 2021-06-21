@@ -156,8 +156,6 @@ public class ItemInit {
 
     public static final RegistryObject<Item> SILICIUM_DIOXIDE = ITEMS.register("silicium_dioxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
-    public static final RegistryObject<Item> ALUMINE_SHARD = ITEMS.register("alumine_shard", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-
     public static final RegistryObject<Item> ALCHEMICAL_POWDER = ITEMS.register("alchemical_powder", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> CIRCUIT_BOARD = ITEMS.register("circuit_board", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
@@ -228,6 +226,9 @@ public class ItemInit {
 
     public static final RegistryObject<Item> ETHYL_BENZENE_BUCKET = ITEMS.register("ethyl_benzene_bucket",
             () -> new BucketItem(FluidInit.ETHYL_BENZENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ETHYL_BENZENE_PEROXYDE_BUCKET = ITEMS.register("ethyl_benzene_peroxyde_bucket",
+            () -> new BucketItem(FluidInit.ETHYL_BENZENE_PEROXYDE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
     public static final RegistryObject<Item> PYROTHEUM_BUCKET = ITEMS.register("pyrotheum_bucket",
             () -> new BucketItem(FluidInit.PYROTHEUM_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
