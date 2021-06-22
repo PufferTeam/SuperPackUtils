@@ -50,6 +50,7 @@ public class BlockInit {
     public static final RegistryObject<Block> ASSEMBLER_FRAME = registerBlock("assembler_frame", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
     public static final RegistryObject<Block> MIXER_CASING = registerBlock("mixer_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
     public static final RegistryObject<Block> CHEMICAL_REACTOR_CASING = registerBlock("chemical_reactor_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> WASHER_CASING = registerBlock("washer_casing", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
 
     //Platinum Ore
     public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore");

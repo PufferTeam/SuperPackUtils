@@ -295,5 +295,5 @@ public class ItemInit {
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
 
     public static final RegistryObject<Item> BREAD = VANILLA_ITEMS.register("bread", Bread::new);
-    
+
 }
