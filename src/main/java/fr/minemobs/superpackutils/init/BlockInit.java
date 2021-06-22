@@ -158,6 +158,9 @@ public class BlockInit {
     public static final RegistryObject<FlowingFluidBlock> ETBE_BLOCK = registerBlock("etbe_fluid",
             new FlowingFluidBlock(FluidInit.ETBE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
+    public static final RegistryObject<FlowingFluidBlock> ISOPRENE_BLOCK = registerBlock("isoprene_fluid",
+            new FlowingFluidBlock(FluidInit.ISOPRENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
     //Register functions
 
     private static RegistryObject<Block> registerBlock(String name) {

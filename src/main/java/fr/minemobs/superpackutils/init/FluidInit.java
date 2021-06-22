@@ -133,6 +133,10 @@ public class FluidInit {
     public static final ResourceLocation ETBE_FLOWING_RL = Main.location("block/etbe_flowing");
     public static final ResourceLocation ETBE_OVERLAY_RL = Main.location("block/etbe_overlay");
 
+    public static final ResourceLocation ISOPRENE_STILL_RL = Main.location("block/isoprene_still");
+    public static final ResourceLocation ISOPRENE_FLOWING_RL = Main.location("block/isoprene_flowing");
+    public static final ResourceLocation ISOPRENE_OVERLAY_RL = Main.location("block/isoprene_overlay");
+
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
     
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLUID = FLUIDS.register("mythril_fluid",
@@ -285,6 +289,11 @@ public class FluidInit {
     public static final RegistryObject<FlowingFluid> ETBE_FLOWING = FLUIDS.register("etbe_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.ETBE_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> ISOPRENE_FLUID = FLUIDS.register("isoprene_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.ISOPRENE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> ISOPRENE_FLOWING = FLUIDS.register("isoprene_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.ISOPRENE_PROPERTIES));
+
     public static final ForgeFlowingFluid.Properties MOLTEN_MYTHRIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             MYTHRIL_FLUID, MYTHRIL_FLOWING, FluidAttributes.builder(MYTHRIL_STILL_RL, MYTHRIL_FLOWING_RL)
             .viscosity(3).density(5).overlay(MYTHRIL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
@@ -435,4 +444,9 @@ public class FluidInit {
             .viscosity(3).density(5).overlay(ETBE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.ETBE_BLOCK).bucket(ItemInit.ETBE_BUCKET);
 
+    public static final ForgeFlowingFluid.Properties ISOPRENE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ISOPRENE_FLUID, ISOPRENE_FLOWING, FluidAttributes.builder(ISOPRENE_STILL_RL, ISOPRENE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(ISOPRENE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.ISOPRENE_BLOCK).bucket(ItemInit.ISOPRENE_BUCKET);
+    
 }

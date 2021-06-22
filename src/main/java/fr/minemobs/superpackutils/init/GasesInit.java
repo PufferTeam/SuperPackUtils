@@ -37,6 +37,7 @@ public class GasesInit {
     public static final RegistryObject<Gas> PROPANE = GASES.register("propane", () -> new Gas(GasBuilder.builder().color(new Color(153, 150, 60).getRGB())));
     public static final RegistryObject<Gas> PROPENE = GASES.register("propene", () -> new Gas(GasBuilder.builder().color(new Color(212, 207, 59).getRGB())));
     public static final RegistryObject<Gas> ETBE = GASES.register("etbe", () -> new Gas(GasBuilder.builder().color(new Color(199, 194, 185).getRGB())));
+    public static final RegistryObject<Gas> ISOPRENE = GASES.register("isoprene", () -> new Gas(GasBuilder.builder().color(new Color(56, 41, 34).getRGB())));
 
     //Corundum
 
