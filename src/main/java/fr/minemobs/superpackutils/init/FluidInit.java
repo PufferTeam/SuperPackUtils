@@ -49,17 +49,9 @@ public class FluidInit {
     public static final ResourceLocation ETHYL_BENZENE_FLOWING_RL = Main.location("block/ethyl_benzene_flowing");
     public static final ResourceLocation ETHYL_BENZENE_OVERLAY_RL = Main.location("block/ethyl_benzene_overlay");
 
-    public static final ResourceLocation ETHYL_BENZENE_PEROXYDE_STILL_RL = Main.location("block/ethyl_benzene_peroxyde_still");
-    public static final ResourceLocation ETHYL_BENZENE_PEROXYDE_FLOWING_RL = Main.location("block/ethyl_benzene_peroxyde_flowing");
-    public static final ResourceLocation ETHYL_BENZENE_PEROXYDE_OVERLAY_RL = Main.location("block/ethyl_benzene_peroxyde_overlay");
-
     public static final ResourceLocation PYROTHEUM_STILL_RL = Main.location("block/pyrotheum_still");
     public static final ResourceLocation PYROTHEUM_FLOWING_RL = Main.location("block/pyrotheum_flowing");
     public static final ResourceLocation PYROTHEUM_OVERLAY_RL = Main.location("block/pyrotheum_overlay");
-
-    public static final ResourceLocation PHENYLETHANOL_STILL_RL = Main.location("block/phenylethanol_still");
-    public static final ResourceLocation PHENYLETHANOL_FLOWING_RL = Main.location("block/phenylethanol_flowing");
-    public static final ResourceLocation PHENYLETHANOL_OVERLAY_RL = Main.location("block/phenylethanol_overlay");
 
     public static final ResourceLocation METHANE_STILL_RL = Main.location("block/methane_still");
     public static final ResourceLocation METHANE_FLOWING_RL = Main.location("block/methane_flowing");
@@ -84,6 +76,62 @@ public class FluidInit {
     public static final ResourceLocation SULFURIZED_HEAVY_FUEL_STILL_RL = Main.location("block/sulfurized_heavy_fuel_still");
     public static final ResourceLocation SULFURIZED_HEAVY_FUEL_FLOWING_RL = Main.location("block/sulfurized_heavy_fuel_flowing");
     public static final ResourceLocation SULFURIZED_HEAVY_FUEL_OVERLAY_RL = Main.location("block/sulfurized_heavy_fuel_overlay");
+
+    public static final ResourceLocation SC_NAPHTHA_STILL_RL = Main.location("block/sc_naphtha_still");
+    public static final ResourceLocation SC_NAPHTHA_FLOWING_RL = Main.location("block/sc_naphtha_flowing");
+    public static final ResourceLocation SC_NAPHTHA_OVERLAY_RL = Main.location("block/sc_naphtha_overlay");
+
+    public static final ResourceLocation HC_NAPHTHA_STILL_RL = Main.location("block/hc_naphtha_still");
+    public static final ResourceLocation HC_NAPHTHA_FLOWING_RL = Main.location("block/hc_naphtha_flowing");
+    public static final ResourceLocation HC_NAPHTHA_OVERLAY_RL = Main.location("block/hc_naphtha_overlay");
+
+    public static final ResourceLocation SC_LIGHT_FUEL_STILL_RL = Main.location("block/sc_light_fuel_still");
+    public static final ResourceLocation SC_LIGHT_FUEL_FLOWING_RL = Main.location("block/sc_light_fuel_flowing");
+    public static final ResourceLocation SC_LIGHT_FUEL_OVERLAY_RL = Main.location("block/sc_light_fuel_overlay");
+
+    public static final ResourceLocation HC_LIGHT_FUEL_STILL_RL = Main.location("block/hc_light_fuel_still");
+    public static final ResourceLocation HC_LIGHT_FUEL_FLOWING_RL = Main.location("block/hc_light_fuel_flowing");
+    public static final ResourceLocation HC_LIGHT_FUEL_OVERLAY_RL = Main.location("block/hc_light_fuel_overlay");
+
+    public static final ResourceLocation SC_HEAVY_FUEL_STILL_RL = Main.location("block/sc_heavy_fuel_still");
+    public static final ResourceLocation SC_HEAVY_FUEL_FLOWING_RL = Main.location("block/sc_heavy_fuel_flowing");
+    public static final ResourceLocation SC_HEAVY_FUEL_OVERLAY_RL = Main.location("block/sc_heavy_fuel_overlay");
+
+    public static final ResourceLocation HC_HEAVY_FUEL_STILL_RL = Main.location("block/hc_heavy_fuel_still");
+    public static final ResourceLocation HC_HEAVY_FUEL_FLOWING_RL = Main.location("block/hc_heavy_fuel_flowing");
+    public static final ResourceLocation HC_HEAVY_FUEL_OVERLAY_RL = Main.location("block/hc_heavy_fuel_overlay");
+
+    public static final ResourceLocation OCTANE_STILL_RL = Main.location("block/octane_still");
+    public static final ResourceLocation OCTANE_FLOWING_RL = Main.location("block/octane_flowing");
+    public static final ResourceLocation OCTANE_OVERLAY_RL = Main.location("block/octane_overlay");
+
+    public static final ResourceLocation BUTANE_STILL_RL = Main.location("block/butane_still");
+    public static final ResourceLocation BUTANE_FLOWING_RL = Main.location("block/butane_flowing");
+    public static final ResourceLocation BUTANE_OVERLAY_RL = Main.location("block/butane_overlay");
+
+    public static final ResourceLocation BUTENE_STILL_RL = Main.location("block/butene_still");
+    public static final ResourceLocation BUTENE_FLOWING_RL = Main.location("block/butene_flowing");
+    public static final ResourceLocation BUTENE_OVERLAY_RL = Main.location("block/butene_overlay");
+
+    public static final ResourceLocation PROPANE_STILL_RL = Main.location("block/propane_still");
+    public static final ResourceLocation PROPANE_FLOWING_RL = Main.location("block/propane_flowing");
+    public static final ResourceLocation PROPANE_OVERLAY_RL = Main.location("block/propane_overlay");
+
+    public static final ResourceLocation PROPENE_STILL_RL = Main.location("block/propene_still");
+    public static final ResourceLocation PROPENE_FLOWING_RL = Main.location("block/propene_flowing");
+    public static final ResourceLocation PROPENE_OVERLAY_RL = Main.location("block/propene_overlay");
+
+    public static final ResourceLocation RAW_GASOLINE_STILL_RL = Main.location("block/raw_gasoline_still");
+    public static final ResourceLocation RAW_GASOLINE_FLOWING_RL = Main.location("block/raw_gasoline_flowing");
+    public static final ResourceLocation RAW_GASOLINE_OVERLAY_RL = Main.location("block/raw_gasoline_overlay");
+
+    public static final ResourceLocation HO_GASOLINE_STILL_RL = Main.location("block/ho_gasoline_still");
+    public static final ResourceLocation HO_GASOLINE_FLOWING_RL = Main.location("block/ho_gasoline_flowing");
+    public static final ResourceLocation HO_GASOLINE_OVERLAY_RL = Main.location("block/ho_gasoline_overlay");
+
+    public static final ResourceLocation ETBE_STILL_RL = Main.location("block/etbe_still");
+    public static final ResourceLocation ETBE_FLOWING_RL = Main.location("block/etbe_flowing");
+    public static final ResourceLocation ETBE_OVERLAY_RL = Main.location("block/etbe_overlay");
 
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
     
@@ -132,20 +180,10 @@ public class FluidInit {
     public static final RegistryObject<FlowingFluid> ETHYL_BENZENE_FLOWING = FLUIDS.register("ethyl_benzene_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.ETHYL_BENZENE_PROPERTIES));
 
-    public static final RegistryObject<FlowingFluid> ETHYL_BENZENE_PEROXYDE_FLUID = FLUIDS.register("ethyl_benzene_peroxyde_fluid",
-            () -> new ForgeFlowingFluid.Source(FluidInit.ETHYL_BENZENE_PEROXYDE_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> ETHYL_BENZENE_PEROXYDE_FLOWING = FLUIDS.register("ethyl_benzene_peroxyde_flowing",
-            () -> new ForgeFlowingFluid.Flowing(FluidInit.ETHYL_BENZENE_PEROXYDE_PROPERTIES));
-
     public static final RegistryObject<FlowingFluid> PYROTHEUM_FLUID = FLUIDS.register("pyrotheum_fluid",
             () -> new ForgeFlowingFluid.Source(FluidInit.PYROTHEUM_PROPERTIES));
     public static final RegistryObject<FlowingFluid> PYROTHEUM_FLOWING = FLUIDS.register("pyrotheum_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.PYROTHEUM_PROPERTIES));
-
-    public static final RegistryObject<FlowingFluid> PHENYLETHANOL_FLUID = FLUIDS.register("phenylethanol_fluid",
-            () -> new ForgeFlowingFluid.Source(FluidInit.PHENYLETHANOL_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> PHENYLETHANOL_FLOWING = FLUIDS.register("phenylethanol_flowing",
-            () -> new ForgeFlowingFluid.Flowing(FluidInit.PHENYLETHANOL_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> METHANE_FLUID = FLUIDS.register("methane_fluid",
             () -> new ForgeFlowingFluid.Source(FluidInit.METHANE_PROPERTIES));
@@ -176,6 +214,76 @@ public class FluidInit {
             () -> new ForgeFlowingFluid.Source(FluidInit.SULFURIZED_HEAVY_FUEL_PROPERTIES));
     public static final RegistryObject<FlowingFluid> SULFURIZED_HEAVY_FUEL_FLOWING = FLUIDS.register("sulfurized_heavy_fuel_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.SULFURIZED_HEAVY_FUEL_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SC_NAPHTHA_FLUID = FLUIDS.register("sc_naphtha_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.SC_NAPHTHA_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> SC_NAPHTHA_FLOWING = FLUIDS.register("sc_naphtha_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.SC_NAPHTHA_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> HC_NAPHTHA_FLUID = FLUIDS.register("hc_naphtha_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.HC_NAPHTHA_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> HC_NAPHTHA_FLOWING = FLUIDS.register("hc_naphtha_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.HC_NAPHTHA_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SC_LIGHT_FUEL_FLUID = FLUIDS.register("sc_light_fuel_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.SC_LIGHT_FUEL_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> SC_LIGHT_FUEL_FLOWING = FLUIDS.register("sc_light_fuel_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.SC_LIGHT_FUEL_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> HC_LIGHT_FUEL_FLUID = FLUIDS.register("hc_light_fuel_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.HC_LIGHT_FUEL_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> HC_LIGHT_FUEL_FLOWING = FLUIDS.register("hc_light_fuel_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.HC_LIGHT_FUEL_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SC_HEAVY_FUEL_FLUID = FLUIDS.register("sc_heavy_fuel_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.SC_HEAVY_FUEL_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> SC_HEAVY_FUEL_FLOWING = FLUIDS.register("sc_heavy_fuel_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.SC_HEAVY_FUEL_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> HC_HEAVY_FUEL_FLUID = FLUIDS.register("hc_heavy_fuel_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.HC_HEAVY_FUEL_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> HC_HEAVY_FUEL_FLOWING = FLUIDS.register("hc_heavy_fuel_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.HC_HEAVY_FUEL_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> OCTANE_FLUID = FLUIDS.register("octane_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.OCTANE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> OCTANE_FLOWING = FLUIDS.register("octane_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.OCTANE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> BUTANE_FLUID = FLUIDS.register("butane_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.BUTANE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> BUTANE_FLOWING = FLUIDS.register("butane_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.BUTANE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> BUTENE_FLUID = FLUIDS.register("butene_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.BUTENE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> BUTENE_FLOWING = FLUIDS.register("butene_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.BUTENE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> PROPANE_FLUID = FLUIDS.register("propane_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.PROPANE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> PROPANE_FLOWING = FLUIDS.register("propane_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.PROPANE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> PROPENE_FLUID = FLUIDS.register("propene_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.PROPENE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> PROPENE_FLOWING = FLUIDS.register("propene_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.PROPENE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> RAW_GASOLINE_FLUID = FLUIDS.register("raw_gasoline_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.RAW_GASOLINE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> RAW_GASOLINE_FLOWING = FLUIDS.register("raw_gasoline_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.RAW_GASOLINE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> HO_GASOLINE_FLUID = FLUIDS.register("ho_gasoline_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.HO_GASOLINE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> HO_GASOLINE_FLOWING = FLUIDS.register("ho_gasoline_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.HO_GASOLINE_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> ETBE_FLUID = FLUIDS.register("etbe_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.ETBE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> ETBE_FLOWING = FLUIDS.register("etbe_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.ETBE_PROPERTIES));
 
     public static final ForgeFlowingFluid.Properties MOLTEN_MYTHRIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             MYTHRIL_FLUID, MYTHRIL_FLOWING, FluidAttributes.builder(MYTHRIL_STILL_RL, MYTHRIL_FLOWING_RL)
@@ -222,20 +330,10 @@ public class FluidInit {
             .viscosity(3).density(5).overlay(ETHYL_BENZENE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.ETHYL_BENZENE_BLOCK).bucket(ItemInit.ETHYL_BENZENE_BUCKET);
 
-    public static final ForgeFlowingFluid.Properties ETHYL_BENZENE_PEROXYDE_PROPERTIES = new ForgeFlowingFluid.Properties(
-            ETHYL_BENZENE_PEROXYDE_FLUID, ETHYL_BENZENE_PEROXYDE_FLOWING, FluidAttributes.builder(ETHYL_BENZENE_PEROXYDE_STILL_RL, ETHYL_BENZENE_PEROXYDE_FLOWING_RL)
-            .viscosity(3).density(5).overlay(ETHYL_BENZENE_PEROXYDE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
-            .block(BlockInit.ETHYL_BENZENE_PEROXYDE_BLOCK).bucket(ItemInit.ETHYL_BENZENE_PEROXYDE_BUCKET);
-
     public static final ForgeFlowingFluid.Properties PYROTHEUM_PROPERTIES = new ForgeFlowingFluid.Properties(
             PYROTHEUM_FLUID, PYROTHEUM_FLOWING, FluidAttributes.builder(PYROTHEUM_STILL_RL, PYROTHEUM_FLOWING_RL)
             .viscosity(3).density(5).overlay(PYROTHEUM_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.PYROTHEUM_BLOCK).bucket(ItemInit.PYROTHEUM_BUCKET);
-
-    public static final ForgeFlowingFluid.Properties PHENYLETHANOL_PROPERTIES = new ForgeFlowingFluid.Properties(
-            PHENYLETHANOL_FLUID, PHENYLETHANOL_FLOWING, FluidAttributes.builder(PHENYLETHANOL_STILL_RL, PHENYLETHANOL_FLOWING_RL)
-            .viscosity(3).density(5).overlay(PHENYLETHANOL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
-            .block(BlockInit.PHENYLETHANOL_BLOCK).bucket(ItemInit.PHENYLETHANOL_BUCKET);
 
     public static final ForgeFlowingFluid.Properties METHANE_PROPERTIES = new ForgeFlowingFluid.Properties(
             METHANE_FLUID, METHANE_FLOWING, FluidAttributes.builder(METHANE_STILL_RL, METHANE_FLOWING_RL)
@@ -266,5 +364,75 @@ public class FluidInit {
             SULFURIZED_HEAVY_FUEL_FLUID, SULFURIZED_HEAVY_FUEL_FLOWING, FluidAttributes.builder(SULFURIZED_HEAVY_FUEL_STILL_RL, SULFURIZED_HEAVY_FUEL_FLOWING_RL)
             .viscosity(3).density(5).overlay(SULFURIZED_HEAVY_FUEL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.SULFURIZED_HEAVY_FUEL_BLOCK).bucket(ItemInit.SULFURIZED_HEAVY_FUEL_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties SC_NAPHTHA_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SC_NAPHTHA_FLUID, SC_NAPHTHA_FLOWING, FluidAttributes.builder(SC_NAPHTHA_STILL_RL, SC_NAPHTHA_FLOWING_RL)
+            .viscosity(3).density(5).overlay(SC_NAPHTHA_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.SC_NAPHTHA_BLOCK).bucket(ItemInit.SC_NAPHTHA_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties HC_NAPHTHA_PROPERTIES = new ForgeFlowingFluid.Properties(
+            HC_NAPHTHA_FLUID, HC_NAPHTHA_FLOWING, FluidAttributes.builder(HC_NAPHTHA_STILL_RL, HC_NAPHTHA_FLOWING_RL)
+            .viscosity(3).density(5).overlay(HC_NAPHTHA_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.HC_NAPHTHA_BLOCK).bucket(ItemInit.HC_NAPHTHA_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties SC_LIGHT_FUEL_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SC_LIGHT_FUEL_FLUID, SC_LIGHT_FUEL_FLOWING, FluidAttributes.builder(SC_LIGHT_FUEL_STILL_RL, SC_LIGHT_FUEL_FLOWING_RL)
+            .viscosity(3).density(5).overlay(SC_LIGHT_FUEL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.SC_LIGHT_FUEL_BLOCK).bucket(ItemInit.SC_LIGHT_FUEL_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties HC_LIGHT_FUEL_PROPERTIES = new ForgeFlowingFluid.Properties(
+            HC_LIGHT_FUEL_FLUID, HC_LIGHT_FUEL_FLOWING, FluidAttributes.builder(HC_LIGHT_FUEL_STILL_RL, HC_LIGHT_FUEL_FLOWING_RL)
+            .viscosity(3).density(5).overlay(HC_LIGHT_FUEL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.HC_LIGHT_FUEL_BLOCK).bucket(ItemInit.HC_LIGHT_FUEL_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties SC_HEAVY_FUEL_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SC_HEAVY_FUEL_FLUID, SC_HEAVY_FUEL_FLOWING, FluidAttributes.builder(SC_HEAVY_FUEL_STILL_RL, SC_HEAVY_FUEL_FLOWING_RL)
+            .viscosity(3).density(5).overlay(SC_HEAVY_FUEL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.SC_HEAVY_FUEL_BLOCK).bucket(ItemInit.SC_HEAVY_FUEL_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties HC_HEAVY_FUEL_PROPERTIES = new ForgeFlowingFluid.Properties(
+            HC_HEAVY_FUEL_FLUID, HC_HEAVY_FUEL_FLOWING, FluidAttributes.builder(HC_HEAVY_FUEL_STILL_RL, HC_HEAVY_FUEL_FLOWING_RL)
+            .viscosity(3).density(5).overlay(HC_HEAVY_FUEL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.HC_HEAVY_FUEL_BLOCK).bucket(ItemInit.HC_HEAVY_FUEL_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties OCTANE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            OCTANE_FLUID, OCTANE_FLOWING, FluidAttributes.builder(OCTANE_STILL_RL, OCTANE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(OCTANE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.OCTANE_BLOCK).bucket(ItemInit.OCTANE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties BUTANE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BUTANE_FLUID, BUTANE_FLOWING, FluidAttributes.builder(BUTANE_STILL_RL, BUTANE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(BUTANE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.BUTANE_BLOCK).bucket(ItemInit.BUTANE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties BUTENE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BUTENE_FLUID, BUTENE_FLOWING, FluidAttributes.builder(BUTENE_STILL_RL, BUTENE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(BUTENE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.BUTENE_BLOCK).bucket(ItemInit.BUTENE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties PROPANE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PROPANE_FLUID, PROPANE_FLOWING, FluidAttributes.builder(PROPANE_STILL_RL, PROPANE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(PROPANE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.PROPANE_BLOCK).bucket(ItemInit.PROPANE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties PROPENE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PROPENE_FLUID, PROPENE_FLOWING, FluidAttributes.builder(PROPENE_STILL_RL, PROPENE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(PROPENE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.PROPENE_BLOCK).bucket(ItemInit.PROPENE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties RAW_GASOLINE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            RAW_GASOLINE_FLUID, RAW_GASOLINE_FLOWING, FluidAttributes.builder(RAW_GASOLINE_STILL_RL, RAW_GASOLINE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(RAW_GASOLINE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.RAW_GASOLINE_BLOCK).bucket(ItemInit.RAW_GASOLINE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties HO_GASOLINE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            HO_GASOLINE_FLUID, HO_GASOLINE_FLOWING, FluidAttributes.builder(HO_GASOLINE_STILL_RL, HO_GASOLINE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(HO_GASOLINE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.HO_GASOLINE_BLOCK).bucket(ItemInit.HO_GASOLINE_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties ETBE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ETBE_FLUID, ETBE_FLOWING, FluidAttributes.builder(ETBE_STILL_RL, ETBE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(ETBE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.ETBE_BLOCK).bucket(ItemInit.ETBE_BUCKET);
 
 }

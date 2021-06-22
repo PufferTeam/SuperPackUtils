@@ -156,8 +156,6 @@ public class ItemInit {
 
     public static final RegistryObject<Item> PYROTHEUM_DUST = registerItem("pyrotheum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
-    public static final RegistryObject<Item> SILICIUM_DIOXIDE = registerItem("silicium_dioxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-
     public static final RegistryObject<Item> MAGNESIUM_OXIDE = registerItem("magnesium_oxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> TALC = registerItem("talc", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
@@ -230,14 +228,8 @@ public class ItemInit {
     public static final RegistryObject<Item> ETHYL_BENZENE_BUCKET = registerItem("ethyl_benzene_bucket",
             () -> new BucketItem(FluidInit.ETHYL_BENZENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
-    public static final RegistryObject<Item> ETHYL_BENZENE_PEROXYDE_BUCKET = registerItem("ethyl_benzene_peroxyde_bucket",
-            () -> new BucketItem(FluidInit.ETHYL_BENZENE_PEROXYDE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
-
     public static final RegistryObject<Item> PYROTHEUM_BUCKET = registerItem("pyrotheum_bucket",
             () -> new BucketItem(FluidInit.PYROTHEUM_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
-
-    public static final RegistryObject<Item> PHENYLETHANOL_BUCKET = registerItem("phenylethanol_bucket",
-            () -> new BucketItem(FluidInit.PHENYLETHANOL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
     public static final RegistryObject<Item> METHANE_BUCKET = registerItem("methane_bucket",
             () -> new BucketItem(FluidInit.METHANE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
@@ -256,6 +248,48 @@ public class ItemInit {
 
     public static final RegistryObject<Item> SULFURIZED_HEAVY_FUEL_BUCKET = registerItem("sulfurized_heavy_fuel_bucket",
             () -> new BucketItem(FluidInit.SULFURIZED_HEAVY_FUEL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> SC_NAPHTHA_BUCKET = registerItem("sc_naphtha_bucket",
+            () -> new BucketItem(FluidInit.SC_NAPHTHA_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> HC_NAPHTHA_BUCKET = registerItem("hc_naphtha_bucket",
+            () -> new BucketItem(FluidInit.HC_NAPHTHA_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> SC_LIGHT_FUEL_BUCKET = registerItem("sc_light_fuel_bucket",
+            () -> new BucketItem(FluidInit.SC_LIGHT_FUEL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> HC_LIGHT_FUEL_BUCKET = registerItem("hc_light_fuel_bucket",
+            () -> new BucketItem(FluidInit.HC_LIGHT_FUEL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> SC_HEAVY_FUEL_BUCKET = registerItem("sc_heavy_fuel_bucket",
+            () -> new BucketItem(FluidInit.SC_HEAVY_FUEL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> HC_HEAVY_FUEL_BUCKET = registerItem("hc_heavy_fuel_bucket",
+            () -> new BucketItem(FluidInit.HC_HEAVY_FUEL_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> OCTANE_BUCKET = registerItem("octane_bucket",
+            () -> new BucketItem(FluidInit.OCTANE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> BUTANE_BUCKET = registerItem("butane_bucket",
+            () -> new BucketItem(FluidInit.BUTANE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> BUTENE_BUCKET = registerItem("butene_bucket",
+            () -> new BucketItem(FluidInit.BUTENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> PROPANE_BUCKET = registerItem("propane_bucket",
+            () -> new BucketItem(FluidInit.PROPANE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> PROPENE_BUCKET = registerItem("propene_bucket",
+            () -> new BucketItem(FluidInit.PROPENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> RAW_GASOLINE_BUCKET = registerItem("raw_gasoline_bucket",
+            () -> new BucketItem(FluidInit.RAW_GASOLINE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> HO_GASOLINE_BUCKET = registerItem("ho_gasoline_bucket",
+            () -> new BucketItem(FluidInit.HO_GASOLINE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> ETBE_BUCKET = registerItem("etbe_bucket",
+            () -> new BucketItem(FluidInit.ETBE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
