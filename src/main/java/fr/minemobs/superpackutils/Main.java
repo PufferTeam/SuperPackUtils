@@ -39,6 +39,7 @@ public class Main
         ItemInit.ITEMS.register(modEventBus);
         ItemInit.VANILLA_ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        FluidInit.OLD_FLUIDS.register(modEventBus);
         FluidInit.FLUIDS.register(modEventBus);
         TileEntityInit.TILE_ENTITIES.register(modEventBus);
         SlurriesInit.SLURRIES.register(modEventBus);

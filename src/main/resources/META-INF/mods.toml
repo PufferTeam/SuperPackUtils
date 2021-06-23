@@ -32,15 +32,9 @@ license="MIT"
     versionRange="[1.16.4-10.0.18.445,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.superpackutils]] #optional
-    modId="citadel"
-    mandatory=true
-    versionRange="[1.6.0,)"
-    ordering="AFTER"
-    side="BOTH"
 [[dependencies.superpackutils]]
-    modId="iceandfire"
+    modId="eidolon"
     mandatory=true
-    versionRange="[2.1.6-1.16.4,)"
+    versionRange="[0.2.7,)"
     ordering="NONE"
     side="BOTH"

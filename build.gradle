@@ -13,10 +13,16 @@ buildscript {
         classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
+
+plugins {
+    id 'maven'
+    id 'maven-publish'
+}
+
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'com.matthewprenger.cursegradle'
 apply plugin: 'org.spongepowered.mixin'
-
+apply plugin: 'idea'
 
 version = "${mc_version}-${mod_version}"
 group = "${mod_group}"
@@ -26,14 +32,11 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    //mappings channel: 'snapshot', version: "${version_mcp}".toString()
     mappings channel: "official", version: "${mc_version}".toString()
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    //accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
-    // Default run configurations.
-    // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
             workingDirectory project.file('run')
@@ -98,7 +101,7 @@ repositories {
     maven {
         // TOP
         name 'tterrag maven'
-        url "https://maven.tterrag.com/"
+        url = "https://maven.tterrag.com/"
     }
 
     maven {
@@ -113,28 +116,13 @@ repositories {
         url = "https://modmaven.k-4u.nl"
     }
 
-    maven {
-        url "https://www.cursemaven.com"
-    }
+    maven { url 'https://modmaven.dev/' }
 
-    maven {
-        name "vazkiismods"
-        url "https://maven.blamejared.com/"
-    }
-
-    maven {
-        name "curiosncaelus"
-        url "https://maven.theillusivec4.top/"
-    }
-
-    maven {
-        name "Hellfire"
-        url "https://maven.hellfiredev.net/"
-    }
-    
     maven { url = 'https://libraries.minecraft.net/' }
     mavenCentral()
     maven { url = 'https://maven.minecraftforge.net/' }
+
+    flatDir name: 'lib', dirs: 'libs'
 }
 
 dependencies {
@@ -149,12 +137,10 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:${jei_version}")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${mc_version}-4.0.5.2")
 
-    compileOnly "mekanism:Mekanism:${mekanism_version}:api"
-    runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")
+    //compileOnly "mekanism:Mekanism:${mekanism_version}:api"
+    implementation fg.deobf("mekanism:Mekanism:${mekanism_version}")
 
-    implementation files("libs/citadel.jar")
-    implementation fg.deobf(files("libs/iceandfire.jar"))
-    implementation fg.deobf(files("libs/eidolon-0.2.7.jar"))
+    implementation fg.deobf("JeromeIsAWeeb:eidolon:${eidelon_version}")
 }
 
 jar {
@@ -183,6 +169,36 @@ tasks.build.dependsOn sourcesJar
 
 jar.finalizedBy('reobfJar')
 
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    classifier = 'deobf'
+}
+
 mixin {
     add sourceSets.main, "${mod_id}.refmap.json"
+}
+
+artifacts {
+    archives sourcesJar
+    archives deobfJar
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "MinemobsMaven"
+            url = "${mvn_url}"
+            credentials {
+                username = "${mvn_alias}"
+                password = "${mvn_token}"
+            }
+        }
+    }
+    publications {
+        gpr(MavenPublication) {
+            artifact jar
+            artifact sourcesJar
+            artifact deobfJar
+        }
+    }
 }

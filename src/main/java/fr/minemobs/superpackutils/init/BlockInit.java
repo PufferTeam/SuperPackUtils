@@ -68,8 +68,6 @@ public class BlockInit {
     public static final RegistryObject<Block> MYTHRIL_BLOCK = registerBlock("mythril_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
 
     //Fluids
-    public static final RegistryObject<FlowingFluidBlock> MOLTEN_MYTHRIL_BLOCK = registerBlock("molten_mythril_fluid",
-            new FlowingFluidBlock(FluidInit.MYTHRIL_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
     public static final RegistryObject<FlowingFluidBlock> MOLTEN_BIO_PLASTIC_BLOCK = registerBlock("molten_bio_plastic_fluid",
             new FlowingFluidBlock(FluidInit.MOLTEN_BIO_PLASTIC_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
