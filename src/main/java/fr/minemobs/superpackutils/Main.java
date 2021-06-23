@@ -90,7 +90,7 @@ public class Main
         @OnlyIn(Dist.CLIENT)
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ItemInit.BREAD.get());
+            return new ItemStack(BlockInit.REDSTONE_CLOCK.get());
         }
     }
 }
