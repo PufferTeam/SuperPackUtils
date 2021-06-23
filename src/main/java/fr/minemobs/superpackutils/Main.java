@@ -90,7 +90,7 @@ public class Main
         @OnlyIn(Dist.CLIENT)
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ItemInit.TINY_TORCH.get());
+            return new ItemStack(ItemInit.BREAD.get());
         }
     }
 }

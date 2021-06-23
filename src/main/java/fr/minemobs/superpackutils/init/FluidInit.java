@@ -342,9 +342,7 @@ public class FluidInit {
     //New way
 
     //Test fluids
-    public static final FluidRegistryObject<ForgeFlowingFluid.Source, ForgeFlowingFluid.Flowing, FlowingFluidBlock, BucketItem> CACAHUETE_FLUID = register("cacahuete",
-            FluidAttributes.builder(Main.location("liquid/cacahuete_still"), Main.location("liquid/cacahuete_flowing")).color(Color.black.getRGB()));
-    public static final FluidRegistryObject<ForgeFlowingFluid.Source, ForgeFlowingFluid.Flowing, FlowingFluidBlock, BucketItem> TEST_FLUID = register("test", Color.green);
+    public static final FluidRegistryObject<ForgeFlowingFluid.Source, ForgeFlowingFluid.Flowing, FlowingFluidBlock, BucketItem> TEST_FLUID = register("test", 0xFF0D1455);
     //Test Fluids
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BIO_PLASTIC_PROPERTIES = new ForgeFlowingFluid.Properties(
@@ -522,9 +520,10 @@ public class FluidInit {
             .viscosity(3).density(5).overlay(DIBORANE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.DIBORANE_BLOCK).bucket(ItemInit.DIBORANE_BUCKET);
 
-    private static FluidRegistryObject<ForgeFlowingFluid.Source, ForgeFlowingFluid.Flowing, FlowingFluidBlock, BucketItem> register(String name, Color color) {
+    private static FluidRegistryObject<ForgeFlowingFluid.Source, ForgeFlowingFluid.Flowing, FlowingFluidBlock, BucketItem> register(String name, int hexColor) {
         name = name.replaceAll("_", " ").toLowerCase();
-        return FLUIDS.register(name, FluidAttributes.builder(Main.location("liquid/" + name + "_still"), Main.location("liquid/" + name + "_flow")).color(color.getRGB()));
+        return FLUIDS.register(name, FluidAttributes.builder(Main.location("liquid/liquid_still"), Main.location("liquid/liquid_flow"))
+                .color(hexColor));
     }
 
     private static FluidRegistryObject<ForgeFlowingFluid.Source, ForgeFlowingFluid.Flowing, FlowingFluidBlock, BucketItem> register(String name, FluidAttributes.Builder attributes) {

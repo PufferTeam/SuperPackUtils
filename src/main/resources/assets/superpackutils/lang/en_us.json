@@ -16,7 +16,6 @@
   "block.superpackutils.dyingrock": "Dyingrock",
   "block.superpackutils.epoxy_resin_fluid": "Epoxy Resin",
   "block.superpackutils.washer_casing": "Washer Casing",
-  "block.superpackutils.sulfurized_naphtha_fluid": "Sulfurized Naphtha",
   "block.superpackutils.lubrified_lpg_fluid": "Lubrified LPG",
   "block.superpackutils.methane_fluid": "Liquid Methane",
   "block.superpackutils.borax_solution_fluid": "Borax Solution",
@@ -82,7 +81,6 @@
   "fluid.superpackutils.sulfurized_naphtha_fluid": "Sulfurized Naphtha",
   "fluid.superpackutils.sulfurized_light_fuel_fluid": "Sulfurized Light Fuel",
   "fluid.superpackutils.sulfurized_heavy_fuel_fluid": "Sulfurized Heavy Fuel",
-  "fluid.superpackutils.sulfurized_naphtha_fluid": "Sulfurized Naphtha",
   "fluid.superpackutils.octane_fluid": "Liquid Octane",
   "fluid.superpackutils.sc_naphtha_fluid": "Steam-Cracked Naphtha",
   "fluid.superpackutils.hc_naphtha_fluid": "Hydro-Cracked Naphtha",
@@ -121,7 +119,6 @@
   "gas.superpackutils.benzene": "Benzene",
   "gas.superpackutils.etbe": "Ethyl Tert-Butyl Ether",
   "gas.superpackutils.butadiene": "Butadiene",
-  "gas.superpackutils.methane": "Methane",
   "gas.superpackutils.toluene": "Toluene",
   "gas.superpackutils.butane": "Butane",
   "gas.superpackutils.butene": "Butene",
@@ -176,7 +173,7 @@
   "item.superpackutils.borax_solution_bucket": "Borax Solution Bucket",
   "item.superpackutils.sf_solution_bucket": "Sodium Fluoride Solution Bucket",
   "item.superpackutils.boric_acid_bucket": "Liquid Boric Acid Bucket",
-  "item.superpackutils.diborane_bucket": "Liquid Diborane Bucket"
+  "item.superpackutils.diborane_bucket": "Liquid Diborane Bucket",
   "item.superpackutils.isoprene_bucket": "Liquid Isoprene Bucket",
   "item.superpackutils.butene_bucket": "Liquid Butene Bucket",
   "item.superpackutils.raw_gasoline_bucket": "Raw Gasoline Bucket",
@@ -236,7 +233,6 @@
   "item.superpackutils.sulfurized_heavy_fuel_bucket": "Sulfurized Heavy Fuel Bucket",
   "item.superpackutils.sc_light_fuel_bucket": "Steam-Cracked Light Fuel Bucket",
   "item.superpackutils.hc_light_fuel_bucket": "Hydro-Cracked Light Fuel Bucket",
-  "item.superpackutils.sulfurized_naphtha_bucket": "Sulfurized Naphtha Bucket",
   "item.superpackutils.energetic_processor": "Energetic Core",
   "item.superpackutils.enriched_petcoke": "Enriched Oil Carbon",
   "item.superpackutils.boron_ingot": "Boron Ingot",
@@ -342,7 +338,9 @@
   "item.superpackutils.uranium_gear": "Uranium Gear",
   "item.superpackutils.uranium_ore_piece": "Uranium Ore Piece",
   "item.superpackutils.zinc_dust": "Zinc Dust",
+
   "itemGroup.superpackutils": "SuperPack: Utils",
+
   "tooltip.superpackutils.redstoneclock": "This clock emits a signal every 3 seconds for 0.5 second.",
   "tooltip.superpackutils.shift": "HOLD\u00A7e SHIFT\u00A77 for more informations!"
 }
