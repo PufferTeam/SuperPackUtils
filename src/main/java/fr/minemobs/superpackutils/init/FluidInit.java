@@ -137,8 +137,28 @@ public class FluidInit {
     public static final ResourceLocation ISOPRENE_FLOWING_RL = Main.location("block/isoprene_flowing");
     public static final ResourceLocation ISOPRENE_OVERLAY_RL = Main.location("block/isoprene_overlay");
 
+    public static final ResourceLocation EPOXY_RESIN_STILL_RL = Main.location("block/epoxy_resin_still");
+    public static final ResourceLocation EPOXY_RESIN_FLOWING_RL = Main.location("block/epoxy_resin_flowing");
+    public static final ResourceLocation EPOXY_RESIN_OVERLAY_RL = Main.location("block/epoxy_resin_overlay");
+
+    public static final ResourceLocation BORAX_SOLUTION_STILL_RL = Main.location("block/borax_solution_still");
+    public static final ResourceLocation BORAX_SOLUTION_FLOWING_RL = Main.location("block/borax_solution_flowing");
+    public static final ResourceLocation BORAX_SOLUTION_OVERLAY_RL = Main.location("block/borax_solution_overlay");
+
+    public static final ResourceLocation SF_SOLUTION_STILL_RL = Main.location("block/sf_solution_still");
+    public static final ResourceLocation SF_SOLUTION_FLOWING_RL = Main.location("block/sf_solution_flowing");
+    public static final ResourceLocation SF_SOLUTION_OVERLAY_RL = Main.location("block/sf_solution_overlay");
+
+    public static final ResourceLocation BORIC_ACID_STILL_RL = Main.location("block/boric_acid_still");
+    public static final ResourceLocation BORIC_ACID_FLOWING_RL = Main.location("block/boric_acid_flowing");
+    public static final ResourceLocation BORIC_ACID_OVERLAY_RL = Main.location("block/boric_acid_overlay");
+
+    public static final ResourceLocation DIBORANE_STILL_RL = Main.location("block/diborane_still");
+    public static final ResourceLocation DIBORANE_FLOWING_RL = Main.location("block/diborane_flowing");
+    public static final ResourceLocation DIBORANE_OVERLAY_RL = Main.location("block/diborane_overlay");
+
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
-    
+
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLUID = FLUIDS.register("mythril_fluid",
             () -> new ForgeFlowingFluid.Source(FluidInit.MOLTEN_MYTHRIL_PROPERTIES));
     public static final RegistryObject<FlowingFluid> MYTHRIL_FLOWING = FLUIDS.register("mythril_flowing",
@@ -294,6 +314,31 @@ public class FluidInit {
     public static final RegistryObject<FlowingFluid> ISOPRENE_FLOWING = FLUIDS.register("isoprene_flowing",
             () -> new ForgeFlowingFluid.Flowing(FluidInit.ISOPRENE_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> EPOXY_RESIN_FLUID = FLUIDS.register("epoxy_resin_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.EPOXY_RESIN_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> EPOXY_RESIN_FLOWING = FLUIDS.register("epoxy_resin_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.EPOXY_RESIN_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> BORAX_SOLUTION_FLUID = FLUIDS.register("borax_solution_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.BORAX_SOLUTION_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> BORAX_SOLUTION_FLOWING = FLUIDS.register("borax_solution_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.BORAX_SOLUTION_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SF_SOLUTION_FLUID = FLUIDS.register("sf_solution_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.SF_SOLUTION_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> SF_SOLUTION_FLOWING = FLUIDS.register("sf_solution_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.SF_SOLUTION_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> BORIC_ACID_FLUID = FLUIDS.register("boric_acid_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.BORIC_ACID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> BORIC_ACID_FLOWING = FLUIDS.register("boric_acid_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.BORIC_ACID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> DIBORANE_FLUID = FLUIDS.register("diborane_fluid",
+            () -> new ForgeFlowingFluid.Source(FluidInit.DIBORANE_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> DIBORANE_FLOWING = FLUIDS.register("diborane_flowing",
+            () -> new ForgeFlowingFluid.Flowing(FluidInit.DIBORANE_PROPERTIES));
+
     public static final ForgeFlowingFluid.Properties MOLTEN_MYTHRIL_PROPERTIES = new ForgeFlowingFluid.Properties(
             MYTHRIL_FLUID, MYTHRIL_FLOWING, FluidAttributes.builder(MYTHRIL_STILL_RL, MYTHRIL_FLOWING_RL)
             .viscosity(3).density(5).overlay(MYTHRIL_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
@@ -448,5 +493,29 @@ public class FluidInit {
             ISOPRENE_FLUID, ISOPRENE_FLOWING, FluidAttributes.builder(ISOPRENE_STILL_RL, ISOPRENE_FLOWING_RL)
             .viscosity(3).density(5).overlay(ISOPRENE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
             .block(BlockInit.ISOPRENE_BLOCK).bucket(ItemInit.ISOPRENE_BUCKET);
-    
+
+    public static final ForgeFlowingFluid.Properties EPOXY_RESIN_PROPERTIES = new ForgeFlowingFluid.Properties(
+            EPOXY_RESIN_FLUID, EPOXY_RESIN_FLOWING, FluidAttributes.builder(EPOXY_RESIN_STILL_RL, EPOXY_RESIN_FLOWING_RL)
+            .viscosity(3).density(5).overlay(EPOXY_RESIN_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.EPOXY_RESIN_BLOCK).bucket(ItemInit.EPOXY_RESIN_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties BORAX_SOLUTION_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BORAX_SOLUTION_FLUID, BORAX_SOLUTION_FLOWING, FluidAttributes.builder(BORAX_SOLUTION_STILL_RL, BORAX_SOLUTION_FLOWING_RL)
+            .viscosity(3).density(5).overlay(BORAX_SOLUTION_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.BORAX_SOLUTION_BLOCK).bucket(ItemInit.BORAX_SOLUTION_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties SF_SOLUTION_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SF_SOLUTION_FLUID, SF_SOLUTION_FLOWING, FluidAttributes.builder(SF_SOLUTION_STILL_RL, SF_SOLUTION_FLOWING_RL)
+            .viscosity(3).density(5).overlay(SF_SOLUTION_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.SF_SOLUTION_BLOCK).bucket(ItemInit.SF_SOLUTION_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties BORIC_ACID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BORIC_ACID_FLUID, BORIC_ACID_FLOWING, FluidAttributes.builder(BORIC_ACID_STILL_RL, BORIC_ACID_FLOWING_RL)
+            .viscosity(3).density(5).overlay(BORIC_ACID_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.BORIC_ACID_BLOCK).bucket(ItemInit.BORIC_ACID_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties DIBORANE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            DIBORANE_FLUID, DIBORANE_FLOWING, FluidAttributes.builder(DIBORANE_STILL_RL, DIBORANE_FLOWING_RL)
+            .viscosity(3).density(5).overlay(DIBORANE_OVERLAY_RL).sound(SoundEvents.LAVA_AMBIENT))
+            .block(BlockInit.DIBORANE_BLOCK).bucket(ItemInit.DIBORANE_BUCKET);
 }

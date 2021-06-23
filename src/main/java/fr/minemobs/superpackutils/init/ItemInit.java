@@ -106,19 +106,19 @@ public class ItemInit {
     public static final RegistryObject<Item> COBALT_WAX = ITEMS.register("cobalt_wax", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     //Dirty Crushed Ore
-    public static final RegistryObject<Item> DIRTY_CRUSHED_ALUMINUM_ORE = ITEMS.register("dirty_crushed_aluminum_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_COPPER_ORE = ITEMS.register("dirty_crushed_copper_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_GOLD_ORE = ITEMS.register("dirty_crushed_gold_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_IRON_ORE = ITEMS.register("dirty_crushed_iron_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_LEAD_ORE = ITEMS.register("dirty_crushed_lead_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_NICKEL_ORE = ITEMS.register("dirty_crushed_nickel_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_OSMIUM_ORE = ITEMS.register("dirty_crushed_osmium_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_PLATINUM_ORE = ITEMS.register("dirty_crushed_platinum_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_SILVER_ORE = ITEMS.register("dirty_crushed_silver_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_TIN_ORE = ITEMS.register("dirty_crushed_tin_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_URANIUM_ORE = ITEMS.register("dirty_crushed_uranium_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_ZINC_ORE = ITEMS.register("dirty_crushed_zinc_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> DIRTY_CRUSHED_COBALT_ORE = ITEMS.register("dirty_crushed_cobalt_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_ALUMINUM_ORE = ITEMS.register("purified_crushed_aluminum_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_COPPER_ORE = ITEMS.register("purified_crushed_copper_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_GOLD_ORE = ITEMS.register("purified_crushed_gold_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_IRON_ORE = ITEMS.register("purified_crushed_iron_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_LEAD_ORE = ITEMS.register("purified_crushed_lead_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_NICKEL_ORE = ITEMS.register("purified_crushed_nickel_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_OSMIUM_ORE = ITEMS.register("purified_crushed_osmium_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_PLATINUM_ORE = ITEMS.register("purified_crushed_platinum_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_SILVER_ORE = ITEMS.register("purified_crushed_silver_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_TIN_ORE = ITEMS.register("purified_crushed_tin_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_URANIUM_ORE = ITEMS.register("purified_crushed_uranium_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_ZINC_ORE = ITEMS.register("purified_crushed_zinc_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> PURIFIED_CRUSHED_COBALT_ORE = ITEMS.register("purified_crushed_cobalt_ore", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     //Dirty Dust
     public static final RegistryObject<Item> DIRTY_DUST_NICKEL = ITEMS.register("dirty_dust_nickel", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
@@ -171,7 +171,19 @@ public class ItemInit {
 
     public static final RegistryObject<Item> PYROTHEUM_DUST = ITEMS.register("pyrotheum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
-    public static final RegistryObject<Item> MAGNESIUM_OXIDE = ITEMS.register("magnesium_oxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> MANGANESE_OXIDE = ITEMS.register("manganese_oxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> BORAX_PULP = ITEMS.register("borax_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));public static final RegistryObject<Item> BORAX_PULP = ITEMS.register("borax_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> ARSENIC_PULP = ITEMS.register("arsenic_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));public static final RegistryObject<Item> BORAX_PULP = ITEMS.register("borax_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> SODIUM_HYDROXIDE_PULP = ITEMS.register("sodium_hydroxide_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));public static final RegistryObject<Item> BORAX_PULP = ITEMS.register("borax_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> SODIUM_FLUORIDE_PULP = ITEMS.register("sodium_fluoride_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));public static final RegistryObject<Item> BORAX_PULP = ITEMS.register("borax_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> POTASSIUM_FLUORIDE_PULP = ITEMS.register("potassium_fluoride_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));public static final RegistryObject<Item> BORAX_PULP = ITEMS.register("borax_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> POTASSIUM_HYDROXIDE_PULP = ITEMS.register("potassium_hydroxide_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));public static final RegistryObject<Item> BORAX_PULP = ITEMS.register("borax_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> POLYDIMETHYLSILOXANE_PULP = ITEMS.register("polydimethylsiloxane_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
@@ -310,6 +322,21 @@ public class ItemInit {
 
     public static final RegistryObject<Item> ISOPRENE_BUCKET = ITEMS.register("isoprene_bucket",
             () -> new BucketItem(FluidInit.ISOPRENE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> EPOXY_RESIN_BUCKET = ITEMS.register("epoxy_resin_bucket",
+            () -> new BucketItem(FluidInit.EPOXY_RESIN_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> BORAX_SOLUTION_BUCKET = ITEMS.register("borax_solution_bucket",
+            () -> new BucketItem(FluidInit.BORAX_SOLUTION_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> SF_SOLUTION_BUCKET = ITEMS.register("sf_solution_bucket",
+            () -> new BucketItem(FluidInit.SF_SOLUTION_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> BORIC_ACID_BUCKET = ITEMS.register("boric_acid_bucket",
+            () -> new BucketItem(FluidInit.BORIC_ACID_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+
+    public static final RegistryObject<Item> DIBORANE_BUCKET = ITEMS.register("diborane_bucket",
+            () -> new BucketItem(FluidInit.DIBORANE_FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
 
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");

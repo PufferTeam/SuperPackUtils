@@ -161,6 +161,21 @@ public class BlockInit {
     public static final RegistryObject<FlowingFluidBlock> ISOPRENE_BLOCK = registerBlock("isoprene_fluid",
             new FlowingFluidBlock(FluidInit.ISOPRENE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
 
+    public static final RegistryObject<FlowingFluidBlock> EPOXY_RESIN_BLOCK = registerBlock("epoxy_resin_fluid",
+            new FlowingFluidBlock(FluidInit.EPOXY_RESIN_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> BORAX_SOLUTION_BLOCK = registerBlock("borax_solution_fluid",
+            new FlowingFluidBlock(FluidInit.BORAX_SOLUTION_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> SF_SOLUTION_BLOCK = registerBlock("sf_solution_fluid",
+            new FlowingFluidBlock(FluidInit.SF_SOLUTION_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> BORIC_ACID_BLOCK = registerBlock("boric_acid_fluid",
+            new FlowingFluidBlock(FluidInit.BORIC_ACID_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
+    public static final RegistryObject<FlowingFluidBlock> DIBORANE_BLOCK = registerBlock("diborane_fluid",
+            new FlowingFluidBlock(FluidInit.DIBORANE_FLUID, AbstractBlock.Properties.copy(Blocks.LAVA).noCollission().strength(100.0f).noDrops().noOcclusion()));
+
     //Register functions
 
     private static RegistryObject<Block> registerBlock(String name) {
