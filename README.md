@@ -2,3 +2,5 @@
 
 # SuperPack: Utils
 A custom mod for the modpack SuperPack.
+
+[Maven repo](http://minemobs.galaxyfight.fr:8081/)
