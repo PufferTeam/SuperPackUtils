@@ -21,16 +21,14 @@ import java.awt.Color;
 
 public class FluidInit {
 
-    public static final ResourceLocation WATER_OVERLAY_RL = new ResourceLocation("block/water_overlay");
-    public static final ResourceLocation MOLTEN_OVERLAY_RL = Main.location("liquid/moltenliquid_overlay");
-    public static final ResourceLocation FLUID_STILL_RL = Main.location("liquid/liquid_still");
-    public static final ResourceLocation FLUID_FLOWING_RL = Main.location("liquid/liquid_flow");
-    public static final ResourceLocation MOLTEN_STILL_RL = Main.location("liquid/molten_still");
-    public static final ResourceLocation MOLTEN_FLOWING_RL = Main.location("liquid/molten_flow");
+    public static final ResourceLocation[] FLUID_RL = {Main.location("liquid/liquid_still"), Main.location("liquid/liquid_flow"),
+            new ResourceLocation("block/water_overlay")};
+    public static final ResourceLocation[] MOLTEN_RL = {Main.location("liquid/molten_still"), Main.location("liquid/molten_flow"),
+            Main.location("liquid/moltenliquid_overlay")};
 
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
 
-    public static final FluidObject TEST_FLUID = register("test", new Color(255, 0, 0, 255), WATER_OVERLAY_RL);
+    public static final FluidObject TEST_FLUID = register("test", new Color(255, 0, 0, 255), FLUID_RL);
 
     public static int toHexa(Color color) {
         int r = color.getRed();
@@ -39,7 +37,7 @@ public class FluidInit {
         return 0xFF000000 + (r << 16) + (g << 8) + b;
     }
 
-    private static FluidObject register(@Nonnull String name,@Nonnull Color color,@Nonnull ResourceLocation overlay) {
+    private static FluidObject register(@Nonnull String name,@Nonnull Color color,@Nonnull ResourceLocation[] resourcesLocations) {
         final ForgeFlowingFluid.Properties[] properties = {null};
         RegistryObject<FlowingFluid> FLUID = FLUIDS.register(name + "_fluid",
                 () -> new ForgeFlowingFluid.Source(properties[0]));
@@ -49,10 +47,10 @@ public class FluidInit {
                 new FlowingFluidBlock(FLUID, AbstractBlock.Properties.copy(Blocks.WATER).noCollission().strength(100.0f).noDrops().noOcclusion()));
         RegistryObject<BucketItem> BUCKET = ItemInit.ITEMS.register(name + "_bucket",
                 () -> new BucketItem(FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
-        properties[0] = new ForgeFlowingFluid.Properties(FLUID, FLOWING, FluidAttributes.builder(FLUID_STILL_RL, FLUID_FLOWING_RL)
+        properties[0] = new ForgeFlowingFluid.Properties(FLUID, FLOWING, FluidAttributes.builder(resourcesLocations[0], resourcesLocations[1])
                 .viscosity(3)
                 .density(5)
-                .overlay(overlay)
+                .overlay(resourcesLocations[2])
                 .color(toHexa(color))
                 .sound(SoundEvents.LAVA_AMBIENT))
                 .bucket(BUCKET)
