@@ -1,6 +1,7 @@
 package fr.minemobs.superpackutils.init;
 
 import fr.minemobs.superpackutils.Main;
+import fr.minemobs.superpackutils.objects.blocks.DestroyerOfTheNature;
 import fr.minemobs.superpackutils.objects.items.TinyCoalItem;
 import fr.minemobs.superpackutils.objects.items.TinyTorchItem;
 import fr.minemobs.superpackutils.objects.items.foods.Bread;
@@ -229,6 +230,8 @@ public class ItemInit {
     public static final RegistryObject<Item> PLOUGH = ITEMS.register("plough", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> HARVESTING_WHEEL = ITEMS.register("harvesting_wheel", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> DESTROYER_OF_THE_NATURE = ITEMS.register("destroyer_of_the_nature", DestroyerOfTheNature::new);
 
     //VANILLA OVERRIDE
     public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");

@@ -22,7 +22,6 @@
   "block.superpackutils.mixer_casing": "Mixer Casing",
   "block.superpackutils.tiny_torch": "Tiny Torch",
   "block.superpackutils.wall_tiny_torch": "Wall Tiny Torch",
-
   "block.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "block.superpackutils.polyethene": "Liquid Polyethylene",
   "block.superpackutils.chemical_death": "Liquid Chemical Death",
@@ -280,7 +279,6 @@
   "item.superpackutils.starlight_stick": "Starlight Stick",
   "item.superpackutils.boron_dust": "Boron Dust",
   "item.superpackutils.crystal_shard": "Crystal Shard",
-  "item.superpackutils.octane_bucket": "Liquid Octane Bucket",
   "item.superpackutils.alchemical_aluminum_dust": "Alchemical Aluminum Dust",
   "item.superpackutils.alchemical_copper_dust": "Alchemical Copper Dust",
   "item.superpackutils.alchemical_gold_dust": "Alchemical Gold Dust",
@@ -302,8 +300,6 @@
   "item.superpackutils.pressurized_capacitor": "Pressurized Capacitor",
   "item.superpackutils.tetraethyl_lead_ingot": "Tetraethyl Lead Ingot",
   "item.superpackutils.tetraethyl_lead_dust": "Tetraethyl Lead Dust",
-  "item.superpackutils.sulfurized_naphtha_bucket": "Sulfurized Naphtha Bucket",
-  "item.superpackutils.pyrotheum_bucket": "Blazing Pyrotheum Bucket",
   "item.superpackutils.redstone_alloy_ingot": "Redstone Alloy Ingot",
   "item.superpackutils.vibrant_alloy_ingot": "Vibrant Alloy Ingot",
   "item.superpackutils.mixed_alloy_ingot": "Mixed Alloy Ingot",
@@ -369,6 +365,7 @@
   "item.superpackutils.uranium_gear": "Uranium Gear",
   "item.superpackutils.uranium_ore_piece": "Uranium Ore Piece",
   "item.superpackutils.zinc_dust": "Zinc Dust",
+  "item.superpackutils.destroyer_of_the_nature": "Destroyer Of Jerome's Mom",
 
   "itemGroup.superpackutils": "SuperPack: Utils",
 

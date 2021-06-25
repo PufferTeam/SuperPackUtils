@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#BA",
+    "TBC",
+    "DVD"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:debug_stick"
+    },
+    "B": {
+      "item": "minecraft:bedrock"
+    },
+    "A": {
+      "item": "minecraft:acacia_sign"
+    },
+    "T": {
+      "item": "minecraft:tnt_minecart"
+    },
+    "C": {
+      "item": "minecraft:command_block_minecart"
+    },
+    "D": {
+      "item": "minecraft:dirt"
+    },
+    "V": {
+      "item": "minecraft:barrier"
+    }
+  },
+  "result": {
+    "item": "superpackutils:destroyer_of_the_nature",
+    "count": 1
+  }
+}
