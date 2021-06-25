@@ -51,8 +51,7 @@ public class FluidInit {
                 .viscosity(3)
                 .density(5)
                 .overlay(resourcesLocations[2])
-                .color(toHexa(color))
-                .sound(SoundEvents.LAVA_AMBIENT))
+                .color(toHexa(color)))
                 .bucket(BUCKET)
                 .block(blockFluid);
         return new FluidObject(properties[0], FLUID, FLOWING, blockFluid, BUCKET);
