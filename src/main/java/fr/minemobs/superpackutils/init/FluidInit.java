@@ -30,20 +30,13 @@ public class FluidInit {
 
     public static final FluidObject TEST_FLUID = register("test", new Color(255, 0, 0, 255), FLUID_RL);
 
-    public static int toHexa(Color color) {
-        int r = color.getRed();
-        int g = color.getGreen();
-        int b = color.getBlue();
-        return 0xFF000000 + (r << 16) + (g << 8) + b;
-    }
-
-    private static FluidObject register(@Nonnull String name,@Nonnull Color color,@Nonnull ResourceLocation[] resourcesLocations) {
+    private static FluidObject register(@Nonnull String name, @Nonnull Color color, @Nonnull ResourceLocation[] resourcesLocations) {
         final ForgeFlowingFluid.Properties[] properties = {null};
-        RegistryObject<FlowingFluid> FLUID = FLUIDS.register(name + "_fluid",
+        RegistryObject<FlowingFluid> FLUID = FLUIDS.register(name,
                 () -> new ForgeFlowingFluid.Source(properties[0]));
         RegistryObject<FlowingFluid> FLOWING = FLUIDS.register(name + "_flowing",
                 () -> new ForgeFlowingFluid.Flowing(properties[0]));
-        RegistryObject<FlowingFluidBlock> blockFluid = BlockInit.BLOCKS.register(name + "_fluid", () ->
+        RegistryObject<FlowingFluidBlock> blockFluid = BlockInit.BLOCKS.register(name, () ->
                 new FlowingFluidBlock(FLUID, AbstractBlock.Properties.copy(Blocks.WATER).noCollission().strength(100.0f).noDrops().noOcclusion()));
         RegistryObject<BucketItem> BUCKET = ItemInit.ITEMS.register(name + "_bucket",
                 () -> new BucketItem(FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
@@ -51,7 +44,7 @@ public class FluidInit {
                 .viscosity(3)
                 .density(5)
                 .overlay(resourcesLocations[2])
-                .color(toHexa(color)))
+                .color(color.getRGB()))
                 .bucket(BUCKET)
                 .block(blockFluid);
         return new FluidObject(properties[0], FLUID, FLOWING, blockFluid, BUCKET);
