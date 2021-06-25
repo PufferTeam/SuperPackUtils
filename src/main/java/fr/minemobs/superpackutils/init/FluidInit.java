@@ -16,12 +16,17 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import javax.annotation.Nonnull;
 import java.awt.Color;
 
 public class FluidInit {
 
     public static final ResourceLocation WATER_OVERLAY_RL = new ResourceLocation("block/water_overlay");
     public static final ResourceLocation MOLTEN_OVERLAY_RL = Main.location("liquid/moltenliquid_overlay");
+    public static final ResourceLocation FLUID_STILL_RL = Main.location("liquid/liquid_still");
+    public static final ResourceLocation FLUID_FLOWING_RL = Main.location("liquid/liquid_flow");
+    public static final ResourceLocation MOLTEN_STILL_RL = Main.location("liquid/molten_still");
+    public static final ResourceLocation MOLTEN_FLOWING_RL = Main.location("liquid/molten_flow");
 
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
 
@@ -34,9 +39,7 @@ public class FluidInit {
         return 0xFF000000 + (r << 16) + (g << 8) + b;
     }
 
-    private static FluidObject register(String name, Color color, ResourceLocation overlay) {
-        ResourceLocation FLUID_STILL_RL = Main.location("liquid/liquid_still");
-        ResourceLocation FLUID_FLOWING_RL = Main.location("liquid/liquid_flow");
+    private static FluidObject register(@Nonnull String name,@Nonnull Color color,@Nonnull ResourceLocation overlay) {
         final ForgeFlowingFluid.Properties[] properties = {null};
         RegistryObject<FlowingFluid> FLUID = FLUIDS.register(name + "_fluid",
                 () -> new ForgeFlowingFluid.Source(properties[0]));
@@ -49,7 +52,7 @@ public class FluidInit {
         properties[0] = new ForgeFlowingFluid.Properties(FLUID, FLOWING, FluidAttributes.builder(FLUID_STILL_RL, FLUID_FLOWING_RL)
                 .viscosity(3)
                 .density(5)
-                .overlay(overlay == null ? WATER_OVERLAY_RL : overlay)
+                .overlay(overlay)
                 .color(toHexa(color))
                 .sound(SoundEvents.LAVA_AMBIENT))
                 .bucket(BUCKET)
