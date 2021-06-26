@@ -111,14 +111,13 @@ repositories {
         name = "Progwml6 maven"
         url = "https://dvs1.progwml6.com/files/maven/"
     }
+    
+    maven { url 'https://modmaven.dev/' }
 
     maven {
-        // location of a maven mirror for JEI files, as a fallback
-        name = "ModMaven"
-        url = "https://modmaven.k-4u.nl"
+        name = "theillusivec4"
+        url = "https://maven.theillusivec4.top/"
     }
-
-    maven { url 'https://modmaven.dev/' }
 
     maven { url = 'https://libraries.minecraft.net/' }
     mavenCentral()
