@@ -55,8 +55,13 @@ public class FluidInit {
     public static final FluidObject DIBORANE = register("diborane", new Color(148, 81, 109), FLUID_RL);
 
     public static final FluidObject PYROTHEUM = register("pyrotheum", new Color(255, 187, 0), MOLTEN_RL);
+    public static final FluidObject CRYOTHEUM = register("cryotheum", new Color(0, 191, 255), MOLTEN_RL);
+    public static final FluidObject AEROTHEUM = register("aerotheum", new Color(167, 176, 204), MOLTEN_RL);
+    public static final FluidObject PETROTHEUM = register("petroleum", new Color(31, 27, 21), MOLTEN_RL);
+
     public static final FluidObject MOLTEN_BIO_PLASTIC = register("molten_bio_plastic", new Color(171, 147, 67), MOLTEN_RL);
     public static final FluidObject NAPHTHA = register("naphtha", new Color(255, 217, 0), FLUID_RL);
+    public static final FluidObject NAPALM_B = register("napalm_b", new Color(64, 34, 3), FLUID_RL);
     public static final FluidObject SULFURIZED_NAPHTHA = register("sulfurized_naphtha", new Color(171, 145, 0), FLUID_RL);
     public static final FluidObject SULFURIZED_LIGHT_OIL = register("sulfurized_light_oil", new Color(252, 171, 66), FLUID_RL);
     public static final FluidObject SULFURIZED_HEAVY_OIL = register("sulfurized_heavy_oil", new Color(191, 95, 65), FLUID_RL);
