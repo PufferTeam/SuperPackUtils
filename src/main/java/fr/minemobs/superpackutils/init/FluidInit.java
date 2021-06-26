@@ -35,7 +35,9 @@ public class FluidInit {
     public static final FluidObject POLYETHENE = register("polyethene", new Color(168, 143, 189), FLUID_RL);
     public static final FluidObject CHEMICAL_DEATH = register("chemical_death", new Color(133, 136, 140), FLUID_RL);
     public static final FluidObject AMMONIA = register("ammonia", new Color(155, 180, 186), FLUID_RL);
+    public static final FluidObject NITROUS_OXIDE = register("nitrous_oxide", new Color(64, 77, 133), FLUID_RL);
     public static final FluidObject CYANIDE = register("cyanide", new Color(230, 230, 230), FLUID_RL);
+    public static final FluidObject CARBON_DIOXIDE = register("carbon_dioxide", new Color(13, 13, 13), FLUID_RL);
     public static final FluidObject METHANE = register("methane", new Color(171, 130, 166), FLUID_RL);
     public static final FluidObject PURE_SULFURIC_ACID = register("pure_sulfuric_acid", new Color(150, 146, 59), FLUID_RL);
     public static final FluidObject BENZENE = register("benzene", new Color(200, 209, 176), FLUID_RL);
@@ -59,11 +61,13 @@ public class FluidInit {
     public static final FluidObject CRYOTHEUM = register("cryotheum", new Color(0, 191, 255), MOLTEN_RL);
     public static final FluidObject AEROTHEUM = register("aerotheum", new Color(167, 176, 204), MOLTEN_RL);
     public static final FluidObject PETROTHEUM = register("petroleum", new Color(31, 27, 21), MOLTEN_RL);
+    public static final FluidObject HO_GASOLINE = register("ho_gasoline", new Color(117, 62, 46), FLUID_RL);
     public static final FluidObject MOLTEN_BIO_PLASTIC = register("molten_bio_plastic", new Color(171, 147, 67), MOLTEN_RL);
     public static final FluidObject NAPHTHA = register("naphtha", new Color(255, 217, 0), FLUID_RL);
     public static final FluidObject NAPALM_B = register("napalm_b", new Color(64, 34, 3), FLUID_RL);
     public static final FluidObject SULFURIZED_NAPHTHA = register("sulfurized_naphtha", new Color(171, 145, 0), FLUID_RL);
     public static final FluidObject SULFURIZED_LIGHT_OIL = register("sulfurized_light_oil", new Color(252, 171, 66), FLUID_RL);
+    public static final FluidObject SULFURIZED_GASOLINE = register("sulfurized_gasoline", new Color(112, 89, 66), FLUID_RL);
     public static final FluidObject SULFURIZED_HEAVY_OIL = register("sulfurized_heavy_oil", new Color(191, 95, 65), FLUID_RL);
     public static final FluidObject SC_NAPHTHA = register("sc_naphtha", new Color(201, 190, 123), FLUID_RL);
     public static final FluidObject SC_LIGHT_OIL = register("sc_light_oil", new Color(201, 169, 123), FLUID_RL);
