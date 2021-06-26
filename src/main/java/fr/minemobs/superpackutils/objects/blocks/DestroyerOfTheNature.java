@@ -5,30 +5,31 @@ import fr.minemobs.superpackutils.utils.helper.KeyboardHelper;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.item.TNTEntity;
+import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemTier;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.util.Hand;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.Explosion;
-import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
-import java.awt.Color;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
-public class DestroyerOfTheNature extends SwordItem {
+public class DestroyerOfTheNature extends PickaxeItem {
 
     public DestroyerOfTheNature() {
         super(ItemTier.NETHERITE, Integer.MAX_VALUE, Float.MAX_VALUE,
@@ -70,12 +71,31 @@ public class DestroyerOfTheNature extends SwordItem {
     }
 
     @Override
-    public float getDestroySpeed(ItemStack p_150893_1_, BlockState p_150893_2_) {
+    public float getDestroySpeed(ItemStack stack, BlockState state) {
         return Float.MAX_VALUE;
     }
 
     @Override
     public int getRGBDurabilityForDisplay(ItemStack stack) {
         return 0x6942069;
+    }
+
+    @Override
+    public boolean isDamageable(ItemStack stack) {
+        return false;
+    }
+
+    @Override
+    public boolean isCorrectToolForDrops(BlockState state) {
+        return true;
+    }
+
+    @Override
+    public ActionResultType interactLivingEntity(ItemStack stack, PlayerEntity player, LivingEntity entity, Hand hand) {
+        if(entity.getType() != EntityType.SHEEP) return ActionResultType.FAIL;
+        SheepEntity sheep = (SheepEntity) entity;
+        if(sheep.isSheared()) player.sendMessage(new StringTextComponent("ProjectE vibes"), player.getUUID());
+        sheep.shear(SoundCategory.NEUTRAL);
+        return ActionResultType.SUCCESS;
     }
 }
