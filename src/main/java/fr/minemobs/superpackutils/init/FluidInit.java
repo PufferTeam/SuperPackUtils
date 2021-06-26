@@ -56,17 +56,22 @@ public class FluidInit {
     public static final FluidObject DIBORANE = register("diborane", new Color(148, 81, 109), FLUID_RL);
 
     public static final FluidObject PYROTHEUM = register("pyrotheum", new Color(255, 187, 0), MOLTEN_RL);
+    public static final FluidObject CRYOTHEUM = register("cryotheum", new Color(0, 191, 255), MOLTEN_RL);
+    public static final FluidObject AEROTHEUM = register("aerotheum", new Color(167, 176, 204), MOLTEN_RL);
+    public static final FluidObject PETROTHEUM = register("petroleum", new Color(31, 27, 21), MOLTEN_RL);
+
     public static final FluidObject MOLTEN_BIO_PLASTIC = register("molten_bio_plastic", new Color(171, 147, 67), MOLTEN_RL);
     public static final FluidObject NAPHTHA = register("naphtha", new Color(255, 217, 0), FLUID_RL);
+    public static final FluidObject NAPALM_B = register("napalm_b", new Color(64, 34, 3), FLUID_RL);
     public static final FluidObject SULFURIZED_NAPHTHA = register("sulfurized_naphtha", new Color(171, 145, 0), FLUID_RL);
-    public static final FluidObject SULFURIZED_LIGHT_OIL = register("sulfurized_light_oil", new Color(158, 103, 0), FLUID_RL);
-    public static final FluidObject SULFURIZED_HEAVY_OIL = register("sulfurized_heavy_oil", new Color(158, 37, 0), FLUID_RL);
+    public static final FluidObject SULFURIZED_LIGHT_OIL = register("sulfurized_light_oil", new Color(252, 171, 66), FLUID_RL);
+    public static final FluidObject SULFURIZED_HEAVY_OIL = register("sulfurized_heavy_oil", new Color(191, 95, 65), FLUID_RL);
     public static final FluidObject SC_NAPHTHA = register("sc_naphtha", new Color(201, 190, 123), FLUID_RL);
     public static final FluidObject SC_LIGHT_OIL = register("sc_light_oil", new Color(201, 169, 123), FLUID_RL);
     public static final FluidObject SC_HEAVY_OIL = register("sc_heavy_oil", new Color(201, 139, 123), FLUID_RL);
     public static final FluidObject HC_NAPHTHA = register("hc_naphtha", new Color(230, 207, 76), FLUID_RL);
     public static final FluidObject HC_LIGHT_OIL = register("hc_light_oil", new Color(230, 166, 76), FLUID_RL);
-    public static final FluidObject HC_HEAVY_OIL = register("hc_heavy_oil", new Color(230, 166, 76), FLUID_RL);
+    public static final FluidObject HC_HEAVY_OIL = register("hc_heavy_oil", new Color(230, 115, 76), FLUID_RL);
     public static final FluidObject EPOXY_RESIN = register("epoxy_resin", new Color(130, 82, 10), FLUID_RL);
     public static final FluidObject BORAX_SOLUTION = register("borax_solution", new Color(88, 113, 133), FLUID_RL);
     public static final FluidObject BORON_NITRIDE_SOLUTION = register("boron_nitride_solution", new Color(87, 109, 125), FLUID_RL);
