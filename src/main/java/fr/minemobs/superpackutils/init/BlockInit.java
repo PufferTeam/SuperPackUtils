@@ -67,6 +67,8 @@ public class BlockInit {
 
     public static final RegistryObject<Block> MYTHRIL_BLOCK = registerBlock("mythril_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
 
+    public static final RegistryObject<Block> EPOXY_ROSIN_BLOCK = registerBlock("epoxy_rosin_block", AbstractBlock.Properties.copy(Blocks.STONE));
+
     //Register functions
 
     private static RegistryObject<Block> registerBlock(String name) {
