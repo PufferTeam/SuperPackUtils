@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "superpackutils:block/epoxy_rosin_block-side",
+    "end": "superpackutils:block/epoxy_rosin_block-end"
+  }
+}
