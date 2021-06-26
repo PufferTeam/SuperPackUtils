@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang=fr>
+    <head>
+<meta charset=utf-8>
+<meta http-equiv=content-type content="text/html;charset=utf-8">
+<title>ReadTheDocs - bin</title>
+
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta name=author content="ReadTheDocs">
+<meta name=title content="ReadTheDocs Bin">
+<meta name=description content="https://github.com/readthedocs-fr/bin-server">
+<meta name=theme-color content="#1e282d">
+<meta name=color-scheme content="only light">
+
+<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+<link rel=stylesheet href="/assets/styles/style.css">
+        <link rel=stylesheet href="/assets/styles/report.css">
+        <link rel=stylesheet href="/assets/styles/monokai.css">
+        <script src="/assets/scripts/loc.js" defer></script>
+        <script src="/assets/scripts/report.js" defer></script>
+        <script src="/assets/scripts/delete.js" defer></script>
+    </head>
+    <body>
+<table class="highlight"><tbody><tr><td class="line-number" id=L1 value=1></td><td class="line-content"><span class="ch">#!/bin/bash</span>
+</td></tr>
+<tr><td class="line-number" id=L2 value=2></td><td class="line-content">rm -rf src<span class="se">\g</span>enerated<span class="se">\r</span>esources
+</td></tr>
+<tr><td class="line-number" id=L3 value=3></td><td class="line-content"><span class="k">if</span> <span class="o">[</span> -x <span class="s2">&quot;gradlew&quot;</span> <span class="o">]</span>
+</td></tr>
+<tr><td class="line-number" id=L4 value=4></td><td class="line-content"><span class="k">then</span>
+</td></tr>
+<tr><td class="line-number" id=L5 value=5></td><td class="line-content">  <span class="nb">echo</span> <span class="s2">&quot;gradlew is executable&quot;</span>
+</td></tr>
+<tr><td class="line-number" id=L6 value=6></td><td class="line-content"><span class="k">else</span>
+</td></tr>
+<tr><td class="line-number" id=L7 value=7></td><td class="line-content">  <span class="nb">echo</span> <span class="s2">&quot;gradlew is not executable&quot;</span>
+</td></tr>
+<tr><td class="line-number" id=L8 value=8></td><td class="line-content">  chmod +x <span class="s2">&quot;gradlew&quot;</span>
+</td></tr>
+<tr><td class="line-number" id=L9 value=9></td><td class="line-content"><span class="k">fi</span>
+</td></tr>
+<tr><td class="line-number" id=L10 value=10></td><td class="line-content">./gradlew <span class="s2">&quot;runData&quot;</span>
+</td></tr>
+<tr><td class="line-number" id=L11 value=11></td><td class="line-content"></td></tr>
+</tbody></table>
+
+        <form id=report title="Signaler" name=report action="/report" method=POST>
+            <input name=snippetid hidden value="arriat" required>
+            <input name=name hidden>
+            <label>
+                <input type=submit>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
+            </label>
+        </form>
+
+        <div class="controls">
+
+            <a class="control" title="Modifier" href="/?parentid=arriat&lang=bash">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9 2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2V6.414A2 2 0 0016.414 5L14 2.586A2 2 0 0012.586 2H9z" />
+                    <path d="M3 8a2 2 0 012-2v10h8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+                </svg>
+            </a>
+            <a class="control" title="Nouveau" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+    </body>
+</html>
