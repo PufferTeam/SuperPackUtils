@@ -9,7 +9,6 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundEvents;
 import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.RegistryObject;
@@ -18,13 +17,15 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FluidInit {
 
     public static final ResourceLocation[] FLUID_RL = {Main.location("liquid/liquid_still"), Main.location("liquid/liquid_flow")};
-
     public static final ResourceLocation[] MOLTEN_RL = {Main.location("liquid/moltenliquid_still"), Main.location("liquid/moltenliquid_flow")};
 
+    public static final List<FluidObject> FLUIDS_LIST = new ArrayList<>();
     public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, Main.MOD_ID);
 
     //public static final FluidObject TEST_FLUID = register("test", new Color(255, 0, 0), FLUID_RL);
@@ -91,10 +92,12 @@ public class FluidInit {
                 .color(color.getRGB()))
                 .bucket(BUCKET)
                 .block(blockFluid);
-        return new FluidObject(properties[0], FLUID, FLOWING, blockFluid, BUCKET);
+        FluidObject fluid = new FluidObject(properties[0], FLUID, FLOWING, blockFluid, BUCKET);
+        FLUIDS_LIST.add(fluid);
+        return fluid;
     }
 
-    private static class FluidObject {
+    public static class FluidObject {
         private final ForgeFlowingFluid.Properties FLUID_PROPERTIES;
         private final RegistryObject<FlowingFluid> STILL_FLUID_REGISTRY;
         private final RegistryObject<FlowingFluid> FLOWING_FLUID_REGISTRY;
@@ -110,16 +113,16 @@ public class FluidInit {
             this.bucket = bucket;
         }
 
-        public ForgeFlowingFluid.Properties getFLUID_PROPERTIES() {
+        public ForgeFlowingFluid.Properties getFluidProperties() {
             return FLUID_PROPERTIES;
         }
 
-        public RegistryObject<FlowingFluid> getFLOWING_FLUID_REGISTRY() {
-            return FLOWING_FLUID_REGISTRY;
+        public RegistryObject<FlowingFluid> getStillFluid() {
+            return STILL_FLUID_REGISTRY;
         }
 
-        public RegistryObject<FlowingFluid> getSTILL_FLUID_REGISTRY() {
-            return STILL_FLUID_REGISTRY;
+        public RegistryObject<FlowingFluid> getFlowingFluid() {
+            return FLOWING_FLUID_REGISTRY;
         }
 
         public RegistryObject<FlowingFluidBlock> getBlockFluid() {

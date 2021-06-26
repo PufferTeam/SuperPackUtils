@@ -72,10 +72,12 @@ minecraft {
 
         data {
             workingDirectory project.file('run')
+            arg "-mixin.config=" + "${mod_id}".toString() + ".mixins.json"
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', archivesBaseName, '--all',
