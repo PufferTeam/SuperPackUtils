@@ -181,6 +181,11 @@ mixin {
     add sourceSets.main, "${mod_id}.refmap.json"
 }
 
+task deleteOldData(type: Delete) {
+    delete 'src/generated/resources'
+    followSymlinks = true
+}
+
 artifacts {
     archives sourcesJar
     archives deobfJar
