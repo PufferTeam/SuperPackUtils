@@ -60,7 +60,9 @@ public class FluidInit {
     public static final FluidObject PYROTHEUM = register("pyrotheum", new Color(255, 187, 0), MOLTEN_RL);
     public static final FluidObject CRYOTHEUM = register("cryotheum", new Color(0, 191, 255), MOLTEN_RL);
     public static final FluidObject AEROTHEUM = register("aerotheum", new Color(167, 176, 204), MOLTEN_RL);
-    public static final FluidObject PETROTHEUM = register("petrotheum", new Color(31, 27, 21), MOLTEN_RL);
+    public static final FluidObject PETROTHEUM = register("petrotheum", new Color(59, 45, 36), MOLTEN_RL);
+    public static final FluidObject MOLTEN_BORON = register("molten_boron", new Color(46, 46, 46), MOLTEN_RL);
+    public static final FluidObject MOLTEN_LITHIUM = register("molten_lithium", new Color(145, 128, 119), MOLTEN_RL);
     public static final FluidObject HO_GASOLINE = register("ho_gasoline", new Color(117, 62, 46), FLUID_RL);
     public static final FluidObject ICHOR = register("ichor", new Color(252, 111, 0), FLUID_RL);
     public static final FluidObject MOLTEN_BIO_PLASTIC = register("molten_bio_plastic", new Color(171, 147, 67), MOLTEN_RL);
