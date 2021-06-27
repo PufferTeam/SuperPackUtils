@@ -27,9 +27,6 @@ public class InfuseTypeInit {
 
     //Other
     public static final RegistryObject<InfuseType> PETROLEUM_COKE = register("petroleum_coke", 0x3C3838);
-    public static final RegistryObject<InfuseType> REDSTONIA = register("redstonia", 0xFF0000);
-    public static final RegistryObject<InfuseType> DIAMANTINE = register("diamantine", 0x0099FF);
-    public static final RegistryObject<InfuseType> EXTREMIUM = register("extremium", 0x8C00B3);
 
     /**
      * @param name Registry name of the infused type ?
