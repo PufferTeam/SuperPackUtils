@@ -69,11 +69,12 @@ public class BlockInit {
 
     public static final RegistryObject<Block> MYTHRIL_BLOCK = registerBlock("mythril_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
 
-    public static final RegistryObject<Block> EPOXY_ROSIN_BLOCK = registerBlock("epoxy_rosin_block", AbstractBlock.Properties.copy(Blocks.STONE));
+    public static final RegistryObject<Block> EPOXY_ROSIN_BLOCK = registerBlock("epoxy_rosin_block", AbstractBlock.Properties.copy(Blocks.HONEY_BLOCK));
 
-    //Other
-
-    //public static final RegistryObject<Block> FAKE_X_SPAWNER = registerBlock("mob_registry_name_spawner", new FakeSpawner(new ResourceLocation("modid", "mob_registry_name")));
+    //Spawner
+    public static final RegistryObject<Block> BLIZZ_SPAWNER = registerBlock("blizz_spawner", new FakeSpawner(new ResourceLocation("thermal", "blizz")));
+    public static final RegistryObject<Block> BLITZ_SPAWNER = registerBlock("blitz_spawner", new FakeSpawner(new ResourceLocation("thermal", "blitz")));
+    public static final RegistryObject<Block> BASALZ_SPAWNER = registerBlock("basalz_spawner", new FakeSpawner(new ResourceLocation("thermal", "basalz")));
 
     //Register functions
 
