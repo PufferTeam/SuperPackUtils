@@ -31,7 +31,7 @@ import java.util.Objects;
 @Mod.EventBusSubscriber(modid = "superpackutils", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Main
 {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "superpackutils";
 
     public Main() {
@@ -71,10 +71,6 @@ public class Main
     public static ResourceLocation location(String _path)
     {
         return new ResourceLocation(Main.MOD_ID, _path);
-    }
-
-    public static Logger getLOGGER() {
-        return LOGGER;
     }
 
     public static class ModItemGroup extends ItemGroup {

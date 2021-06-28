@@ -1,6 +1,7 @@
 package fr.minemobs.superpackutils.init;
 
 import fr.minemobs.superpackutils.Main;
+import fr.minemobs.superpackutils.objects.blocks.FakeSpawner;
 import fr.minemobs.superpackutils.objects.blocks.RedstoneClock;
 import fr.minemobs.superpackutils.objects.blocks.TinyTorch;
 import fr.minemobs.superpackutils.objects.blocks.WallTinyTorch;
@@ -11,6 +12,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -68,6 +70,10 @@ public class BlockInit {
     public static final RegistryObject<Block> MYTHRIL_BLOCK = registerBlock("mythril_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
 
     public static final RegistryObject<Block> EPOXY_ROSIN_BLOCK = registerBlock("epoxy_rosin_block", AbstractBlock.Properties.copy(Blocks.STONE));
+
+    //Other
+
+    //public static final RegistryObject<Block> FAKE_X_SPAWNER = registerBlock("mob_registry_name_spawner", new FakeSpawner(new ResourceLocation("modid", "mob_registry_name")));
 
     //Register functions
 
