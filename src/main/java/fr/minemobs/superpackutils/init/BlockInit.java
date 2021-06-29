@@ -1,7 +1,7 @@
 package fr.minemobs.superpackutils.init;
 
 import fr.minemobs.superpackutils.Main;
-import fr.minemobs.superpackutils.objects.blocks.FakeSpawner;
+import fr.minemobs.superpackutils.objects.blocks.BrokenSpawner;
 import fr.minemobs.superpackutils.objects.blocks.RedstoneClock;
 import fr.minemobs.superpackutils.objects.blocks.TinyTorch;
 import fr.minemobs.superpackutils.objects.blocks.WallTinyTorch;
@@ -64,18 +64,15 @@ public class BlockInit {
 
     //Ore Blocks
     public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
-
     public static final RegistryObject<Block> CUPRONICKEL_BLOCK = registerBlock("cupronickel_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
-
     public static final RegistryObject<Block> MYTHRIL_BLOCK = registerBlock("mythril_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
-
     public static final RegistryObject<Block> EPOXY_ROSIN_BLOCK = registerBlock("epoxy_rosin_block", AbstractBlock.Properties.copy(Blocks.HONEY_BLOCK));
 
     //Spawner
-    public static final RegistryObject<Block> BLIZZ_SPAWNER = registerBlock("blizz_spawner", new FakeSpawner(new ResourceLocation("thermal", "blizz")));
-    public static final RegistryObject<Block> BLITZ_SPAWNER = registerBlock("blitz_spawner", new FakeSpawner(new ResourceLocation("thermal", "blitz")));
-    public static final RegistryObject<Block> BASALZ_SPAWNER = registerBlock("basalz_spawner", new FakeSpawner(new ResourceLocation("thermal", "basalz")));
-    public static final RegistryObject<Block> BLAZE_SPAWNER = registerBlock("blaze_spawner", new FakeSpawner(new ResourceLocation("blaze")));
+    public static final RegistryObject<Block> BLIZZ_SPAWNER = registerBlock("blizz_spawner", new BrokenSpawner(new ResourceLocation("thermal", "blizz")));
+    public static final RegistryObject<Block> BLITZ_SPAWNER = registerBlock("blitz_spawner", new BrokenSpawner(new ResourceLocation("thermal", "blitz")));
+    public static final RegistryObject<Block> BASALZ_SPAWNER = registerBlock("basalz_spawner", new BrokenSpawner(new ResourceLocation("thermal", "basalz")));
+    //public static final RegistryObject<Block> BLAZE_SPAWNER = registerBlock("blaze_spawner", new BrokenSpawner(new ResourceLocation("blaze")));
 
     //Register functions
 
@@ -88,10 +85,6 @@ public class BlockInit {
     }
 
     private static RegistryObject<Block> registerBlock(String name, Block block) {
-        return BLOCKS.register(name.toLowerCase(Locale.ROOT).replaceAll(" ","_"), () -> block);
-    }
-
-    private static RegistryObject<FlowingFluidBlock> registerBlock(String name, FlowingFluidBlock block) {
         return BLOCKS.register(name.toLowerCase(Locale.ROOT).replaceAll(" ","_"), () -> block);
     }
 }

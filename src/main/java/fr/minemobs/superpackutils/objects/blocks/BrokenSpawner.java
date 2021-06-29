@@ -26,11 +26,11 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Objects;
 
-public class FakeSpawner extends Block {
+public class BrokenSpawner extends Block {
 
     private final ResourceLocation mobLocation;
 
-    public FakeSpawner(ResourceLocation mobLocation) {
+    public BrokenSpawner(ResourceLocation mobLocation) {
         super(Properties.copy(Blocks.SPAWNER));
         this.mobLocation = mobLocation;
     }
