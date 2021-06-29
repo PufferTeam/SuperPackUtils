@@ -110,6 +110,28 @@ public class FluidInit {
         return fluid;
     }
 
+    private static FluidObject register(@Nonnull String name, @Nonnull Color color, @Nonnull ResourceLocation[] resourcesLocations, int temperature) {
+        final ForgeFlowingFluid.Properties[] properties = {null};
+        RegistryObject<FlowingFluid> FLUID = FLUIDS.register(name,
+                () -> new ForgeFlowingFluid.Source(properties[0]));
+        RegistryObject<FlowingFluid> FLOWING = FLUIDS.register(name + "_flowing",
+                () -> new ForgeFlowingFluid.Flowing(properties[0]));
+        RegistryObject<FlowingFluidBlock> blockFluid = BlockInit.BLOCKS.register(name, () ->
+                new FlowingFluidBlock(FLUID, AbstractBlock.Properties.copy(Blocks.WATER).noCollission().strength(100.0f).noDrops().noOcclusion()));
+        RegistryObject<BucketItem> BUCKET = ItemInit.ITEMS.register(name + "_bucket",
+                () -> new BucketItem(FLUID, new Item.Properties().tab(Main.ModItemGroup.instance).stacksTo(1)));
+        properties[0] = new ForgeFlowingFluid.Properties(FLUID, FLOWING, FluidAttributes.builder(resourcesLocations[0], resourcesLocations[1])
+                .viscosity(3)
+                .density(5)
+                .temperature(temperature)
+                .color(color.getRGB()))
+                .bucket(BUCKET)
+                .block(blockFluid);
+        FluidObject fluid = new FluidObject(properties[0], FLUID, FLOWING, blockFluid, BUCKET);
+        FLUIDS_LIST.add(fluid);
+        return fluid;
+    }
+
     public static class FluidObject {
         private final ForgeFlowingFluid.Properties FLUID_PROPERTIES;
         private final RegistryObject<FlowingFluid> STILL_FLUID_REGISTRY;
