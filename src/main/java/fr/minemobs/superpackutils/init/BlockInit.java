@@ -75,6 +75,7 @@ public class BlockInit {
     public static final RegistryObject<Block> BLIZZ_SPAWNER = registerBlock("blizz_spawner", new FakeSpawner(new ResourceLocation("thermal", "blizz")));
     public static final RegistryObject<Block> BLITZ_SPAWNER = registerBlock("blitz_spawner", new FakeSpawner(new ResourceLocation("thermal", "blitz")));
     public static final RegistryObject<Block> BASALZ_SPAWNER = registerBlock("basalz_spawner", new FakeSpawner(new ResourceLocation("thermal", "basalz")));
+    public static final RegistryObject<Block> BLAZE_SPAWNER = registerBlock("blaze_spawner", new FakeSpawner(new ResourceLocation("blaze")));
 
     //Register functions
 
