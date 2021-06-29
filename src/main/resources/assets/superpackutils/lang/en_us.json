@@ -23,9 +23,9 @@
   "block.superpackutils.mixer_casing": "Mixer Casing",
   "block.superpackutils.tiny_torch": "Tiny Torch",
   "block.superpackutils.wall_tiny_torch": "Wall Tiny Torch",
-  "block.superpackutils.blizz_spawner": "Blizz Spawner",
-  "block.superpackutils.blitz_spawner": "Blitz Spawner",
-  "block.superpackutils.basalz_spawner": "Basalz Spawner",
+  "block.superpackutils.blizz_spawner": "Broken Blizz Spawner",
+  "block.superpackutils.blitz_spawner": "Broken Blitz Spawner",
+  "block.superpackutils.basalz_spawner": "Broken Basalz Spawner",
 
   "slurry.superpackutils.dirty_nickel": "Dirty Nickel Slurry",
   "slurry.superpackutils.clean_nickel": "Clean Nickel Slurry",
