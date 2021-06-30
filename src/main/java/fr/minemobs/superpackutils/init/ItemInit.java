@@ -195,6 +195,12 @@ public class ItemInit {
 
     public static final RegistryObject<Item> PYROTHEUM_DUST = ITEMS.register("pyrotheum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
+    public static final RegistryObject<Item> CRYOTHEUM_DUST = ITEMS.register("cryotheum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> PETROTHEUM_DUST = ITEMS.register("petrotheum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> AEROTHEUM_DUST = ITEMS.register("aerotheum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
     public static final RegistryObject<Item> MANGANESE_OXIDE = ITEMS.register("manganese_oxide", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> BORAX_PULP = ITEMS.register("borax_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
