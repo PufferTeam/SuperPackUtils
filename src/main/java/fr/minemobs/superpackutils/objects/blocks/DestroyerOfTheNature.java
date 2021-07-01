@@ -44,9 +44,10 @@ public class DestroyerOfTheNature extends PickaxeItem {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable World world, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         if(KeyboardHelper.isHoldingShift()){
+            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shiftw"));
             tooltip.add(new StringTextComponent("Do not use this or your TPS will drop to 0 and your map will be Tchernobyl"));
         }else {
-            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shift"));
+            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shiftg"));
         }
     }
 

@@ -87,10 +87,11 @@ public class RedstoneClock extends Block {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable IBlockReader worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        if(KeyboardHelper.isHoldingShift()){
+        if(KeyboardHelper.isHoldingShift()) {
+            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shiftw"));
             tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".redstoneclock"));
         }else{
-            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shift"));
+            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shiftg"));
         }
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
     }

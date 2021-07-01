@@ -13,6 +13,7 @@ import net.minecraft.tileentity.MobSpawnerTileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
@@ -53,9 +54,10 @@ public class BrokenSpawner extends Block {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable IBlockReader worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         if(KeyboardHelper.isHoldingShift()){
+            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shiftw"));
             tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".brokenspawner"));
         }else{
-            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shift"));
+            tooltip.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shiftg"));
         }
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
     }

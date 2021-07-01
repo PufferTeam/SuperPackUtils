@@ -452,5 +452,6 @@
 
   "tooltip.superpackutils.redstoneclock": "This clock emits a signal every 3 seconds for 0.5 second.",
   "tooltip.superpackutils.brokenspawner": "This spawner is broken! Use a Spawner Extractor to get a Spawner Core that can be used in a Pressurized Spawner.",
-  "tooltip.superpackutils.shift": "HOLD\u00A7e SHIFT\u00A77 for more informations!"
+  "tooltip.superpackutils.shiftg": "\u00A78Hold [\u00A77Shift\u00A78] for Summary",
+  "tooltip.superpackutils.shiftw": "\u00A78Hold [\u00A7rShift\u00A78] for Summary"
 }
