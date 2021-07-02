@@ -199,6 +199,8 @@ public class ItemInit {
 
     public static final RegistryObject<Item> POWERED_SUBSTANCE = ITEMS.register("powered_substance", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
+    public static final RegistryObject<Item> CALCIUM_CARBURE = ITEMS.register("calcium_carbure", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
     public static final RegistryObject<Item> EPOXY_SLAG = ITEMS.register("epoxy_slag", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> ELEMENTAL_GEM = ITEMS.register("elemental_gem", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
