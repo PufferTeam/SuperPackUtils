@@ -83,13 +83,6 @@ public class FluidInit {
     public static final FluidObject HC_LIGHT_OIL = register("hc_light_oil", new Color(230, 166, 76), FLUID_RL);
     public static final FluidObject HC_HEAVY_OIL = register("hc_heavy_oil", new Color(230, 115, 76), FLUID_RL);
     public static final FluidObject EPOXY_RESIN = register("epoxy_resin", new Color(130, 82, 10), FLUID_RL);
-    public static final FluidObject BORAX_SOLUTION = register("borax_solution", new Color(88, 113, 133), FLUID_RL);
-    public static final FluidObject BORON_NITRIDE_SOLUTION = register("boron_nitride_solution", new Color(87, 109, 125), FLUID_RL);
-    public static final FluidObject SF_SOLUTION = register("sf_solution", new Color(94, 123, 145), FLUID_RL);
-    public static final FluidObject CS_SOLUTION = register("cs_solution", new Color(95, 120, 146), FLUID_RL);
-    public static final FluidObject PF_SOLUTION = register("pf_solution", new Color(95, 120, 140), FLUID_RL);
-    public static final FluidObject SH_SOLUTION = register("sh_solution", new Color(94, 123, 150), FLUID_RL);
-    public static final FluidObject PH_SOLUTION = register("ph_solution", new Color(95, 133, 150), FLUID_RL);
 
     private static FluidObject register(@Nonnull String name, @Nonnull Color color, @Nonnull ResourceLocation[] resourcesLocations) {
         final ForgeFlowingFluid.Properties[] properties = {null};
