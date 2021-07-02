@@ -33,6 +33,7 @@
   "slurry.superpackutils.clean_nickel": "Clean Nickel Slurry",
 
   "block.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
+  "block.superpackutils.acetylene": "Liquid Acetylene",
   "block.superpackutils.polyethene": "Liquid Polyethylene",
   "block.superpackutils.chemical_death": "Liquid Chemical Death",
   "block.superpackutils.pure_sulfuric_acid": "Liquid Pure Sulfuric Acid",
@@ -92,6 +93,7 @@
   "block.superpackutils.plastic_waste": "Liquid Plastic Waste",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
+  "fluid.superpackutils.acetylene": "Liquid Acetylene",
   "fluid.superpackutils.polyethene": "Liquid Polyethylene",
   "fluid.superpackutils.chemical_death": "Liquid Chemical Death",
   "fluid.superpackutils.carbon_dioxide": "Liquid Carbon Dioxide",
@@ -151,6 +153,7 @@
   "fluid.superpackutils.plastic_waste": "Liquid Plastic Waste",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
+  "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
   "item.superpackutils.polyethene_bucket": "Liquid Polyethylene Bucket",
   "item.superpackutils.chemical_death_bucket": "Liquid Chemical Death Bucket",
   "item.superpackutils.pure_sulfuric_acid_bucket": "Liquid Pure Sulfuric Acid Bucket",
@@ -210,6 +213,7 @@
   "item.superpackutils.plastic_waste_bucket": "Liquid Plastic Waste Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
+  "gas.superpackutils.acetylene": "Acetylene",
   "gas.superpackutils.polyethene": "Polyethylene",
   "gas.superpackutils.stabilizer": "Stabilizer",
   "gas.superpackutils.chemical_death": "Chemical Death",

@@ -41,6 +41,7 @@ public class GasesInit {
     public static final RegistryObject<Gas> BORIC_ACID = GASES.register("boric_acid", () -> new Gas(GasBuilder.builder().color(new Color(117, 100, 53).getRGB())));
     public static final RegistryObject<Gas> DIBORANE = GASES.register("diborane", () -> new Gas(GasBuilder.builder().color(new Color(148, 81, 109).getRGB())));
     public static final RegistryObject<Gas> PLASTIC_WASTE = GASES.register("plastic_waste", () -> new Gas(GasBuilder.builder().color(new Color(59, 41, 28).getRGB())));
+    public static final RegistryObject<Gas> ACETYLENE = GASES.register("acetylene", () -> new Gas(GasBuilder.builder().color(new Color(191, 128, 164).getRGB())));
 
     //Corundum
 
