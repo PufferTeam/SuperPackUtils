@@ -235,6 +235,8 @@ public class ItemInit {
 
     public static final RegistryObject<Item> SODIUM_FLUORIDE_PULP = ITEMS.register("sodium_fluoride_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
+    public static final RegistryObject<Item> POTASSIUM_PULP = ITEMS.register("potassium_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
     public static final RegistryObject<Item> POTASSIUM_FLUORIDE_PULP = ITEMS.register("potassium_fluoride_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     public static final RegistryObject<Item> POTASSIUM_HYDROXIDE_PULP = ITEMS.register("potassium_hydroxide_pulp", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
