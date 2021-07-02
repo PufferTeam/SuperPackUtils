@@ -67,6 +67,7 @@ public class BlockInit {
     public static final RegistryObject<Block> MYTHRIL_BLOCK = registerBlock("mythril_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
     public static final RegistryObject<Block> EPOXY_ROSIN_BLOCK = registerBlock("epoxy_rosin_block", AbstractBlock.Properties.copy(Blocks.HONEY_BLOCK));
     public static final RegistryObject<Block> DARK_STEEL_BLOCK = registerBlock("dark_steel_block", AbstractBlock.Properties.copy(Blocks.DIAMOND_BLOCK));
+    public static final RegistryObject<Block> MANGANESE_BLOCK = registerBlock("manganese_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
 
     //Obsidian
     public static final RegistryObject<Block> REINFORCED_OBSIDIAN = registerBlock("reinforced_obsidian", AbstractBlock.Properties.copy(Blocks.OBSIDIAN));
