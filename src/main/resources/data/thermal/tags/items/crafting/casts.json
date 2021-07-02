@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "superpackutils:chiller_nugget_cast",
+    "superpackutils:chiller_gear_cast",
+    "superpackutils:chiller_plate_cast",
+    "superpackutils:chiller_coin_cast"
+  ]
+}
