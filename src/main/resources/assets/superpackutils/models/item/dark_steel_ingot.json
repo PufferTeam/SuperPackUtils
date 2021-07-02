@@ -1,3 +1,6 @@
 {
-  "parent": "superpackutils:block/dark_steel_ingot"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "superpackutils:item/dark_steel_ingot"
+  }
 }

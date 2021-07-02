@@ -1,3 +1,6 @@
 {
-  "parent": "superpackutils:block/dark_steel_dust"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "superpackutils:item/dark_steel_dust"
+  }
 }
