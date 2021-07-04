@@ -29,6 +29,9 @@
   "block.superpackutils.blizz_spawner": "Broken Blizz Spawner",
   "block.superpackutils.blitz_spawner": "Broken Blitz Spawner",
   "block.superpackutils.basalz_spawner": "Broken Basalz Spawner",
+  "block.superpackutils.energetic_alloy_block": "Energetic Alloy Block",
+  "block.superpackutils.vibrant_alloy_block": "Vibrant Alloy Block",
+  "block.superpackutils.tetraethyl_lead_block": "Tetraethyl Lead Block",
 
   "slurry.superpackutils.dirty_nickel": "Dirty Nickel Slurry",
   "slurry.superpackutils.clean_nickel": "Clean Nickel Slurry",
@@ -452,8 +455,9 @@
   "item.superpackutils.radioactive_fabric": "Hazmat Fabric",
   "item.superpackutils.polished_mana_quartz": "Polished Mana Quartz",
   "item.superpackutils.tetraethyl_lead_nugget": "Tetraethyl Lead Nugget",
-  "item.superpackutils.tetraethyl_lead_block": "Tetraethyl Lead Block",
   "item.superpackutils.destroyer_of_the_nature": "Destroyer Of The Nature",
+  "item.superpackutils.energetic_alloy_nugget": "Energetic Alloy Nugget",
+  "item.superpackutils.vibrant_alloy_nugget": "Vibrant Alloy Nugget",
 
   "itemGroup.superpackutils": "SuperPack: Utils",
 
