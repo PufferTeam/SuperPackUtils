@@ -451,6 +451,8 @@
   "item.superpackutils.powered_substance": "Powered Substance",
   "item.superpackutils.radioactive_fabric": "Hazmat Fabric",
   "item.superpackutils.polished_mana_quartz": "Polished Mana Quartz",
+  "item.superpackutils.tetraethyl_lead_nugget": "Tetraethyl Lead Nugget",
+  "item.superpackutils.tetraethyl_lead_block": "Tetraethyl Lead Block",
   "item.superpackutils.destroyer_of_the_nature": "Destroyer Of The Nature",
 
   "itemGroup.superpackutils": "SuperPack: Utils",
