@@ -1,0 +1,32 @@
+{
+   "ctm":{
+      "ctm_version":1,
+      "type":"CTM",
+      "layer":"SOLID",
+      "textures":[
+         "superpackutils:block/advanced_mixer_casing-ctm"
+      ],
+      "extra":{
+         "connect_to":[
+            {
+               "block":"masterfulmachinery:advanced_mixer_controller"
+            },
+            {
+               "block":"masterfulmachinery:advanced_mixer_basic_port_pncr_pressure_input"
+            },
+            {
+               "block":"masterfulmachinery:advanced_mixer_basic_port_fluids_input"
+            },
+            {
+               "block":"masterfulmachinery:advanced_mixer_basic_port_fluids_output"
+            },
+            {
+               "block":"masterfulmachinery:advanced_mixer_basic_port_energy_input"
+            },
+            {
+               "block":"superpackutils:advanced_mixer_casing"
+            }
+         ]
+      }
+   }
+}

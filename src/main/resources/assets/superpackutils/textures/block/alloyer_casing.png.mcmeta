@@ -1,0 +1,32 @@
+{
+   "ctm":{
+      "ctm_version":1,
+      "type":"CTM",
+      "layer":"SOLID",
+      "textures":[
+         "superpackutils:block/alloyer_casing-ctm"
+      ],
+      "extra":{
+         "connect_to":[
+            {
+               "block":"masterfulmachinery:alloyer_controller"
+            },
+            {
+               "block":"masterfulmachinery:alloyer_basic_port_pncr_pressure_input"
+            },
+            {
+               "block":"masterfulmachinery:alloyer_basic_port_items_input"
+            },
+            {
+               "block":"masterfulmachinery:alloyer_basic_port_items_output"
+            },
+            {
+               "block":"masterfulmachinery:alloyer_basic_port_energy_input"
+            },
+            {
+               "block":"superpackutils:alloyer_casing"
+            }
+         ]
+      }
+   }
+}

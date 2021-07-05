@@ -32,6 +32,9 @@
   "block.superpackutils.energetic_alloy_block": "Energetic Alloy Block",
   "block.superpackutils.vibrant_alloy_block": "Vibrant Alloy Block",
   "block.superpackutils.tetraethyl_lead_block": "Tetraethyl Lead Block",
+  "block.superpackutils.advanced_mixer_casing": "Advanced Mixer Casing",
+  "block.superpackutils.compacter_casing": "Pressurized Compacter Casing",
+  "block.superpackutils.alloyer_casing": "Pressurized Alloyer Casing",
 
   "slurry.superpackutils.dirty_nickel": "Dirty Nickel Slurry",
   "slurry.superpackutils.clean_nickel": "Clean Nickel Slurry",
