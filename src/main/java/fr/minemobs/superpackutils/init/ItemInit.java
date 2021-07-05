@@ -1,16 +1,25 @@
 package fr.minemobs.superpackutils.init;
 
 import fr.minemobs.superpackutils.Main;
+import fr.minemobs.superpackutils.objects.blocks.AbstractItem;
 import fr.minemobs.superpackutils.objects.blocks.DestroyerOfTheNature;
 import fr.minemobs.superpackutils.objects.items.TinyCoalItem;
 import fr.minemobs.superpackutils.objects.items.TinyTorchItem;
 import fr.minemobs.superpackutils.objects.items.foods.Bread;
+import fr.minemobs.superpackutils.utils.helper.KeyboardHelper;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import javax.annotation.Nullable;
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ItemInit {
@@ -209,7 +218,7 @@ public class ItemInit {
 
     public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> RADIOACTIVE_FABRIC = ITEMS.register("radioactive_fabric", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
-    public static final RegistryObject<Item> POWERED_SUBSTANCE = ITEMS.register("powered_substance", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> POWERED_SUBSTANCE = registerItem("powered_substance", true);
     public static final RegistryObject<Item> CALCIUM_CARBURE = ITEMS.register("calcium_carbure", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> EPOXY_SLAG = ITEMS.register("epoxy_slag", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> ELEMENTAL_GEM = ITEMS.register("elemental_gem", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
@@ -259,4 +268,22 @@ public class ItemInit {
 
     public static final RegistryObject<Item> BREAD = VANILLA_ITEMS.register("bread", Bread::new);
 
+
+    //Register functions
+
+    private static RegistryObject<Item> registerItem(String registryName, boolean tooltip) {
+        String name = registryName.toLowerCase().replaceAll("\\s+", "_");
+        return ITEMS.register(name, () -> new AbstractItem() {
+            @Override
+            public void appendHoverText(ItemStack stack, @Nullable World p_77624_2_, List<ITextComponent> tooltipList, ITooltipFlag flagIn) {
+                if(!tooltip) return;
+                if(KeyboardHelper.isHoldingShift()){
+                    tooltipList.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shiftw"));
+                    tooltipList.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + '.' + name));
+                }else{
+                    tooltipList.add(new TranslationTextComponent("tooltip." + Main.MOD_ID + ".shiftg"));
+                }
+            }
+        });
+    }
 }

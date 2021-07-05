@@ -472,6 +472,7 @@
 
   "tooltip.superpackutils.redstoneclock": "This clock emits a signal every 3 seconds for 0.5 second.",
   "tooltip.superpackutils.brokenspawner": "This spawner is broken! Use a Spawner Extractor to get a Spawner Core that can be used in a Pressurized Spawner.",
+  "tooltip.superpackutils.powered_substance": "\u00A72A Chromatic material forged with \u00A7apure energy",
   "tooltip.superpackutils.shiftg": "\u00A78Hold [\u00A77Shift\u00A78] for Summary",
   "tooltip.superpackutils.shiftw": "\u00A78Hold [\u00A7rShift\u00A78] for Summary"
 }
