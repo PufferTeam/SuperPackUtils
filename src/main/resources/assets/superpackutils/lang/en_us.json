@@ -467,6 +467,9 @@
   "item.superpackutils.destroyer_of_the_nature": "Destroyer Of The Nature",
   "item.superpackutils.energetic_alloy_nugget": "Energetic Alloy Nugget",
   "item.superpackutils.vibrant_alloy_nugget": "Vibrant Alloy Nugget",
+  "item.superpackutils.vibrant_alloy_dust": "Vibrant Alloy Dust",
+  "item.superpackutils.energetic_alloy_dust": "Energetic Alloy Dust",
+  "item.superpackutils.tiny_moon": "Tiny Moon",
 
   "itemGroup.superpackutils": "SuperPack: Utils",
 
