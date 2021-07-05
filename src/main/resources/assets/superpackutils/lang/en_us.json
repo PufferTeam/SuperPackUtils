@@ -91,6 +91,8 @@
   "block.superpackutils.hc_heavy_oil": "Hydro-Cracked Heavy Oil", 
   "block.superpackutils.epoxy_resin": "Epoxy Resin",
   "block.superpackutils.plastic_waste": "Liquid Plastic Waste",
+  "block.superpackutils.pressurized_hydrogen": "Pressurized Hydrogen",
+  "block.superpackutils.pressurized_steam": "Pressurized Steam",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -144,6 +146,8 @@
   "fluid.superpackutils.hc_heavy_oil": "Hydro-Cracked Heavy Oil",
   "fluid.superpackutils.epoxy_resin": "Epoxy Resin",
   "fluid.superpackutils.plastic_waste": "Liquid Plastic Waste",
+  "fluid.superpackutils.pressurized_hydrogen": "Pressurized Hydrogen",
+  "fluid.superpackutils.pressurized_steam": "Pressurized Steam",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -197,6 +201,8 @@
   "item.superpackutils.epoxy_resin_bucket": "Epoxy Resin Bucket",
   "item.superpackutils.ichor_bucket": "Ichor Bucket",
   "item.superpackutils.plastic_waste_bucket": "Liquid Plastic Waste Bucket",
+  "item.superpackutils.pressurized_hydrogen_bucket": "Pressurized Hydrogen Bucket",
+  "item.superpackutils.pressurized_steam_bucket": "Pressurized Steam Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",

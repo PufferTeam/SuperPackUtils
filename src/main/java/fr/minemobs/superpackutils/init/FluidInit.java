@@ -56,7 +56,7 @@ public class FluidInit {
     public static final FluidObject ISOPRENE = register("isoprene", new Color(56, 41, 34), FLUID_RL);
     public static final FluidObject BORIC_ACID = register("boric_acid", new Color(117, 100, 53), FLUID_RL);
     public static final FluidObject DIBORANE = register("diborane", new Color(148, 81, 109), FLUID_RL);
-    public static final FluidObject PLASTIC_WASTE = register("plastic_waste", new Color(59, 41, 28), FLUID_RL);
+    public static final FluidObject PLASTIC_WASTE = register("plastic_waste", new Color(97, 70, 54), FLUID_RL);
     public static final FluidObject ACETYLENE = register("acetylene", new Color(191, 128, 164), FLUID_RL);
 
 
@@ -83,6 +83,8 @@ public class FluidInit {
     public static final FluidObject HC_LIGHT_OIL = register("hc_light_oil", new Color(230, 166, 76), FLUID_RL);
     public static final FluidObject HC_HEAVY_OIL = register("hc_heavy_oil", new Color(230, 115, 76), FLUID_RL);
     public static final FluidObject EPOXY_RESIN = register("epoxy_resin", new Color(130, 82, 10), FLUID_RL);
+    public static final FluidObject PRESSURIZED_HYDROGEN = register("pressurized_hydrogen", new Color(132, 132, 132), FLUID_RL);
+    public static final FluidObject PRESSURIZED_STEAM = register("pressurized_steam", new Color(132, 132, 132), FLUID_RL);
 
     private static FluidObject register(@Nonnull String name, @Nonnull Color color, @Nonnull ResourceLocation[] resourcesLocations) {
         final ForgeFlowingFluid.Properties[] properties = {null};
