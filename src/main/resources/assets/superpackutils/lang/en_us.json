@@ -98,6 +98,8 @@
   "block.superpackutils.molten_alfsteel": "Molten Alfsteel",
   "block.superpackutils.molten_elementium": "Molten Elementium",
   "block.superpackutils.molten_crystaltine": "Molten Crystaltine",
+  "block.superpackutils.primal_mana": "Primal Mana",
+  "block.superpackutils.pahoehoe_lava": "Pahoehoe Lava",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -158,6 +160,8 @@
   "fluid.superpackutils.molten_alfsteel": "Molten Alfsteel",
   "fluid.superpackutils.molten_elementium": "Molten Elementium",
   "fluid.superpackutils.molten_crystaltine": "Molten Crystaltine",
+  "fluid.superpackutils.primal_mana": "Primal Mana",
+  "fluid.superpackutils.pahoehoe_lava": "Pahoehoe Lava",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -218,6 +222,8 @@
   "item.superpackutils.molten_alfsteel_bucket": "Molten Alfsteel Bucket",
   "item.superpackutils.molten_elementium_bucket": "Molten Elementium Bucket",
   "item.superpackutils.molten_crystaltine_bucket": "Molten Crystaltine Bucket",
+  "item.superpackutils.primal_mana_bucket": "Primal Mana Bucket",
+  "item.superpackutils.pahoehoe_lava_bucket": "Pahoehoe Lava Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",
