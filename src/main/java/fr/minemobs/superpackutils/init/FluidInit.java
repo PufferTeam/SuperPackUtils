@@ -60,11 +60,11 @@ public class FluidInit {
     public static final FluidObject ACETYLENE = register("acetylene", new Color(191, 128, 164), FLUID_RL);
 
 
-    public static final FluidObject PYROTHEUM = register("pyrotheum", new Color(255, 187, 0), MOLTEN_RL, 2000);
-    public static final FluidObject CRYOTHEUM = register("cryotheum", new Color(0, 191, 255), MOLTEN_RL);
-    public static final FluidObject AEROTHEUM = register("aerotheum", new Color(167, 176, 204), MOLTEN_RL);
-    public static final FluidObject PETROTHEUM = register("petrotheum", new Color(59, 45, 36), MOLTEN_RL);
-    public static final FluidObject PAHOEHOE_LAVA = register("pahoehoe_lava", new Color(148, 113, 86), MOLTEN_RL);
+    public static final FluidObject PYROTHEUM = register("pyrotheum", new Color(255, 187, 0), MOLTEN_RL, 2300);
+    public static final FluidObject CRYOTHEUM = register("cryotheum", new Color(0, 191, 255), MOLTEN_RL, -2300);
+    public static final FluidObject AEROTHEUM = register("aerotheum", new Color(167, 176, 204), MOLTEN_RL, 500);
+    public static final FluidObject PETROTHEUM = register("petrotheum", new Color(59, 45, 36), MOLTEN_RL, 600);
+    public static final FluidObject PAHOEHOE_LAVA = register("pahoehoe_lava", new Color(148, 113, 86), MOLTEN_RL, 700);
     public static final FluidObject PRIMAL_MANA = register("primal_mana", new Color(73, 31, 181), MOLTEN_RL);
     public static final FluidObject MOLTEN_TERRASTEEL = register("molten_terrasteel", new Color(13, 255, 0), MOLTEN_RL);
     public static final FluidObject MOLTEN_MANASTEEL = register("molten_manasteel", new Color(57, 117, 196), MOLTEN_RL);
