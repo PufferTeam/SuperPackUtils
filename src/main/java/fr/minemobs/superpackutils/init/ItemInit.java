@@ -232,6 +232,7 @@ public class ItemInit {
 
     public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> TINY_MOON = ITEMS.register("tiny_moon", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> ENRICHED_CARBON_BRICK = ITEMS.register("enriched_carbon_brick", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> RADIOACTIVE_FABRIC = ITEMS.register("radioactive_fabric", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> POWERED_SUBSTANCE = registerItem("powered_substance", true);
     public static final RegistryObject<Item> CALCIUM_CARBURE = ITEMS.register("calcium_carbure", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
