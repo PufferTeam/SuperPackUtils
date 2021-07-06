@@ -21,6 +21,12 @@
                "block":"masterfulmachinery:metallurgic_fabricator_basic_port_items_input"
             },
             {
+               "block":"masterfulmachinery:metallurgic_fabricator_advanced_port_items_output"
+            },
+            {
+               "block":"masterfulmachinery:metallurgic_fabricator_advanced_port_items_input"
+            },
+            {
                "block":"masterfulmachinery:metallurgic_fabricator_basic_port_energy_input"
             }
          ]
