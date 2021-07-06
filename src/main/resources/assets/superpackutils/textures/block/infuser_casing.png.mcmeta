@@ -18,6 +18,12 @@
                "block":"masterfulmachinery:infuser_basic_port_items_output"
             },
             {
+               "block":"masterfulmachinery:infuser_advanced_port_items_input"
+            },
+            {
+               "block":"masterfulmachinery:infuser_advanced_port_items_output"
+            },
+            {
                "block":"masterfulmachinery:infuser_basic_port_fluids_input"
             },
             {
