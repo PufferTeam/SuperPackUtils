@@ -485,6 +485,14 @@
   "item.superpackutils.vibrant_alloy_dust": "Vibrant Alloy Dust",
   "item.superpackutils.energetic_alloy_dust": "Energetic Alloy Dust",
   "item.superpackutils.tiny_moon": "Tiny Moon",
+  "item.superpackutils.basic_circuit": "Raw Basic Logic Circuit",
+  "item.superpackutils.improved_circuit": "Raw Improved Logic Circuit",
+  "item.superpackutils.advanced_circuit": "Raw Advanced Logic Circuit",
+  "item.superpackutils.withering_circuit": "Raw Withering Logic Circuit",
+  "item.superpackutils.basic_logic_circuit": "Basic Logic Circuit",
+  "item.superpackutils.improved_logic_circuit": "Improved Logic Circuit",
+  "item.superpackutils.advanced_logic_circuit": "Advanced Logic Circuit",
+  "item.superpackutils.withering_logic_circuit": "Withering Logic Circuit",
 
   "itemGroup.superpackutils": "SuperPack: Utils",
 
