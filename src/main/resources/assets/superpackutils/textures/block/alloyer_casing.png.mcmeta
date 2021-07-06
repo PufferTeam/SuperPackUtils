@@ -21,6 +21,12 @@
                "block":"masterfulmachinery:alloyer_basic_port_items_output"
             },
             {
+               "block":"masterfulmachinery:alloyer_advanced_port_items_input"
+            },
+            {
+               "block":"masterfulmachinery:alloyer_advanced_port_items_output"
+            },
+            {
                "block":"masterfulmachinery:alloyer_basic_port_energy_input"
             },
             {
