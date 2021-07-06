@@ -56,6 +56,23 @@ public class ItemInit {
     public static final RegistryObject<Item> DARK_STEEL_INGOT = ITEMS.register("dark_steel_ingot", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> PROSPERITY_INGOT = ITEMS.register("prosperity_ingot", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
+    //Tiny Dust
+    public static final RegistryObject<Item> TINY_ALUMINUM_DUST = ITEMS.register("tiny_aluminum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_COPPER_DUST = ITEMS.register("tiny_copper_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_GOLD_DUST = ITEMS.register("tiny_gold_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_IRON_DUST = ITEMS.register("tiny_iron_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_LEAD_DUST = ITEMS.register("tiny_lead_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_NICKEL_DUST = ITEMS.register("tiny_nickel_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_PLATINUM_DUST = ITEMS.register("tiny_platinum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_SILVER_DUST = ITEMS.register("tiny_silver_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_TIN_DUST = ITEMS.register("tiny_tin_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_OSMIUM_DUST = ITEMS.register("tiny_osmium_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_URANIUM_DUST = ITEMS.register("tiny_uranium_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_ZINC_DUST = ITEMS.register("tiny_zinc_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_COBALT_DUST = ITEMS.register("tiny_platinum_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_MANGANESE_DUST = ITEMS.register("tiny_manganese_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> TINY_DEPLETED_MYTHRIL_DUST = ITEMS.register("tiny_depleted_mythril_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
     //Refined Dust
     public static final RegistryObject<Item> REFINED_GLOWSTONE_DUST = ITEMS.register("refined_glowstone_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> REFINED_REDSTONE_DUST = ITEMS.register("refined_redstone_dust", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
@@ -229,7 +246,6 @@ public class ItemInit {
     public static final RegistryObject<Item> WITHERING_LOGIC_CIRCUIT = ITEMS.register("withering_logic_circuit", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
     //Other
-
     public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> TINY_MOON = ITEMS.register("tiny_moon", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> ENRICHED_CARBON_BRICK = ITEMS.register("enriched_carbon_brick", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
