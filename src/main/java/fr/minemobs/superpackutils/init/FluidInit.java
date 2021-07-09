@@ -92,6 +92,7 @@ public class FluidInit {
     public static final FluidObject EPOXY_RESIN = register("epoxy_resin", new Color(130, 82, 10), FLUID_RL);
     public static final FluidObject PRESSURIZED_HYDROGEN = register("pressurized_hydrogen", new Color(132, 132, 132), FLUID_RL);
     public static final FluidObject PRESSURIZED_STEAM = register("pressurized_steam", new Color(132, 132, 132), FLUID_RL);
+    public static final FluidObject ENRICHED_FUEL = register("enriched_fuel", new Color(181, 217, 74), FLUID_RL);
 
     private static FluidObject register(@Nonnull String name, @Nonnull Color color, @Nonnull ResourceLocation[] resourcesLocations) {
         final ForgeFlowingFluid.Properties[] properties = {null};

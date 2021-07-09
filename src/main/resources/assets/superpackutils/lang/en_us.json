@@ -101,6 +101,7 @@
   "block.superpackutils.primal_mana": "Primal Mana",
   "block.superpackutils.pahoehoe_lava": "Pahoehoe Lava",
   "block.superpackutils.hydrogen_cyanide": "Liquid Hydrogen Cyanide",
+  "block.superpackutils.enriched_fuel": "Enriched Fuel",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -164,6 +165,7 @@
   "fluid.superpackutils.primal_mana": "Primal Mana",
   "fluid.superpackutils.pahoehoe_lava": "Pahoehoe Lava",
   "fluid.superpackutils.hydrogen_cyanide": "Liquid Hydrogen Cyanide",
+  "fluid.superpackutils.enriched_fuel": "Enriched Fuel",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -227,6 +229,7 @@
   "item.superpackutils.primal_mana_bucket": "Primal Mana Bucket",
   "item.superpackutils.pahoehoe_lava_bucket": "Pahoehoe Lava Bucket",
   "item.superpackutils.hydrogen_cyanide_bucket": "Liquid Hydrogen Cyanide Bucket",
+  "item.superpackutils.enriched_fuel_bucket": "Enriched Fuel Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",
