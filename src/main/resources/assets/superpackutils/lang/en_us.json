@@ -102,6 +102,9 @@
   "block.superpackutils.pahoehoe_lava": "Pahoehoe Lava",
   "block.superpackutils.hydrogen_cyanide": "Liquid Hydrogen Cyanide",
   "block.superpackutils.enriched_fuel": "Enriched Fuel",
+  "block.superpackutils.molten_blizz": "Molten Blizz",
+  "block.superpackutils.molten_blitz": "Molten Blitz",
+  "block.superpackutils.molten_basalz": "Molten Basalz",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -166,6 +169,9 @@
   "fluid.superpackutils.pahoehoe_lava": "Pahoehoe Lava",
   "fluid.superpackutils.hydrogen_cyanide": "Liquid Hydrogen Cyanide",
   "fluid.superpackutils.enriched_fuel": "Enriched Fuel",
+  "fluid.superpackutils.molten_blizz": "Molten Blizz",
+  "fluid.superpackutils.molten_blitz": "Molten Blitz",
+  "fluid.superpackutils.molten_basalz": "Molten Basalz",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -230,6 +236,9 @@
   "item.superpackutils.pahoehoe_lava_bucket": "Pahoehoe Lava Bucket",
   "item.superpackutils.hydrogen_cyanide_bucket": "Liquid Hydrogen Cyanide Bucket",
   "item.superpackutils.enriched_fuel_bucket": "Enriched Fuel Bucket",
+  "item.superpackutils.molten_blizz_bucket": "Molten Blizz Bucket",
+  "item.superpackutils.molten_blitz_bucket": "Molten Blitz Bucket",
+  "item.superpackutils.molten_basalz_bucket": "Molten Basalz Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",

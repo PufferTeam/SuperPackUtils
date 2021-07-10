@@ -62,9 +62,12 @@ public class FluidInit {
 
     public static final FluidObject PYROTHEUM = register("pyrotheum", new Color(255, 187, 0), MOLTEN_RL, 2300);
     public static final FluidObject CRYOTHEUM = register("cryotheum", new Color(0, 191, 255), MOLTEN_RL, -2300);
+    public static final FluidObject MOLTEN_BLIZZ = register("molten_blizz", new Color(90, 190, 193), MOLTEN_RL, -2300);
     public static final FluidObject AEROTHEUM = register("aerotheum", new Color(167, 176, 204), MOLTEN_RL, 500);
+    public static final FluidObject MOLTEN_BLITZ = register("molten_blitz", new Color(219, 196, 103), MOLTEN_RL, 500);
     public static final FluidObject PETROTHEUM = register("petrotheum", new Color(59, 45, 36), MOLTEN_RL, 600);
-    public static final FluidObject PAHOEHOE_LAVA = register("pahoehoe_lava", new Color(148, 113, 86), MOLTEN_RL, 700);
+    public static final FluidObject MOLTEN_BASALZ = register("molten_basalz", new Color(135, 60, 36), MOLTEN_RL, 600);
+    public static final FluidObject PAHOEHOE_LAVA = register("pahoehoe_lava", new Color(111, 65, 43), MOLTEN_RL, 700);
     public static final FluidObject PRIMAL_MANA = register("primal_mana", new Color(73, 31, 181), MOLTEN_RL);
     public static final FluidObject MOLTEN_TERRASTEEL = register("molten_terrasteel", new Color(13, 255, 0), MOLTEN_RL);
     public static final FluidObject MOLTEN_MANASTEEL = register("molten_manasteel", new Color(57, 117, 196), MOLTEN_RL);
@@ -72,7 +75,7 @@ public class FluidInit {
     public static final FluidObject MOLTEN_ALFSTEEL = register("molten_alfsteel", new Color(255, 111, 0), MOLTEN_RL);
     public static final FluidObject MOLTEN_CRYSTALTINE = register("molten_crystaltine", new Color(41, 227, 227), MOLTEN_RL);
     public static final FluidObject MOLTEN_BORON = register("molten_boron", new Color(46, 46, 46), MOLTEN_RL);
-    public static final FluidObject MOLTEN_LITHIUM = register("molten_lithium", new Color(184, 184, 184), MOLTEN_RL);
+    public static final FluidObject MOLTEN_LITHIUM = register("molten_lithium", new Color(194, 192, 192), MOLTEN_RL);
     public static final FluidObject BLAZE_ESSENCE = register("blaze_essence", new Color(255, 60, 0), MOLTEN_RL);
     public static final FluidObject HO_GASOLINE = register("ho_gasoline", new Color(117, 62, 46), FLUID_RL);
     public static final FluidObject ICHOR = register("ichor", new Color(252, 111, 0), FLUID_RL);
