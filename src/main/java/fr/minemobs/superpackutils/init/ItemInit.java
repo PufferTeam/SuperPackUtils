@@ -224,6 +224,10 @@ public class ItemInit {
     //Wire
     public static final RegistryObject<Item> REDSTONE_WIRE = ITEMS.register("redstone_wire", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
+    //Combusting Circuit & Alloy
+    public static final RegistryObject<Item> INDUCTIVE_CONTROL_CIRCUIT = ITEMS.register("inductive_control_circuit", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> COMBUSTING_ALLOY = ITEMS.register("combusting_alloy", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
     //Cast
     public static final RegistryObject<Item> CHILLER_NUGGET_CAST = ITEMS.register("chiller_nugget_cast", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> CHILLER_GEAR_CAST = ITEMS.register("chiller_gear_cast", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));

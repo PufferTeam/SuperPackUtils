@@ -540,6 +540,8 @@
   "item.superpackutils.platinum_manganese_alloy_ingot": "Platinum-Manganese Alloy Ingot",
   "item.superpackutils.integrated_circuit": "Integrated Circuit",
   "item.superpackutils.resonating_coil": "Resonating Coil",
+  "item.superpackutils.inductive_control_circuit": "\u00A76Inductive Control Circuit",
+  "item.superpackutils.combusting_alloy": "\u00A7eCombusting Alloy",
 
   "itemGroup.superpackutils": "SuperPack: Utils",
 
