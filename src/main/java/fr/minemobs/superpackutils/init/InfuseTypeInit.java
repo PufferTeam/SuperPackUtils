@@ -30,9 +30,10 @@ public class InfuseTypeInit {
 
     //Crystals
     public static final RegistryObject<InfuseType> SLIME_CRYSTAL = register("slime_crystal", 0x00FF37);
-    public static final RegistryObject<InfuseType> ICHOR_CRYSTAL = register("ichor_crystal", 0xFF4800);
+    public static final RegistryObject<InfuseType> ICHOR_CRYSTAL = register("ichor_crystal", 0xFFa600);
     public static final RegistryObject<InfuseType> SKYSLIME_CRYSTAL = register("skyslime_crystal", 0x00B3FF);
     public static final RegistryObject<InfuseType> ENDERSLIME_CRYSTAL = register("enderslime_crystal", 0xB700FF);
+    public static final RegistryObject<InfuseType> BLOOD_CRYSTAL = register("blood_crystal", 0xFC2003);
 
     /**
      * @param name Registry name of the infused type ?
