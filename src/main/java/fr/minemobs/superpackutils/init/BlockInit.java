@@ -74,6 +74,7 @@ public class BlockInit {
     public static final RegistryObject<Block> TETRAETHYL_LEAD_BLOCK = registerBlock("tetraethyl_lead_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
     public static final RegistryObject<Block> ENERGETIC_ALLOY_BLOCK = registerBlock("energetic_alloy_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
     public static final RegistryObject<Block> VIBRANT_ALLOY_BLOCK = registerBlock("vibrant_alloy_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
+    public static final RegistryObject<Block> ANTIMONY_BLOCK = registerBlock("antimony_block", AbstractBlock.Properties.copy(Blocks.IRON_BLOCK));
 
     //Obsidian
     public static final RegistryObject<Block> REINFORCED_OBSIDIAN = registerBlock("reinforced_obsidian", AbstractBlock.Properties.copy(Blocks.OBSIDIAN));

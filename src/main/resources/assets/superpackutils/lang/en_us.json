@@ -35,6 +35,7 @@
   "block.superpackutils.advanced_mixer_casing": "Advanced Mixer Casing",
   "block.superpackutils.compacter_casing": "Pressurized Compacter Casing",
   "block.superpackutils.alloyer_casing": "Pressurized Alloyer Casing",
+  "block.superpackutils.antimony_block": "Antimony Block",
 
   "slurry.superpackutils.dirty_nickel": "Dirty Nickel Slurry",
   "slurry.superpackutils.clean_nickel": "Clean Nickel Slurry",
@@ -549,6 +550,10 @@
   "item.superpackutils.blood_crystal": "Blood Crystal",
   "item.superpackutils.blank_tier_installer": "Blank Tier Installer",
   "item.superpackutils.nand_chip": "NAND Chip",
+  "item.superpackutils.antimony_ingot": "Antimony Ingot",
+  "item.superpackutils.antimony_nugget": "Antimony Nugget",
+  "item.superpackutils.antimony_dust": "Antimony Dust",
+  "item.superpackutils.tiny_antimony_dust": "Tiny Antimony Dust",
 
   "itemGroup.superpackutils": "SuperPack: Utils",
 
