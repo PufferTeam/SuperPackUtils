@@ -106,7 +106,7 @@
   "block.superpackutils.molten_blitz": "Molten Blitz",
   "block.superpackutils.molten_basalz": "Molten Basalz",
   "block.superpackutils.distilled_water": "Distilled Water",
-  "block.superpackutils.condensed_water": "Condensed Water",
+  "block.superpackutils.coolant": "Coolant",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -175,7 +175,7 @@
   "fluid.superpackutils.molten_blitz": "Molten Blitz",
   "fluid.superpackutils.molten_basalz": "Molten Basalz",
   "fluid.superpackutils.distilled_water": "Distilled Water",
-  "fluid.superpackutils.condensed_water": "Condensed Water",
+  "fluid.superpackutils.coolant": "Coolant",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -244,7 +244,7 @@
   "item.superpackutils.molten_blitz_bucket": "Molten Blitz Bucket",
   "item.superpackutils.molten_basalz_bucket": "Molten Basalz Bucket",
   "item.superpackutils.distilled_water_bucket": "Distilled Water Bucket",
-  "item.superpackutils.condensed_water_bucket": "Condensed Water Bucket",
+  "item.superpackutils.coolant_bucket": "Coolant Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",
