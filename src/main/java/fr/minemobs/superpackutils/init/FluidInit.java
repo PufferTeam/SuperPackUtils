@@ -59,6 +59,7 @@ public class FluidInit {
     public static final FluidObject PLASTIC_WASTE = register("plastic_waste", new Color(97, 70, 54), FLUID_RL);
     public static final FluidObject ACETYLENE = register("acetylene", new Color(191, 128, 164), FLUID_RL);
     public static final FluidObject HYDROGEN_CYANIDE = register("hydrogen_cyanide", new Color(114, 85, 161), FLUID_RL);
+    public static final FluidObject HELIUM = register("helium", new Color(234, 217, 194), FLUID_RL);
 
     public static final FluidObject PYROTHEUM = register("pyrotheum", new Color(255, 187, 0), MOLTEN_RL, 2300);
     public static final FluidObject CRYOTHEUM = register("cryotheum", new Color(0, 191, 255), MOLTEN_RL, -2300);

@@ -109,6 +109,7 @@
   "block.superpackutils.distilled_water": "Distilled Water",
   "block.superpackutils.coolant": "Coolant",
   "block.superpackutils.grassoline": "Grassoline",
+  "block.superpackutils.helium": "Liquid Helium",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -179,6 +180,7 @@
   "fluid.superpackutils.distilled_water": "Distilled Water",
   "fluid.superpackutils.coolant": "Coolant",
   "fluid.superpackutils.grassoline": "Grassoline",
+  "fluid.superpackutils.helium": "Liquid Helium",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -249,6 +251,7 @@
   "item.superpackutils.distilled_water_bucket": "Distilled Water Bucket",
   "item.superpackutils.coolant_bucket": "Coolant Bucket",
   "item.superpackutils.grassoline_bucket": "Grassoline Bucket",
+  "item.superpackutils.helium_bucket": "Liquid Helium Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",
@@ -298,6 +301,7 @@
   "gas.superpackutils.white_corundum": "White Corundum",
   "gas.superpackutils.black_corundum": "Black Corundum",
   "gas.superpackutils.hydrogen_cyanide": "Hydrogen Cyanide",
+  "gas.superpackutils.helium": "Helium",
 
   "infuse_type.superpackutils.petroleum_coke": "Petroleum Coke",
   "infuse_type.superpackutils.slime_crystal": "Crystallized Slime",
