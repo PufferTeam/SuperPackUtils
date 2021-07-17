@@ -114,6 +114,7 @@
   "block.superpackutils.chloroform": "Liquid Chloroform",
   "block.superpackutils.chloromethane_mixture": "Chloromethane Mixture",
   "block.superpackutils.cumene": "Liquid Cumene",
+  "block.superpackutils.acetone": "Liquid Acetone",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -189,6 +190,7 @@
   "fluid.superpackutils.chloroform": "Liquid Chloroform",
   "fluid.superpackutils.chloromethane_mixture": "Chloromethane Mixture",
   "fluid.superpackutils.cumene": "Liquid Cumene",
+  "fluid.superpackutils.acetone": "Liquid Acetone",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -264,6 +266,7 @@
   "item.superpackutils.chloroform_bucket": "Liquid Chloroform Bucket",
   "item.superpackutils.chloromethane_mixture_bucket": "Chloromethane Mixture Bucket",
   "item.superpackutils.cumene_bucket": "Liquid Cumene Bucket",
+  "item.superpackutils.acetone_bucket": "Liquid Acetone Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",
@@ -316,6 +319,8 @@
   "gas.superpackutils.helium": "Helium",
   "gas.superpackutils.silicon_tetrachloride": "Silicon Tetrachloride",
   "gas.superpackutils.chloroform": "Chloroform",
+  "gas.superpackutils.cumene": "Cumene",
+  "gas.superpackutils.acetone": "Acetone",
 
   "infuse_type.superpackutils.petroleum_coke": "Petroleum Coke",
   "infuse_type.superpackutils.slime_crystal": "Crystallized Slime",
