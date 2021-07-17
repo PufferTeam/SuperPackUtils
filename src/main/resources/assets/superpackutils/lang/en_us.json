@@ -115,6 +115,8 @@
   "block.superpackutils.chloromethane_mixture": "Chloromethane Mixture",
   "block.superpackutils.cumene": "Liquid Cumene",
   "block.superpackutils.acetone": "Liquid Acetone",
+  "block.superpackutils.sodium_chloride": "Liquid Sodium Chloride",
+  "block.superpackutils.sodium_hypochlorite": "Liquid Sodium Hypochlorite",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -191,6 +193,8 @@
   "fluid.superpackutils.chloromethane_mixture": "Chloromethane Mixture",
   "fluid.superpackutils.cumene": "Liquid Cumene",
   "fluid.superpackutils.acetone": "Liquid Acetone",
+  "fluid.superpackutils.sodium_chloride": "Liquid Sodium Chloride",
+  "fluid.superpackutils.sodium_hypochlorite": "Liquid Sodium Hypochlorite",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -267,6 +271,8 @@
   "item.superpackutils.chloromethane_mixture_bucket": "Chloromethane Mixture Bucket",
   "item.superpackutils.cumene_bucket": "Liquid Cumene Bucket",
   "item.superpackutils.acetone_bucket": "Liquid Acetone Bucket",
+  "item.superpackutils.sodium_chloride_bucket": "Liquid Sodium Chloride Bucket",
+  "item.superpackutils.sodium_hypochlorite_bucket": "Liquid Sodium Hypochlorite Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",
@@ -321,6 +327,8 @@
   "gas.superpackutils.chloroform": "Chloroform",
   "gas.superpackutils.cumene": "Cumene",
   "gas.superpackutils.acetone": "Acetone",
+  "gas.superpackutils.sodium_chloride": "Sodium Chloride",
+  "gas.superpackutils.sodium_hypochlorite": "Sodium Hypochlorite",
 
   "infuse_type.superpackutils.petroleum_coke": "Petroleum Coke",
   "infuse_type.superpackutils.slime_crystal": "Crystallized Slime",

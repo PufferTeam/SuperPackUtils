@@ -48,12 +48,15 @@ public class GasesInit {
     public static final RegistryObject<Gas> CHLOROFORM = GASES.register("chloroform", () -> new Gas(GasBuilder.builder().color(new Color(94, 65, 140).getRGB())));
     public static final RegistryObject<Gas> CUMENE = GASES.register("cumene", () -> new Gas(GasBuilder.builder().color(new Color(190, 207, 157).getRGB())));
     public static final RegistryObject<Gas> ACETONE = GASES.register("acetone", () -> new Gas(GasBuilder.builder().color(new Color(188, 227, 162).getRGB())));
+    public static final RegistryObject<Gas> SODIUM_CHLORIDE = GASES.register("sodium_chloride", () -> new Gas(GasBuilder.builder().color(new Color(117, 155, 252).getRGB())));
+    public static final RegistryObject<Gas> SODIUM_HYPOCHLORITE = GASES.register("sodium_hypochlorite", () -> new Gas(GasBuilder.builder().color(new Color(168, 202, 243).getRGB())));
 
     public static final RegistryObject<Gas> BORAX_SOLUTION = GASES.register("borax_solution", () -> new Gas(GasBuilder.builder().color(new Color(88, 113, 133).getRGB())));
     public static final RegistryObject<Gas> BN_SOLUTION = GASES.register("bn_solution", () -> new Gas(GasBuilder.builder().color(new Color(87, 109, 125).getRGB())));
     public static final RegistryObject<Gas> SF_SOLUTION = GASES.register("sf_solution", () -> new Gas(GasBuilder.builder().color(new Color(94, 123, 145).getRGB())));
     public static final RegistryObject<Gas> SH_SOLUTION = GASES.register("sh_solution", () -> new Gas(GasBuilder.builder().color(new Color(94, 123, 150).getRGB())));
     public static final RegistryObject<Gas> PF_SOLUTION = GASES.register("pf_solution", () -> new Gas(GasBuilder.builder().color(new Color(95, 120, 140).getRGB())));
+    public static final RegistryObject<Gas> PH_SOLUTION = GASES.register("ph_solution", () -> new Gas(GasBuilder.builder().color(new Color(80, 105, 123).getRGB())));
     public static final RegistryObject<Gas> CS_SOLUTION = GASES.register("cs_solution", () -> new Gas(GasBuilder.builder().color(new Color(95, 120, 146).getRGB())));
 
     //Corundum
