@@ -111,6 +111,9 @@
   "block.superpackutils.grassoline": "Grassoline",
   "block.superpackutils.helium": "Liquid Helium",
   "block.superpackutils.silicon_tetrachloride": "Liquid Silicon Tetrachloride",
+  "block.superpackutils.chloroform": "Liquid Chloroform",
+  "block.superpackutils.chloromethane_mixture": "Chloromethane Mixture",
+  "block.superpackutils.cumene": "Liquid Cumene",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -183,6 +186,9 @@
   "fluid.superpackutils.grassoline": "Grassoline",
   "fluid.superpackutils.helium": "Liquid Helium",
   "fluid.superpackutils.silicon_tetrachloride": "Liquid Silicon Tetrachloride",
+  "fluid.superpackutils.chloroform": "Liquid Chloroform",
+  "fluid.superpackutils.chloromethane_mixture": "Chloromethane Mixture",
+  "fluid.superpackutils.cumene": "Liquid Cumene",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -255,6 +261,9 @@
   "item.superpackutils.grassoline_bucket": "Grassoline Bucket",
   "item.superpackutils.helium_bucket": "Liquid Helium Bucket",
   "item.superpackutils.silicon_tetrachloride_bucket": "Liquid Silicon Tetrachloride Bucket",
+  "item.superpackutils.chloroform_bucket": "Liquid Chloroform Bucket",
+  "item.superpackutils.chloromethane_mixture_bucket": "Chloromethane Mixture Bucket",
+  "item.superpackutils.cumene_bucket": "Liquid Cumene Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",
@@ -305,6 +314,8 @@
   "gas.superpackutils.black_corundum": "Black Corundum",
   "gas.superpackutils.hydrogen_cyanide": "Hydrogen Cyanide",
   "gas.superpackutils.helium": "Helium",
+  "gas.superpackutils.silicon_tetrachloride": "Silicon Tetrachloride",
+  "gas.superpackutils.chloroform": "Chloroform",
 
   "infuse_type.superpackutils.petroleum_coke": "Petroleum Coke",
   "infuse_type.superpackutils.slime_crystal": "Crystallized Slime",
