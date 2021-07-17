@@ -44,6 +44,7 @@ public class GasesInit {
     public static final RegistryObject<Gas> ACETYLENE = GASES.register("acetylene", () -> new Gas(GasBuilder.builder().color(new Color(191, 128, 164).getRGB())));
     public static final RegistryObject<Gas> HYDROGEN_CYANIDE = GASES.register("hydrogen_cyanide", () -> new Gas(GasBuilder.builder().color(new Color(114, 85, 161).getRGB())));
     public static final RegistryObject<Gas> HELIUM = GASES.register("helium", () -> new Gas(GasBuilder.builder().color(new Color(234, 217, 194).getRGB())));
+    public static final RegistryObject<Gas> SILICON_TETRACHLORIDE = GASES.register("silicon_tetrachloride", () -> new Gas(GasBuilder.builder().color(new Color(65, 86, 140).getRGB())));
 
     public static final RegistryObject<Gas> BORAX_SOLUTION = GASES.register("borax_solution", () -> new Gas(GasBuilder.builder().color(new Color(88, 113, 133).getRGB())));
     public static final RegistryObject<Gas> BN_SOLUTION = GASES.register("bn_solution", () -> new Gas(GasBuilder.builder().color(new Color(87, 109, 125).getRGB())));
