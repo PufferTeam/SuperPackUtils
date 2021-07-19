@@ -117,6 +117,7 @@
   "block.superpackutils.acetone": "Liquid Acetone",
   "block.superpackutils.sodium_chloride": "Liquid Sodium Chloride",
   "block.superpackutils.sodium_hypochlorite": "Liquid Sodium Hypochlorite",
+  "block.superpackutils.fumed_silica": "Fumed Silica",
 
   "fluid.superpackutils.ethyl_chloride": "Liquid Ethyl Chloride",
   "fluid.superpackutils.acetylene": "Liquid Acetylene",
@@ -195,6 +196,7 @@
   "fluid.superpackutils.acetone": "Liquid Acetone",
   "fluid.superpackutils.sodium_chloride": "Liquid Sodium Chloride",
   "fluid.superpackutils.sodium_hypochlorite": "Liquid Sodium Hypochlorite",
+  "fluid.superpackutils.fumed_silica": "Fumed Silica",
 
   "item.superpackutils.ethyl_chloride_bucket": "Liquid Ethyl Chloride Bucket",
   "item.superpackutils.acetylene_bucket": "Liquid Acetylene Bucket",
@@ -273,6 +275,7 @@
   "item.superpackutils.acetone_bucket": "Liquid Acetone Bucket",
   "item.superpackutils.sodium_chloride_bucket": "Liquid Sodium Chloride Bucket",
   "item.superpackutils.sodium_hypochlorite_bucket": "Liquid Sodium Hypochlorite Bucket",
+  "item.superpackutils.fumed_silica_bucket": "Fumed Silica Bucket",
 
   "gas.superpackutils.ethyl_chloride": "Ethyl Chloride",
   "gas.superpackutils.borax_solution": "Borax Solution",
