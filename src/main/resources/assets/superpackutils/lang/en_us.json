@@ -587,6 +587,10 @@
   "item.superpackutils.tiny_antimony_dust": "Tiny Antimony Dust",
   "item.superpackutils.blaze_ashes": "Blaze Ashes",
   "item.superpackutils.data_core": "Data Core",
+  "item.superpackutils.small_soulstone": "Small Soulstone",
+  "item.superpackutils.medium_soulstone": "Medium Soulstone",
+  "item.superpackutils.large_soulstone": "Large Soulstone",
+  "item.superpackutils.charged_soulstone": "Charged Soulstone",
 
   "itemGroup.superpackutils": "SuperPack: Utils",
 
