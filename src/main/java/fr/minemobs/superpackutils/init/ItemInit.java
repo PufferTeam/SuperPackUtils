@@ -263,6 +263,11 @@ public class ItemInit {
     public static final RegistryObject<Item> LARGE_SOULSTONE = ITEMS.register("large_soulstone", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> CHARGED_SOULSTONE = ITEMS.register("charged_soulstone", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
 
+    //Coal
+    public static final RegistryObject<Item> CARBON_FIBERS = ITEMS.register("carbon_fibers", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> COMBINED_CARBON_FIBERS = ITEMS.register("coombined_carbon_fibers", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+    public static final RegistryObject<Item> CARBON_PLATE = ITEMS.register("carbon_plate", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
+
     //Other
     public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
     public static final RegistryObject<Item> TINY_MOON = ITEMS.register("tiny_moon", () -> new Item(new Item.Properties().tab(Main.ModItemGroup.instance)));
